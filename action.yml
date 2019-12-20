@@ -62,5 +62,5 @@ runs:
     - ${{ inputs.args }}
   env:
     OPTIONS: ${{ inputs.options }}
-    COMMANDS: ${{ inputs.command }}
+    COMMAND: ${{ inputs.command }}
     ARGS: ${{ inputs.args }}
