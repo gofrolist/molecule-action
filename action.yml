@@ -56,10 +56,10 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-  args:
-    - ${{ inputs.options }}
-    - ${{ inputs.command }}
-    - ${{ inputs.args }}
+#   args:
+#     - ${{ inputs.options }}
+#     - ${{ inputs.command }}
+#     - ${{ inputs.args }}
   env:
     OPTIONS: ${{ inputs.options }}
     COMMAND: ${{ inputs.command }}
