@@ -58,9 +58,9 @@ runs:
   image: Dockerfile
   args:
     - ${{ inputs.options }}
-    - ${{ inputs.targets }}
+    - ${{ inputs.command }}
     - ${{ inputs.args }}
   env:
     OPTIONS: ${{ inputs.options }}
-    COMMANDS: ${{ inputs.targets }}
+    COMMANDS: ${{ inputs.command }}
     ARGS: ${{ inputs.args }}
