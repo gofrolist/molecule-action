@@ -1,8 +1,15 @@
-# Container image that runs your code
-FROM alpine:3.10
+FROM python:3.7
 
-# Copies your code file from your action repository to the filesystem path `/` of the container
+LABEL "maintainer"="Eugene Vasilenko <gmrnsk@gmail.com>"
+LABEL "repository"="https://github.com/gofrolist/molecule-action"
+LABEL "homepage"="https://github.com/gofrolist/molecule-action"
+
+LABEL "com.github.actions.name"="molecule"
+LABEL "com.github.actions.description"="Run Ansible Molecule"
+LABEL "com.github.actions.icon"="command"
+LABEL "com.github.actions.color"="gray-dark"
+
+RUN pip install molecule[docker]
+
 COPY entrypoint.sh /entrypoint.sh
-
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]

@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  molecule:
+    runs-on: ubuntu-latest
+    name: Run Ansible Molecule
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Ansible Molecule action step
+        uses: ./ # Uses an action in the root directory
+        with:
+          options: '--base-config molecule/_shared/base.yml'
+          command: 'test'
+          args: '--scenario-name centos-6'

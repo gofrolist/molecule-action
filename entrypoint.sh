@@ -1,5 +1,10 @@
-#!/bin/sh -l
+#!/bin/bash
 
-echo "Hello $1"
-time=$(date)
-echo ::set-output name=time::$time
+set -Eeuo pipefail
+set -x
+
+: "${COMMAND?No command to run. Nothing to do.}"
+: "${GITHUB_WORKSPACE?GITHUB_WORKSPACE has to be set. Did you use the actions/checkout action?}"
+pushd ${GITHUB_WORKSPACE}
+
+molecule "${OPTIONS}" "${COMMAND}" "${ARGS}"

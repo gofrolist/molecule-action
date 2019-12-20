@@ -1,15 +1,62 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: Ansible Molecule
+description: Run Ansible Molecule
+author: Eugene Vasilenko <gmrnsk@gmail.com>
+
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  options:
+    description: |
+      Usage: molecule [OPTIONS] COMMAND [ARGS]...
+
+      Options:
+        --debug / --no-debug    Enable or disable debug mode. Default is disabled.
+        -c, --base-config TEXT  Path to a base config.  If provided Molecule will
+                                load this config first, and deep merge each
+                                scenario's molecule.yml on top.
+                                (/home/gofrolist/.config/molecule/config.yml)
+        -e, --env-file TEXT     The file to read variables from when rendering
+                                molecule.yml. (.env.yml)
+        --version               Show the version and exit.
+        --help                  Show this message and exit.
+
+    required: false
+  command:
+    description: |
+      Commands:
+        check        Use the provisioner to perform a Dry-Run...
+        cleanup      Use the provisioner to cleanup any changes...
+        converge     Use the provisioner to configure instances...
+        create       Use the provisioner to start the instances.
+        dependency   Manage the role's dependencies.
+        destroy      Use the provisioner to destroy the instances.
+        idempotence  Use the provisioner to configure the...
+        init         Initialize a new role or scenario.
+        lint         Lint the role.
+        list         Lists status of instances.
+        login        Log in to one instance.
+        matrix       List matrix of steps used to test instances.
+        prepare      Use the provisioner to prepare the instances...
+        side-effect  Use the provisioner to perform side-effects...
+        syntax       Use the provisioner to syntax check the role.
+        test         Test (lint, cleanup, destroy, dependency,...
+        verify       Run automated tests against instances.
+
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
+    default: 'test'
   args:
-    - ${{ inputs.who-to-greet }}
+    description: |
+      Usage: molecule [OPTIONS] COMMAND [ARGS]...
+
+      Arguments:
+        --scenario-name foo  Targeting a specific scenario.
+        --driver-name foo    Targeting a specific driver.
+        --all                Target all scenarios.
+        --destroy=always     Always destroy instances at the conclusion of a Molecule run.
+
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
+  env:
+    OPTIONS: ${{ inputs.options }}
+    COMMANDS: ${{ inputs.targets }}
+    ARGS: ${{ inputs.args }}
