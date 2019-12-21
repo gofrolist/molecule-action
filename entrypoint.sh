@@ -1,9 +1,6 @@
-#!/bin/bash
+#!/bin/bash -x
 
-set -x
+# : "${GITHUB_WORKSPACE?GITHUB_WORKSPACE has to be set. Did you use the actions/checkout action?}"
+# pushd ${GITHUB_WORKSPACE}
 
-: "${COMMAND?No command given. Nothing to do.}"
-: "${GITHUB_WORKSPACE?GITHUB_WORKSPACE has to be set. Did you use the actions/checkout action?}"
-pushd ${GITHUB_WORKSPACE}
-
-molecule ${OPTIONS} ${COMMAND} ${ARGS}
+molecule ${INPUT_OPTIONS} ${INPUT_COMMAND} ${INPUT_ARGS}

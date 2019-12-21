@@ -1,6 +1,11 @@
+---
 name: Ansible Molecule
 description: Run Ansible Molecule
 author: Eugene Vasilenko <gmrnsk@gmail.com>
+
+branding:
+  icon: "upload"
+  color: "green"
 
 inputs:
   options:
@@ -56,11 +61,12 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-#   args:
-#     - ${{ inputs.options }}
-#     - ${{ inputs.command }}
-#     - ${{ inputs.args }}
-  env:
-    OPTIONS: ${{ inputs.options }}
-    COMMAND: ${{ inputs.command }}
-    ARGS: ${{ inputs.args }}
+  # image: docker://docker.pkg.github.com/gofrolist/molecule-action/molecule-action:latest
+  # args:
+  #   - ${{ inputs.options }}
+  #   - ${{ inputs.command }}
+  #   - ${{ inputs.args }}
+  # env:
+  #   OPTIONS: ${{ inputs.options }}
+  #   COMMAND: ${{ inputs.command }}
+  #   ARGS: ${{ inputs.args }}

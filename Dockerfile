@@ -9,7 +9,7 @@ LABEL "com.github.actions.description"="Run Ansible Molecule"
 LABEL "com.github.actions.icon"="command"
 LABEL "com.github.actions.color"="gray-dark"
 
-RUN pip install molecule[docker]
+RUN pip install --no-cache-dir molecule[docker]
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

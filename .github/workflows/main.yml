@@ -1,3 +1,6 @@
+---
+name: Ansible Molecule action
+
 on: [push]
 
 jobs:
@@ -5,11 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Run Ansible Molecule
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v1
+      # - name: Log into registry
+      #   run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
       - name: Ansible Molecule action step
-        uses: ./ # Uses an action in the root directory
+        uses: docker://gofrolist/molecule:latest
+        # uses: docker://docker.pkg.github.com/gofrolist/molecule-action/molecule-action:latest
+        # uses: gofrolist/molecule-action@master
+        # uses: ./ # Uses an action in the root directory
         with:
-          options: '--base-config molecule/_shared/base.yml'
-          command: 'test'
-          args: '--scenario-name centos-6'
+          options: '--version'

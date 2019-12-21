@@ -1,0 +1,31 @@
+---
+name: DockerHub Image CI
+
+on:
+  push:
+    branches:
+      - master
+    # paths:
+    #   - 'Dockerfile'
+    #   - 'entrypoint.sh'
+
+env:
+  DOCKER_IMAGE_NAME: gofrolist/molecule
+  DOCKER_FILE: Dockerfile
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Build image
+        run: docker build . --file ${DOCKER_FILE} -t ${DOCKER_IMAGE_NAME}:${GITHUB_SHA} -t ${DOCKER_IMAGE_NAME}:latest
+
+      - name: Log into registry
+        run: docker login -u ${{ secrets.DOCKERHUB_USER }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build the Docker image
+        run: |
+          docker push ${DOCKER_IMAGE_NAME}:${GITHUB_SHA}
+          docker push ${DOCKER_IMAGE_NAME}:latest
