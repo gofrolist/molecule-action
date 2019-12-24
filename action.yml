@@ -4,14 +4,12 @@ description: Run Ansible Molecule
 author: Eugene Vasilenko <gmrnsk@gmail.com>
 
 branding:
-  icon: "upload"
-  color: "green"
+  icon: upload
+  color: green
 
 inputs:
-  options:
+  molecule_options:
     description: |
-      Usage: molecule [OPTIONS] COMMAND [ARGS]...
-
       Options:
         --debug / --no-debug    Enable or disable debug mode. Default is disabled.
         -c, --base-config TEXT  Path to a base config.  If provided Molecule will
@@ -22,9 +20,9 @@ inputs:
                                 molecule.yml. (.env.yml)
         --version               Show the version and exit.
         --help                  Show this message and exit.
-
     required: false
-  command:
+
+  molecule_command:
     description: |
       Commands:
         check        Use the provisioner to perform a Dry-Run...
@@ -44,29 +42,22 @@ inputs:
         syntax       Use the provisioner to syntax check the role.
         test         Test (lint, cleanup, destroy, dependency,...
         verify       Run automated tests against instances.
-
     required: true
     default: 'test'
-  args:
-    description: |
-      Usage: molecule [OPTIONS] COMMAND [ARGS]...
 
+  molecule_args:
+    description: |
       Arguments:
         --scenario-name foo  Targeting a specific scenario.
         --driver-name foo    Targeting a specific driver.
         --all                Target all scenarios.
         --destroy=always     Always destroy instances at the conclusion of a Molecule run.
-
     required: false
+
 runs:
   using: docker
-  image: Dockerfile
-  # image: docker://docker.pkg.github.com/gofrolist/molecule-action/molecule-action:latest
-  # args:
-  #   - ${{ inputs.options }}
-  #   - ${{ inputs.command }}
-  #   - ${{ inputs.args }}
+  image: docker://gofrolist/molecule:latest
   # env:
-  #   OPTIONS: ${{ inputs.options }}
-  #   COMMAND: ${{ inputs.command }}
-  #   ARGS: ${{ inputs.args }}
+  #   options: ${{ inputs.molecule_options }}
+  #   command: ${{ inputs.molecule_command }}
+  #   args: ${{ inputs.molecule_args }}
