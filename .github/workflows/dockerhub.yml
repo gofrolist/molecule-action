@@ -1,13 +1,14 @@
 ---
-name: DockerHub Image CI
+name: DockerHub CI
 
 on:
   push:
     branches:
       - master
-    # paths:
-    #   - 'Dockerfile'
-    #   - 'entrypoint.sh'
+      - releases/*
+    paths:
+      - 'Dockerfile'
+  pull_request:
 
 env:
   DOCKER_IMAGE_NAME: gofrolist/molecule
@@ -17,15 +18,36 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      - name: Build image
-        run: docker build . --file ${DOCKER_FILE} -t ${DOCKER_IMAGE_NAME}:${GITHUB_SHA} -t ${DOCKER_IMAGE_NAME}:latest
+      - name: Build Docker image
+        run: >
+          docker build . --file ${DOCKER_FILE}
+          -t ${DOCKER_IMAGE_NAME}:${GITHUB_SHA}
+          -t ${DOCKER_IMAGE_NAME}:latest
 
-      - name: Log into registry
-        run: docker login -u ${{ secrets.DOCKERHUB_USER }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Login to Docker registry
+        run: >
+          echo "${{ secrets.DOCKERHUB_TOKEN }}" |
+          docker login
+          -u ${{ secrets.DOCKERHUB_USER }}
+          --password-stdin
 
-      - name: Build the Docker image
+      - name: Push Docker image
         run: |
           docker push ${DOCKER_IMAGE_NAME}:${GITHUB_SHA}
           docker push ${DOCKER_IMAGE_NAME}:latest
+
+  molecule:
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: "${{ github.repository }}"
+
+      - name: Molecule
+        uses: docker://gofrolist/molecule:latest
+        with:
+          molecule_options: --version
