@@ -11,7 +11,7 @@ on:
   pull_request:
 
 env:
-  DOCKER_IMAGE_NAME: gofrolist/molecule
+  DOCKER_IMAGE_NAME: marcemv90/molecule
   DOCKER_FILE: Dockerfile
 
 jobs:
@@ -48,6 +48,6 @@ jobs:
           path: "${{ github.repository }}"
 
       - name: Molecule
-        uses: docker://gofrolist/molecule:latest
+        uses: docker://marcemv90/molecule:latest
         with:
           molecule_options: --version
