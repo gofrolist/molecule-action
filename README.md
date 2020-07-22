@@ -52,7 +52,7 @@ This GitHub action allows you to run [Molecule](https://molecule.readthedocs.io/
 
     molecule_working_dir:
     description: |
-      Path to another directory in the repository, where molecule command will be issued from.
+      Path to another directory in the repository, where molecule command will be issued from
       Useful in those cases where Ansible roles are not in git repository root.
     required: false
     default: '${GITHUB_REPOSITORY}'
