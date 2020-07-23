@@ -52,7 +52,7 @@ This GitHub action allows you to run [Molecule](https://molecule.readthedocs.io/
 
     molecule_working_dir:
     description: |
-      Path to another directory in the repository, where molecule command will be issued from
+      Path to another directory in the repository, where molecule command will be issued from.
       Useful in those cases where Ansible roles are not in git repository root.
     required: false
     default: '${GITHUB_REPOSITORY}'
@@ -76,7 +76,9 @@ jobs:
       - uses: gofrolist/molecule-action@master
 ```
 
->NOTE: the checkout action needs to place the file in ${{ github.repository }} in order for Molecule to find your role.
+>NOTE: By default molecule is going to look for configuration at `molecule/*/molecule.yml`, so if option `molecule-working-dir` is not provided, 
+>checkout action needs to place the file in ${{ github.repository }} in order for Molecule to find your role. If your role is placed somewhere else
+>in the repository, ensure that `molecule-working-dir` is set up accordingly, in order to `cd` to that directory before issuing `molecule` command.
 
 ### Advanced example:
 
