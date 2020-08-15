@@ -12,7 +12,6 @@ on:
 
 env:
   DOCKER_IMAGE_NAME: gofrolist/molecule
-  DOCKER_FILE: Dockerfile
 
 jobs:
   build:
@@ -20,33 +19,21 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build Docker image
-        run: >
-          docker build . --file ${DOCKER_FILE}
-          -t ${DOCKER_IMAGE_NAME}:${GITHUB_SHA}
-          -t ${DOCKER_IMAGE_NAME}:latest
-
-      - name: Login to Docker registry
-        run: >
-          echo "${{ secrets.DOCKERHUB_TOKEN }}" |
-          docker login
-          -u ${{ secrets.DOCKERHUB_USER }}
-          --password-stdin
-
-      - name: Push Docker image
-        run: |
-          docker push ${DOCKER_IMAGE_NAME}:${GITHUB_SHA}
-          docker push ${DOCKER_IMAGE_NAME}:latest
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ env.DOCKER_IMAGE_NAME }}
+          tag_with_sha: true
+          tag_with_ref: true
+          tags: latest
 
   molecule:
     needs:
       - build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          path: "${{ github.repository }}"
-
       - name: Molecule
         uses: docker://gofrolist/molecule:latest
         with:

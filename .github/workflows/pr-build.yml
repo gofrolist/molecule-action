@@ -24,8 +24,8 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ${{ env.DOCKER_REGISTRY }}
           repository: ${{ env.DOCKER_IMAGE_NAME }}
-          tags: pr-build
           tag_with_ref: true
+          tags: pr-build
 
       - name: Run molecule
         run: |
