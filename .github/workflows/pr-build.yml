@@ -9,8 +9,7 @@ on:
 
 env:
   DOCKER_REGISTRY: docker.pkg.github.com
-  DOCKER_IMAGE_NAME: gofrolist/molecule
-  DOCKER_FILE: Dockerfile
+  DOCKER_IMAGE_NAME: ${{ github.repository }}/molecule
 
 jobs:
   build:
@@ -18,34 +17,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Login to Docker registry
-        run: >
-          echo "${{ secrets.GITHUB_TOKEN }}" |
-          docker login ${DOCKER_REGISTRY}
-          -u ${{ github.actor }}
-          --password-stdin
-
       - name: Build and push Docker images
         uses: docker/build-push-action@v1
         with:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          registry: ${DOCKER_REGISTRY}
-          repository: ${DOCKER_IMAGE_NAME}
+          registry: ${{ env.DOCKER_REGISTRY }}
+          repository: ${{ env.DOCKER_IMAGE_NAME }}
           tags: pr-build
           tag_with_ref: true
-          tag_with_sha: true
 
-  molecule:
-    needs:
-      - build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          path: "${{ github.repository }}"
-
-      - name: Molecule
-        uses: docker://${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:${GITHUB_SHA}
-        with:
-          molecule_options: --version
+      - name: Run molecule
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ${{ env.DOCKER_REGISTRY }} -u ${{ github.actor }} --password-stdin
+          export DOCKER_IMAGE=${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:pr-build
+          docker pull ${DOCKER_IMAGE}
+          docker run ${DOCKER_IMAGE} molecule --version
