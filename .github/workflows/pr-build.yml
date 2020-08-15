@@ -1,0 +1,51 @@
+---
+name: DockerHub CI
+
+on:
+  pull_request:
+    paths:
+      - 'Dockerfile'
+      - 'action.yml'
+
+env:
+  DOCKER_REGISTRY: docker.pkg.github.com
+  DOCKER_IMAGE_NAME: gofrolist/molecule
+  DOCKER_FILE: Dockerfile
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Login to Docker registry
+        run: >
+          echo "${{ secrets.GITHUB_TOKEN }}" |
+          docker login ${DOCKER_REGISTRY}
+          -u ${{ github.actor }}
+          --password-stdin
+
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: ${DOCKER_REGISTRY}
+          repository: ${DOCKER_IMAGE_NAME}
+          tags: pr-build
+          tag_with_ref: true
+          tag_with_sha: true
+
+  molecule:
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: "${{ github.repository }}"
+
+      - name: Molecule
+        uses: docker://${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:${GITHUB_SHA}
+        with:
+          molecule_options: --version

@@ -8,7 +8,7 @@ on:
       - releases/*
     paths:
       - 'Dockerfile'
-  pull_request:
+      - 'action.yml'
 
 env:
   DOCKER_IMAGE_NAME: gofrolist/molecule
