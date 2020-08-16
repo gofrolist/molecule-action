@@ -6,6 +6,8 @@ on:
     branches:
       - master
       - releases/*
+    tags:
+      - '*'
     paths:
       - 'Dockerfile'
       - 'action.yml'
@@ -25,7 +27,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: ${{ env.DOCKER_IMAGE_NAME }}
-          tag_with_sha: true
           tag_with_ref: true
           tags: latest
 
