@@ -28,7 +28,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: ${{ env.DOCKER_IMAGE_NAME }}
           tag_with_ref: true
-          tags: latest
+          tags: v2,latest
 
   molecule:
     needs:
