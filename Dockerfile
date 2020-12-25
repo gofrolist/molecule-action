@@ -4,9 +4,9 @@ ARG BUILD_DEPS="\
     gcc=9.3.0-r2 \
     libc-dev=0.7.2-r3 \
     make=4.3-r0 \
-    musl-dev=1.1.24-r9 \
+    musl-dev=1.1.24-r10 \
     libffi-dev=3.3-r2 \
-    openssl-dev=1.1.1g-r0 \
+    openssl-dev=1.1.1i-r0 \
     "
 
 ARG PIP_INSTALL_ARGS="\
@@ -14,10 +14,10 @@ ARG PIP_INSTALL_ARGS="\
     "
 
 ARG PIP_MODULES="\
-    ansible-lint==4.3.3 \
-    flake8==3.8.3 \
-    molecule[docker]==3.0.8 \
-    testinfra==5.2.2 \
+    ansible-lint==4.3.7 \
+    flake8==3.8.4 \
+    molecule[docker]==3.2.1 \
+    testinfra==6.0.0 \
     "
 
 RUN apk add --update --no-cache ${BUILD_DEPS} && \
@@ -36,7 +36,7 @@ LABEL "com.github.actions.color"="green"
 ARG PACKAGES="\
     docker=19.03.12-r0 \
     git=2.26.2-r0 \
-    openssh-client=8.3_p1-r0 \
+    openssh-client=8.3_p1-r1 \
     "
 
 RUN apk add --update --no-cache ${PACKAGES} && \
