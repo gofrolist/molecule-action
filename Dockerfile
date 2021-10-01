@@ -1,12 +1,12 @@
 FROM python:3.8-alpine AS builder
 
 ARG BUILD_DEPS="\
-    gcc=9.3.0-r2 \
+    gcc=10.3.1_git20210424-r2 \
     libc-dev=0.7.2-r3 \
     make=4.3-r0 \
-    musl-dev=1.1.24-r10 \
+    musl-dev=1.2.2-r3 \
     libffi-dev=3.3-r2 \
-    openssl-dev=1.1.1i-r0 \
+    openssl-dev=1.1.1l-r0 \
     "
 
 ARG PIP_INSTALL_ARGS="\
@@ -23,20 +23,19 @@ ARG PIP_MODULES="\
 RUN apk add --update --no-cache ${BUILD_DEPS} && \
     pip install ${PIP_INSTALL_ARGS} ${PIP_MODULES}
 
-FROM python:3.8-alpine
+FROM python:3.8-alpine AS runner
 
 LABEL "maintainer"="Eugene Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
-
 LABEL "com.github.actions.name"="molecule"
 LABEL "com.github.actions.description"="Run Ansible Molecule"
 LABEL "com.github.actions.icon"="upload"
 LABEL "com.github.actions.color"="green"
 
 ARG PACKAGES="\
-    docker=19.03.12-r0 \
-    git=2.26.2-r0 \
-    openssh-client=8.3_p1-r1 \
+    docker=20.10.7-r2 \
+    git=2.32.0-r0 \
+    openssh-client=8.6_p1-r2 \
     "
 
 RUN apk add --update --no-cache ${PACKAGES} && \
