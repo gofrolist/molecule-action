@@ -6,6 +6,7 @@ on:
     paths:
       - 'Dockerfile'
       - 'action.yml'
+      - '.github/workflows/*.yml'
 
 env:
   DOCKER_REGISTRY: docker.pkg.github.com

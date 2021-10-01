@@ -11,6 +11,7 @@ on:
     paths:
       - 'Dockerfile'
       - 'action.yml'
+      - '.github/workflows/*.yml'
 
 env:
   DOCKER_IMAGE_NAME: gofrolist/molecule
