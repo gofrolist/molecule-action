@@ -1,4 +1,4 @@
-FROM python:3.8-alpine AS builder
+FROM python:3.9-alpine3.14 AS builder
 
 ARG BUILD_DEPS="\
     gcc=10.3.1_git20210424-r2 \
@@ -23,7 +23,7 @@ ARG PIP_MODULES="\
 RUN apk add --update --no-cache ${BUILD_DEPS} && \
     pip install ${PIP_INSTALL_ARGS} ${PIP_MODULES}
 
-FROM python:3.8-alpine AS runner
+FROM python:3.9-alpine3.14 AS runner
 
 LABEL "maintainer"="Eugene Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
@@ -41,7 +41,7 @@ ARG PACKAGES="\
 RUN apk add --update --no-cache ${PACKAGES} && \
     rm -rf /root/.cache
 
-COPY --from=builder /usr/local/lib/python3.8/site-packages/ /usr/local/lib/python3.8/site-packages/
+COPY --from=builder /usr/local/lib/python3.9/site-packages/ /usr/local/lib/python3.9/site-packages/
 COPY --from=builder /usr/local/bin/ansible*  /usr/local/bin/
 COPY --from=builder /usr/local/bin/flake8    /usr/local/bin/flake8
 COPY --from=builder /usr/local/bin/molecule  /usr/local/bin/molecule
