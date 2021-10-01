@@ -18,6 +18,7 @@ ARG PIP_MODULES="\
     flake8==3.9.2 \
     molecule[docker]==3.5.1 \
     testinfra==6.0.0 \
+    yamllint==1.26.3 \
     "
 
 RUN apk add --update --no-cache ${BUILD_DEPS} && \
