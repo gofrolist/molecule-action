@@ -15,6 +15,7 @@ ARG PIP_INSTALL_ARGS="\
 
 ARG PIP_MODULES="\
     ansible-lint==5.1.3 \
+    boto3==1.18.46 \
     flake8==3.9.2 \
     molecule[docker]==3.5.1 \
     testinfra==6.0.0 \
