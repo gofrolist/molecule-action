@@ -19,7 +19,7 @@ ARG PIP_MODULES="\
     ansible-lint==5.1.3 \
     boto3==1.18.52 \
     flake8==3.9.2 \
-    molecule[docker]==3.4.0 \
+    molecule[docker]==3.4.1 \
     molecule-inspec==1.1 \
     testinfra==6.0.0 \
     yamllint==1.26.3 \
