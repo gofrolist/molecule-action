@@ -139,5 +139,19 @@ If your role require some python modules (for example `netaddr`) you can install
       delegate_to: 127.0.0.1
 ```
 
+## Maintenance
+
+> Make the new release available to those binding to the major version tag: Move the major version
+> tag (v1, v2, etc.) to point to the ref of the current release. This will act as the stable release
+> for that major version. You should keep this tag updated to the most recent stable minor/patch
+> release.
+
+```sh
+git tag -fa v2 -m "Update v2 tag" && git push origin v2 --force
+```
+
+**Reference**:
+https://github.com/actions/toolkit/blob/master/docs/action-versioning.md#recommendations
+
 ## License
 The Dockerfile and associated scripts and documentation in this project are released under the [MIT](license).
