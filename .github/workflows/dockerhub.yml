@@ -5,10 +5,10 @@ on:
   push:
     branches:
       - master
-    paths:
-      - '!README.md'
-      - '!LICENSE'
-      - '!.github/dependabot.yml'
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+      - '.github/dependabot.yml'
   release:
     types:
       - created
