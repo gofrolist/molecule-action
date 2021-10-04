@@ -1,5 +1,5 @@
 ---
-name: DockerHub CI
+name: Release
 
 on:
   push:
@@ -12,8 +12,6 @@ on:
   release:
     types:
       - created
-      - edited
-      - published
   schedule:
     # every Saturday
     - cron: '0 0 * * 6'
