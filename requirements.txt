@@ -1,5 +1,5 @@
 ansible-core==2.11.5
-ansible-lint==5.1.3
+ansible-lint==5.2.0
 ansible==4.6.0
 boto3==1.18.53
 flake8==3.9.2
