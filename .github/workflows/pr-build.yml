@@ -3,10 +3,10 @@ name: Pull Request CI
 
 on:
   pull_request:
-    paths:
-      - '!README.md'
-      - '!LICENSE'
-      - '!.github/dependabot.yml'
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+      - '.github/dependabot.yml'
 
 env:
   DOCKER_IMAGE_NAME: gofrolist/molecule
