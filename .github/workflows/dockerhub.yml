@@ -5,12 +5,10 @@ on:
   push:
     branches:
       - master
-    tags:
-      - '*'
     paths:
-      - 'Dockerfile'
-      - 'action.yml'
-      - '.github/workflows/*.yml'
+      - '!README.md'
+      - '!LICENSE'
+      - '!.github/dependabot.yml'
   release:
     types:
       - created

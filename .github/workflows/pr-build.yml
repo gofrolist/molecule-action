@@ -4,9 +4,9 @@ name: Pull Request CI
 on:
   pull_request:
     paths:
-      - 'Dockerfile'
-      - 'action.yml'
-      - '.github/workflows/*.yml'
+      - '!README.md'
+      - '!LICENSE'
+      - '!.github/dependabot.yml'
 
 env:
   DOCKER_IMAGE_NAME: gofrolist/molecule
