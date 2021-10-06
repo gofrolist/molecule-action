@@ -31,9 +31,9 @@ COPY --from=builder /usr/local/bin/pytest    /usr/local/bin/pytest
 COPY --from=builder /usr/local/bin/yamllint  /usr/local/bin/yamllint
 
 ARG PACKAGES="\
-    docker=20.10.7-r2 \
+    docker=20.10.9-r0 \
     git=2.32.0-r0 \
-    openssh-client=8.6_p1-r2 \
+    openssh-client=8.6_p1-r3 \
     "
 
 RUN apk add --update --no-cache ${PACKAGES} && \
