@@ -125,18 +125,41 @@ jobs:
 
 > TIP: N.B. Use `gofrolist/molecule-action@v2` or any other valid tag, or branch, or commit SHA instead of `v2` to pin the action to use a specific version.
 
-If your role require some python modules (for example `netaddr`) you can install them in molecule prepare step
-
+## Troubleshooting
+If you see this error while you executing `apt_key` task
+```
+FAILED! => {"changed": false, "msg": "Failed to find required executable gpg in paths: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"}
+```
+That means your docker image require some python modules `gpg` and you can install them in molecule prepare step or embed it in your dockerfile.
 ```yaml
 ---
 - name: Prepare
   hosts: all
 
   tasks:
-    - name: Install netaddr dependency on controlling host (virtualenv)
-      pip:
-        name: netaddr
-      delegate_to: 127.0.0.1
+    - name: dependency for apt_key
+      apt:
+        name: python3-gpg
+        state: present
+        update_cache: true
+```
+
+If you see this error while you executing `pip` task
+```
+FAILED! => {"changed": false, "msg": "No package matching 'python-pip' is available"}
+```
+That means your docker image is missing `pip` and you can install them in molecule prepare step or embed it in your dockerfile.
+```yaml
+---
+- name: Prepare
+  hosts: all
+
+  tasks:
+    - name: dependency for pip
+      apt:
+        name: python3-pip
+        state: present
+        update_cache: true
 ```
 
 ## Maintenance
