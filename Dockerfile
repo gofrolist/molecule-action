@@ -37,7 +37,6 @@ ARG PACKAGES="\
     "
 
 RUN apk add --update --no-cache ${PACKAGES} && \
-    rm -rf /root/.cache && \
-    ansible-galaxy collection install --force -v community.docker:>=1.8.0
+    rm -rf /root/.cache
 
 CMD cd ${INPUT_MOLECULE_WORKING_DIR}; molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}
