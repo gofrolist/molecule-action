@@ -1,7 +1,7 @@
+# Molecule for GitHub Action
 [![Docker Pulls](https://img.shields.io/docker/pulls/gofrolist/molecule)](https://hub.docker.com/r/gofrolist/molecule)
 [![License](https://img.shields.io/github/license/gofrolist/molecule-action)](LICENSE)
 
-# Molecule for GitHub Action
 This GitHub action allows you to run [Molecule](https://molecule.readthedocs.io/en/stable/) to test [Ansible](https://www.ansible.com/) role.
 
 ## Inputs
