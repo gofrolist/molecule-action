@@ -1,11 +1,13 @@
-FROM python:3.9-alpine3.14 AS builder
+FROM python:3.9.7-alpine3.14 AS builder
 
 ARG BUILD_DEPS="\
+    docker=20.10.9-r0 \
     gcc=10.3.1_git20210424-r2 \
     libc-dev=0.7.2-r3 \
+    libffi-dev=3.3-r2 \
     make=4.3-r0 \
     musl-dev=1.2.2-r3 \
-    libffi-dev=3.3-r2 \
+    openssh-client=8.6_p1-r3 \
     openssl-dev=1.1.1l-r0 \
     "
 
@@ -14,7 +16,7 @@ RUN apk add --update --no-cache ${BUILD_DEPS}
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-FROM python:3.9-alpine3.14 AS runner
+FROM python:3.9.7-alpine3.14 AS runner
 
 LABEL "maintainer"="Eugene Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
