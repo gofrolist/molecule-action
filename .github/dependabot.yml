@@ -6,7 +6,7 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "chore"
+      prefix: "fix"
       include: "scope"
     open-pull-requests-limit: 10
 
@@ -15,7 +15,7 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "chore"
+      prefix: "fix"
       include: "scope"
     open-pull-requests-limit: 10
 
@@ -24,6 +24,6 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "chore"
+      prefix: "fix"
       include: "scope"
     open-pull-requests-limit: 10
