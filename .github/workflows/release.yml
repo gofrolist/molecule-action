@@ -9,9 +9,6 @@ on:
       - '**.md'
       - 'LICENSE'
       - '.github/dependabot.yml'
-  release:
-    types:
-      - created
   schedule:
     # every Saturday
     - cron: '0 0 * * 6'
@@ -114,57 +111,10 @@ jobs:
     needs:
       - build
       - molecule
-      - snyk
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
-
-      - name: Docker meta
-        id: meta
-        uses: docker/metadata-action@v3.5.0
-        with:
-          images: ${{ env.DOCKER_IMAGE_NAME }}
-          tags: |
-            type=semver,pattern=v{{version}}
-            type=semver,pattern=v{{major}}
-            type=ref,event=branch
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1.6.0
-
-      - name: Login to DockerHub
-        if: github.event_name == 'release'
-        uses: docker/login-action@v1
-        with:
-          username: ${{ github.actor }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Download artifact
-        uses: actions/download-artifact@v2.0.10
-        with:
-          name: testimage
-          path: /tmp
-
-      - name: Load image
-        run: |
-          docker load --input /tmp/test.tar
-          docker image ls -a
-
-      - name: Push Docker image
-        uses: docker/build-push-action@v2.7.0
-        with:
-          context: .
-          push: ${{ github.event_name == 'release' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-
-      - name: Test run Molecule from DockerHub latest image
-        uses: docker://gofrolist/molecule:latest
-        with:
-          molecule_options: --version
 
       - name: Setup Node.js
         uses: actions/setup-node@v2.3.2
@@ -174,4 +124,7 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release -p @semantic-release/commit-analyzer -p @semantic-release/release-notes-generator -p @semantic-release/github --dry-run
+        run: npx semantic-release -p @semantic-release/commit-analyzer -p @semantic-release/release-notes-generator -p @semantic-release/github
+
+      - name: Update major tag
+        uses: Actions-R-Us/actions-tagger@latest
