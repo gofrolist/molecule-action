@@ -63,14 +63,6 @@ jobs:
           name: testimage
           path: /tmp/test.tar
 
-      - name: Push Docker image
-        uses: docker/build-push-action@v2.7.0
-        with:
-          context: .
-          push: ${{ github.event_name == 'release' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-
   molecule:
     needs:
       - build
@@ -87,10 +79,9 @@ jobs:
           docker load --input /tmp/test.tar
           docker image ls -a
 
-      - name: Test run Molecule from DockerHub latest image
-        uses: docker://gofrolist/molecule:test
-        with:
-          molecule_options: --version
+      - name: Test run Molecule
+        run: |
+          docker run --rm ${{ env.DOCKER_IMAGE_NAME }}:test molecule --version
 
   snyk:
     needs:
@@ -125,3 +116,45 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: snyk.sarif
+
+  release:
+    needs:
+      - build
+      - molecule
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2.0.10
+        with:
+          name: testimage
+          path: /tmp
+
+      - name: Load image
+        run: |
+          docker load --input /tmp/test.tar
+          docker image ls -a
+
+      - name: Push Docker image
+        uses: docker/build-push-action@v2.7.0
+        with:
+          context: .
+          push: ${{ github.event_name == 'release' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Test run Molecule from DockerHub latest image
+        uses: docker://gofrolist/molecule:latest
+        with:
+          molecule_options: --version
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.3.2
+        with:
+          node-version: '14'
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release -p @semantic-release/commit-analyzer -p @semantic-release/release-notes-generator -p @semantic-release/github --dry-run
