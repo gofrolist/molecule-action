@@ -6,6 +6,9 @@ on:
     types:
       - published
 
+env:
+  DOCKER_IMAGE_NAME: gofrolist/molecule
+
 jobs:
   publish:
     name: Publish Release
