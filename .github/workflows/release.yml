@@ -24,7 +24,8 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.3.4
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
 
       - name: Docker meta
         id: meta
@@ -76,3 +77,22 @@ jobs:
         uses: docker://gofrolist/molecule:latest
         with:
           molecule_options: --version
+
+  snyk:
+    needs:
+      - build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Run Snyk to check Docker image for vulnerabilities
+        continue-on-error: true
+        uses: snyk/actions/docker@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          image: ${{ env.DOCKER_IMAGE_NAME }}:latest
+          args: --file=Dockerfile
+
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: snyk.sarif

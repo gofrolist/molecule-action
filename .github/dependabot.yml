@@ -1,19 +1,29 @@
+---
 version: 2
 updates:
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "friday"
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+      include: "dockerfile"
+    open-pull-requests-limit: 10
 
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "friday"
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+      include: "python"
+    open-pull-requests-limit: 10
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "friday"
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+      include: "ci"
+    open-pull-requests-limit: 10

@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-20.04
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      # - name: Dependabot metadata
-      #   id: metadata
-      #   uses: dependabot/fetch-metadata@v1.1.1
-      #   with:
-      #     github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1.1.1
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Enable auto-merge for Dependabot PRs
         # if: ${{ contains(steps.metadata.outputs.dependency-names, 'my-dependency') && steps.metadata.outputs.update-type == 'version-update:semver-patch' }}
         env:
