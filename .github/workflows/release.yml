@@ -125,6 +125,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release -p @semantic-release/commit-analyzer -p @semantic-release/release-notes-generator -p @semantic-release/github
-
-      - name: Update major tag
-        uses: Actions-R-Us/actions-tagger@latest

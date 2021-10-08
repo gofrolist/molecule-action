@@ -5,7 +5,6 @@ on:
   release:
     types:
       - published
-  workflow_dispatch:
 
 jobs:
   publish:
@@ -44,6 +43,9 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Update major tag
+        uses: Actions-R-Us/actions-tagger@latest
 
   validate:
     needs:
