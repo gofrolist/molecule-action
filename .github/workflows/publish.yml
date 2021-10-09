@@ -5,9 +5,18 @@ on:
   release:
     types:
       - published
+  workflow_dispatch:
+    inputs:
+      TAG_NAME:
+        description: 'Tag name that the major tag will point to'
+        required: true
 
 env:
   DOCKER_IMAGE_NAME: gofrolist/molecule
+  TAG_NAME: ${{ github.event.inputs.TAG_NAME || github.event.release.tag_name }}
+
+permissions:
+  contents: write
 
 jobs:
   publish:
@@ -47,8 +56,15 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Update major tag
-        uses: Actions-R-Us/actions-tagger@latest
+      - name: Update the ${{ env.TAG_NAME }} tag
+        id: update-major-tag
+        uses: actions/publish-action@v0.1.0
+        with:
+          source-tag: ${{ env.TAG_NAME }}
+          # slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
+
+      # - name: Update major tag
+      #   uses: Actions-R-Us/actions-tagger@latest
 
   validate:
     needs:
