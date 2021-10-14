@@ -36,6 +36,7 @@ ARG PACKAGES="\
     docker=20.10.9-r0 \
     git=2.32.0-r0 \
     openssh-client=8.6_p1-r3 \
+    podman=3.2.3-r1 \
     "
 
 RUN apk add --update --no-cache ${PACKAGES} && \
