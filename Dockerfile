@@ -13,10 +13,11 @@ ARG BUILD_DEPS="\
 
 RUN apk add --update --no-cache ${BUILD_DEPS}
 
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+COPY Pipfile* .
+RUN pip install pipenv && \
+    pipenv install --deploy --system
 
-FROM python:3.9.7-alpine3.14 AS runner
+FROM python:3.9.7-alpine3.14 AS runtime
 
 LABEL "maintainer"="Eugene Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
