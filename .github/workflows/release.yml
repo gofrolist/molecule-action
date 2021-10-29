@@ -73,7 +73,7 @@ jobs:
         run: |
           docker run --rm ${{ env.DOCKER_IMAGE_NAME }}:test molecule --version
 
-  snyk:
+  snyk-docker:
     needs:
       - build
     runs-on: ubuntu-20.04
@@ -106,6 +106,27 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: snyk.sarif
+
+      - name: Run Snyk to check for Python vulnerabilities
+        continue-on-error: true
+        uses: snyk/actions/python@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --sarif-file-output=snyk-python.sarif
+
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: snyk-python.sarif
+
+  snyk-python:
+    needs:
+      - build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.5
 
       - name: Run Snyk to check for Python vulnerabilities
         continue-on-error: true
