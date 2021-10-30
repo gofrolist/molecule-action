@@ -122,6 +122,8 @@ jobs:
           molecule_options: --debug --base-config molecule/_shared/base.yml
           molecule_command: test
           molecule_args: --scenario-name ${{ matrix.scenario }}
+        env:
+          ANSIBLE_FORCE_COLOR: '1'
 ```
 
 > TIP: N.B. Use `gofrolist/molecule-action@v2` or any other valid tag, or branch, or commit SHA instead of `v2` to pin the action to use a specific version.
