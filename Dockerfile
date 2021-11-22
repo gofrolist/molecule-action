@@ -1,4 +1,4 @@
-FROM python:3.9.7-alpine3.14 AS builder
+FROM python:3.10-alpine3.14 AS builder
 
 ARG BUILD_DEPS="\
     docker=20.10.9-r0 \
@@ -17,7 +17,7 @@ COPY Pipfile* .
 RUN pip install pipenv && \
     pipenv install --deploy --system
 
-FROM python:3.9.7-alpine3.14 AS runtime
+FROM python:3.10-alpine3.14 AS runtime
 
 LABEL "maintainer"="Eugene Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
