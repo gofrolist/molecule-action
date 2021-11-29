@@ -1,14 +1,14 @@
 FROM python:3.9.7-alpine3.14 AS builder
 
 ARG BUILD_DEPS="\
-    docker=20.10.9-r0 \
-    gcc=10.3.1_git20210424-r2 \
-    libc-dev=0.7.2-r3 \
-    libffi-dev=3.3-r2 \
-    make=4.3-r0 \
-    musl-dev=1.2.2-r3 \
-    openssh-client=8.6_p1-r3 \
-    openssl-dev=1.1.1l-r0 \
+    docker \
+    gcc \
+    libc-dev \
+    libffi-dev \
+    make \
+    musl-dev \
+    openssh-client \
+    openssl-dev \
     "
 
 RUN apk add --update --no-cache ${BUILD_DEPS}
@@ -34,10 +34,10 @@ COPY --from=builder /usr/local/bin/pytest    /usr/local/bin/pytest
 COPY --from=builder /usr/local/bin/yamllint  /usr/local/bin/yamllint
 
 ARG PACKAGES="\
-    docker=20.10.9-r0 \
-    git=2.32.0-r0 \
-    openssh-client=8.6_p1-r3 \
-    podman=3.2.3-r1 \
+    docker \
+    git \
+    openssh-client \
+    podman \
     "
 
 RUN apk add --update --no-cache ${PACKAGES} && \
