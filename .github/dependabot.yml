@@ -9,6 +9,9 @@ updates:
       prefix: "fix"
       include: "scope"
     open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "python"
+        update-types: ["version-update:semver-minor", "version-update:semver-major"]
 
   - package-ecosystem: "pip"
     directory: "/"
