@@ -30,6 +30,16 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Test run Molecule
+      - name: Test Molecule default pipeline
+        env:
+          ANSIBLE_FORCE_COLOR: '1'
         run: |
-          docker run --rm ${{ env.DOCKER_IMAGE_NAME }}:test molecule --version
+          docker run \
+          -v /var/run/docker.sock:/var/run/docker.sock \
+          ${{ env.DOCKER_IMAGE_NAME }}:test \
+          sh -c "\
+            molecule --version \
+            && molecule init role --driver-name docker gofrolist.validate && cd validate \
+            && sed -i 's/gofrolist.//g' molecule/default/converge.yml \
+            && molecule test \
+          "
