@@ -4,11 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flake8 = "==4.0.1"
-molecule-inspec = "==1.1"
-molecule = {version = "==3.4.1", extras = ["docker", "podman", "lint"]}
-testinfra = "==6.0.0"
-yamllint = "==1.26.3"
+ansible-lint = "*"
+molecule-inspec = "*"
+molecule = {version = "==3.6.1", extras = ["docker", "podman", "lint", "test"]}
 
 [dev-packages]
 

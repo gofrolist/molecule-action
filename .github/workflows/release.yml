@@ -22,11 +22,11 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.0.2
 
       - name: Docker meta
         id: meta
-        uses: docker/metadata-action@v3.6.2
+        uses: docker/metadata-action@v4.0.1
         with:
           images: ${{ env.DOCKER_IMAGE_NAME }}
           tags: |
@@ -35,10 +35,10 @@ jobs:
             type=ref,event=branch
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1.6.0
+        uses: docker/setup-buildx-action@v2.0.0
 
       - name: Build Docker image
-        uses: docker/build-push-action@v2.10.0
+        uses: docker/build-push-action@v3.0.0
         with:
           context: .
           load: true
@@ -48,7 +48,7 @@ jobs:
           outputs: type=docker,dest=/tmp/test.tar
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3.0.0
+        uses: actions/upload-artifact@v3.1.0
         with:
           name: testimage
           path: /tmp/test.tar
@@ -79,7 +79,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.0.2
 
       - name: Download artifact
         uses: actions/download-artifact@v3.0.0
@@ -103,7 +103,7 @@ jobs:
           args: --file=Dockerfile
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: snyk.sarif
 
@@ -113,7 +113,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.0.2
 
       - name: Run Snyk to check for Python vulnerabilities
         continue-on-error: true
@@ -124,7 +124,7 @@ jobs:
           args: --sarif-file-output=snyk-python.sarif
 
       - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: snyk-python.sarif
 
@@ -135,12 +135,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v3.0.2
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v3.3.0
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Release
         env:
