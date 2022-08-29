@@ -66,3 +66,6 @@ inputs:
 runs:
   using: docker
   image: docker://gofrolist/molecule:v2
+  env:
+    ANSIBLE_ASYNC_DIR: "/tmp/.ansible_async"
+    ANSIBLE_FORCE_COLOR: "1"
