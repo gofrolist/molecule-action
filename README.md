@@ -165,6 +165,39 @@ That means your docker image is missing `pip` and you can install them in molecu
         update_cache: true
 ```
 
+If you are trying to install any Python packages in order to run your Molecule
+tests such as the OpenStack SDK and getting errors such as this:
+
+```
+fatal: [localhost]: FAILED! => {"changed": false, "msg": "openstacksdk is required for this module"}
+```
+
+You will need to do the following:
+
+1. Switch the dependency driver to `shell` inside Molecule, like this:
+
+   ```yaml
+   dependency:
+     name: shell
+     command: "${MOLECULE_SCENARIO_DIRECTORY}/tools/install-dependencies"
+   ```
+
+2. Once you have that, create a file in your scenario inside a `tools` folder
+   and place whatever you need inside of it, such as:
+
+   ```bash
+   #!/bin/sh
+
+   # Install OpenStack SDK
+   pip install \
+     --extra-index-url https://vexxhost.github.io/wheels/alpine-3.15/ \
+     'openstacksdk<0.99.0'
+   ```
+
+   You will have to manually install any other dependencies that you were using
+   Galaxy for, but that should be trivial to add with a few
+   simple `ansible-galaxy` commands.
+
 ## Maintenance
 
 > Make the new release available to those binding to the major version tag: Move the major version
