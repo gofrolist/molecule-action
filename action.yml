@@ -61,7 +61,7 @@ inputs:
       Path to another directory in the repository, where molecule command will be issued from.
       Useful in those cases where Ansible roles are not in git repository root.
     required: false
-    default: ${{ github.repository }}
+    default: ${{ github.workspace }}
 
 runs:
   using: docker
