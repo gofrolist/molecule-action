@@ -39,10 +39,12 @@ ARG PACKAGES="\
     git \
     openssh-client \
     podman \
+    tini \
     "
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y ${PACKAGES} && \
     rm -rf /var/lib/apt/lists/*
 
+ENTRYPOINT ["/usr/bin/tini", "--"]
 CMD cd ${INPUT_MOLECULE_WORKING_DIR}; molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}
