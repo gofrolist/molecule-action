@@ -43,9 +43,11 @@ ARG PACKAGES="\
     git \
     openssh-client \
     podman \
+    tini \
     "
 
 RUN apk add --update --no-cache ${PACKAGES} && \
     rm -rf /root/.cache
 
+ENTRYPOINT ["/sbin/tini", "--"]
 CMD cd ${INPUT_MOLECULE_WORKING_DIR}; molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}
