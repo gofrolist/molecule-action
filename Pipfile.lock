@@ -49,11 +49,11 @@
         },
         "ansible-lint": {
             "hashes": [
-                "sha256:56bf7974594e34b9327211d2febe623978850a1fab4330da94e2964ab52cfe42",
-                "sha256:eb467d725d0839693ef5fe11abe18085f472c2da4837a8e2df724e04ede96af6"
+                "sha256:b5b3eae0271fbb5799dd5f8a111aa69ccd97ff2cc45253bd4101bf31b8f6beb7",
+                "sha256:c3828a8370133b944bd0f943154f5069529c104c565d7b92c400149e3f699efc"
             ],
             "index": "pypi",
-            "version": "==6.6.0"
+            "version": "==6.6.1"
         },
         "arrow": {
             "hashes": [
@@ -945,11 +945,11 @@
         },
         "wcmatch": {
             "hashes": [
-                "sha256:ba4fc5558f8946bf1ffc7034b05b814d825d694112499c86035e0e4d398b6a67",
-                "sha256:dc7351e5a7f8bbf4c6828d51ad20c1770113f5f3fd3dfe2a03cfde2a63f03f98"
+                "sha256:3476cd107aba7b25ba1d59406938a47dc7eec6cfd0ad09ff77193f21a964dee7",
+                "sha256:b1f042a899ea4c458b7321da1b5e3331e3e0ec781583434de1301946ceadb943"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==8.4"
+            "version": "==8.4.1"
         },
         "websocket-client": {
             "hashes": [
