@@ -43,6 +43,7 @@ ARG PACKAGES="\
     git \
     openssh-client \
     podman \
+    rsync \
     tini \
     "
 
