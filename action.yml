@@ -1,7 +1,7 @@
 ---
 name: Ansible Molecule
 description: Run Ansible Molecule
-author: Evgenii Vasilenko <gmrnsk@gmail.com>
+author: https://github.com/RedlineTriad/
 
 branding:
   icon: upload
@@ -65,7 +65,7 @@ inputs:
 
 runs:
   using: docker
-  image: docker://gofrolist/molecule:v2
+  image: docker://ghcr.io/redlinetriad/molecule-vagrant-qemu-action:v0.1.0
   env:
     ANSIBLE_ASYNC_DIR: "/tmp/.ansible_async"
     ANSIBLE_FORCE_COLOR: "1"

@@ -7,6 +7,7 @@ name = "pypi"
 ansible-lint = "*"
 molecule-inspec = "*"
 molecule = {version = "==4.0.1", extras = ["docker", "podman", "lint", "test"]}
+molecule-vagrant = "*"
 
 [dev-packages]
 

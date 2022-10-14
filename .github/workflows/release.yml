@@ -15,7 +15,9 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE_NAME: gofrolist/molecule
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
 jobs:
   build:
@@ -28,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4.1.0
         with:
-          images: ${{ env.DOCKER_IMAGE_NAME }}
+          images: ${{ env.IMAGE }}
           tags: |
             type=semver,pattern=v{{version}}
             type=semver,pattern=v{{major}}
@@ -42,7 +44,7 @@ jobs:
         with:
           context: .
           load: true
-          tags: ${{ env.DOCKER_IMAGE_NAME }}:test
+          tags: ${{ env.IMAGE }}:test
           cache-from: type=gha
           cache-to: type=gha,mode=max
           outputs: type=docker,dest=/tmp/test.tar
@@ -71,7 +73,7 @@ jobs:
 
       - name: Test run Molecule
         run: |
-          docker run --rm ${{ env.DOCKER_IMAGE_NAME }}:test molecule --version
+          docker run --rm ${{ env.IMAGE }}:test molecule --version
 
   snyk-docker:
     needs:
@@ -98,7 +100,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          image: ${{ env.DOCKER_IMAGE_NAME }}:test
+          image: ${{ env.IMAGE }}:test
           sarif: true
           args: --file=Dockerfile
 

@@ -9,7 +9,9 @@ on:
       - '.github/dependabot.yml'
 
 env:
-  DOCKER_IMAGE_NAME: gofrolist/molecule
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
 jobs:
   build:
@@ -26,7 +28,7 @@ jobs:
         with:
           context: .
           load: true
-          tags: ${{ env.DOCKER_IMAGE_NAME }}:test
+          tags: ${{ env.IMAGE }}:test
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -36,10 +38,10 @@ jobs:
         run: |
           docker run \
           -v /var/run/docker.sock:/var/run/docker.sock \
-          ${{ env.DOCKER_IMAGE_NAME }}:test \
+          ${{ env.IMAGE }}:test \
           sh -c "\
             molecule --version \
-            && molecule init role --driver-name docker gofrolist.validate && cd validate \
-            && sed -i 's/gofrolist.//g' molecule/default/converge.yml \
+            && molecule init role --driver-name docker ${{ github.repository }}.validate && cd validate \
+            && sed -i 's/${{ github.repository }}.//g' molecule/default/converge.yml \
             && molecule test \
           "
