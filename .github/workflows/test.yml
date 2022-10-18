@@ -9,9 +9,7 @@ on:
       - '.github/dependabot.yml'
 
 env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
-  IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+  IMAGE: ghcr.io/redlinetriad/molecule-vagrant-qemu-action
 
 jobs:
   build:
