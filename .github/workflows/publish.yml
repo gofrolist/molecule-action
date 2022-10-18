@@ -14,7 +14,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+  IMAGE: ghcr.io/${{ env.IMAGE_NAME }}
   TAG_NAME: ${{ github.event.inputs.TAG_NAME || github.event.release.tag_name }}
 
 permissions:
