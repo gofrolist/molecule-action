@@ -39,7 +39,7 @@ jobs:
           ${{ env.IMAGE }}:test \
           sh -c "\
             molecule --version \
-            && molecule init role --driver-name docker ${{ github.repository }}.validate && cd validate \
-            && sed -i 's/${{ github.repository }}.//g' molecule/default/converge.yml \
+            && molecule init role --driver-name docker redlinetriad.validate && cd validate \
+            && sed -i 's/redlinetriad.//g' molecule/default/converge.yml \
             && molecule test \
           "
