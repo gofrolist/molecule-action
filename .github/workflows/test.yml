@@ -35,11 +35,14 @@ jobs:
           ANSIBLE_FORCE_COLOR: '1'
         run: |
           docker run \
-          -v /var/run/docker.sock:/var/run/docker.sock \
+          -v /var/run/libvirt/virtqemud-sock:/var/run/libvirt/virtqemud-sock \
+          -v $(pwd)/test_files/:/var/test_files \
           ${{ env.IMAGE }}:test \
           sh -c "\
             molecule --version \
-            && molecule init role --driver-name docker redlinetriad.validate && cd validate \
+            && molecule init role --driver-name vagrant redlinetriad.validate \
+            && cd validate \
+            && cp /var/test_files/molecule.yml molecule/default/molecule.yml \
             && sed -i 's/redlinetriad.//g' molecule/default/converge.yml \
             && molecule test \
           "

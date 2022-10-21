@@ -66,6 +66,24 @@ This GitHub action allows you to run [Molecule](https://molecule.readthedocs.io/
 ## Usage
 To use the action simply create an `main.yml` (or choose custom `*.yml` name) in the `.github/workflows/` directory.
 
+The `molecule.yml` also has to be configured to use QEMU like this:
+```yml
+driver:
+  name: vagrant
+  provider:
+    name: qemu
+platforms:
+  - name: instance
+    provider_options:
+      qemu_dir: /usr/bin/
+      arch: x86_64
+      machine: q35
+      cpu: max
+      net_device: virtio-net-pci
+    provider_raw_config_args:
+      - extra_qemu_args = %w(-vga std)
+```
+
 ### Basic example:
 
 ```yaml
