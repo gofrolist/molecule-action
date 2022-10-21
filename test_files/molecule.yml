@@ -1,0 +1,21 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant
+  provider:
+    name: qemu
+platforms:
+  - name: instance
+    provider_options:
+      qemu_dir: /usr/bin/
+      arch: x86_64
+      machine: q35
+      cpu: max
+      net_device: virtio-net-pci
+    provider_raw_config_args:
+      - extra_qemu_args = %w(-vga std)
+provisioner:
+  name: ansible
+verifier:
+  name: ansible

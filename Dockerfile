@@ -14,7 +14,7 @@ RUN apt-get update && \
     apt-get install --no-install-recommends -y ${BUILD_DEPS} && \
     rm -rf /var/lib/apt/lists/*
 
-COPY Pipfile* .
+COPY Pipfile* ./
 RUN pip install --no-cache-dir pipenv && \
     pipenv install --deploy --system
 
@@ -37,9 +37,12 @@ COPY --from=builder /usr/local/bin/yamllint  /usr/local/bin/yamllint
 ARG PACKAGES="\
     docker \
     git \
+    libvirt-daemon-driver-qemu \
     openssh-client \
     podman \
     qemu \
+    qemu-utils \
+    qemu-system \
     tini \
     vagrant \
     "
@@ -47,6 +50,8 @@ ARG PACKAGES="\
 RUN apt-get update && \
     apt-get install --no-install-recommends -y ${PACKAGES} && \
     rm -rf /var/lib/apt/lists/*
+
+RUN vagrant plugin install vagrant-qemu
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 CMD cd ${INPUT_MOLECULE_WORKING_DIR}; molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}
