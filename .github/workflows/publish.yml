@@ -69,6 +69,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Test run Molecule from DockerHub latest image
-        uses: docker://${{ env.IMAGE }}:latest
+        uses: "docker://${{ env.IMAGE }}:latest"
         with:
           molecule_options: --version
