@@ -35,11 +35,9 @@ COPY --from=builder /usr/local/bin/pytest    /usr/local/bin/pytest
 COPY --from=builder /usr/local/bin/yamllint  /usr/local/bin/yamllint
 
 ARG PACKAGES="\
-    docker \
     git \
     libvirt-daemon-driver-qemu \
     openssh-client \
-    podman \
     qemu \
     qemu-utils \
     qemu-system \
