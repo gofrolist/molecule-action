@@ -1,6 +1,6 @@
 ---
-name: Ansible Molecule
-description: Run Ansible Molecule
+name: Ansible Molecule Vagrant QEMU
+description: Run Ansible Molecule with Vagrant using QEMU
 author: https://github.com/RedlineTriad/
 
 branding:
@@ -49,7 +49,7 @@ inputs:
     description: |
       Arguments:
         -s, --scenario-name TEXT        Name of the scenario to target. (default)
-        -d, --driver-name [delegated|docker]
+        -d, --driver-name [delegated|docker|vagrant]
                                         Name of driver to use. (delegated)
         --all / --no-all                Test all scenarios. Default is False.
         --destroy [always|never]        The destroy strategy used at the conclusion of a Molecule run (always).
