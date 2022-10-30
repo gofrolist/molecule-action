@@ -65,7 +65,7 @@ inputs:
 
 runs:
   using: docker
-  image: docker://ghcr.io/redlinetriad/molecule-vagrant-qemu-action:v0.1.0
+  image: docker://ghcr.io/redlinetriad/molecule-vagrant-qemu-action:v1
   env:
     ANSIBLE_ASYNC_DIR: "/tmp/.ansible_async"
     ANSIBLE_FORCE_COLOR: "1"

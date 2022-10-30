@@ -66,6 +66,25 @@ This GitHub action allows you to run [Molecule](https://molecule.readthedocs.io/
 ## Usage
 To use the action simply create an `main.yml` (or choose custom `*.yml` name) in the `.github/workflows/` directory.
 
+### Basic example:
+
+```yaml
+on: push
+
+jobs:
+  molecule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: "${{ github.repository }}"
+      - uses: redlinetriad/molecule-action@v1
+```
+
+>NOTE: By default molecule is going to look for configuration at `molecule/*/molecule.yml`, so if option `molecule-working-dir` is not provided,
+>checkout action needs to place the file in ${{ github.repository }} in order for Molecule to find your role. If your role is placed somewhere else
+>in the repository, ensure that `molecule-working-dir` is set up accordingly, in order to `cd` to that directory before issuing `molecule` command.
+
 The `molecule.yml` also has to be configured to use QEMU like this:
 ```yml
 driver:
@@ -83,25 +102,6 @@ platforms:
     provider_raw_config_args:
       - extra_qemu_args = %w(-vga std)
 ```
-
-### Basic example:
-
-```yaml
-on: push
-
-jobs:
-  molecule:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          path: "${{ github.repository }}"
-      - uses: redlinetriad/molecule-action@v2
-```
-
->NOTE: By default molecule is going to look for configuration at `molecule/*/molecule.yml`, so if option `molecule-working-dir` is not provided,
->checkout action needs to place the file in ${{ github.repository }} in order for Molecule to find your role. If your role is placed somewhere else
->in the repository, ensure that `molecule-working-dir` is set up accordingly, in order to `cd` to that directory before issuing `molecule` command.
 
 ### Advanced example:
 
@@ -134,7 +134,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: Molecule
-        uses: redlinetriad/molecule-vagrant-qemu-action@v0.1.0
+        uses: redlinetriad/molecule-vagrant-qemu-action@v1
         with:
           molecule_options: --debug --base-config molecule/_shared/base.yml
           molecule_command: test
@@ -143,7 +143,7 @@ jobs:
           ANSIBLE_FORCE_COLOR: '1'
 ```
 
-> TIP: N.B. Use `redlinetriad/molecule-vagrant-qemu-action@v0.1.0` or any other valid tag, or branch, or commit SHA instead of `v0.1.0` to pin the action to use a specific version.
+> TIP: N.B. Use `redlinetriad/molecule-vagrant-qemu-action@v1` or any other valid tag, or branch, or commit SHA instead of `v1` to pin the action to use a specific version.
 
 ## Troubleshooting
 If you see this error while you executing `apt_key` task
