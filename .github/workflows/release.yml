@@ -19,7 +19,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3.3.0
@@ -56,7 +56,7 @@ jobs:
   molecule:
     needs:
       - build
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v3.0.2
@@ -76,7 +76,7 @@ jobs:
   snyk-docker:
     needs:
       - build
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3.3.0
@@ -110,7 +110,7 @@ jobs:
   snyk-python:
     needs:
       - build
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3.3.0
@@ -132,7 +132,7 @@ jobs:
     needs:
       - build
       - molecule
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3.3.0
@@ -140,7 +140,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3.6.0
         with:
-          node-version: '16'
+          node-version: '18'
 
       - name: Release
         env:
