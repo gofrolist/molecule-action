@@ -1,4 +1,4 @@
-FROM python:3.9.16-slim-bullseye AS builder
+FROM python:3.9.18-slim-bullseye AS builder
 
 ARG BUILD_DEPS="\
     docker \
@@ -18,7 +18,7 @@ COPY Pipfile* .
 RUN pip install --no-cache-dir pipenv && \
     pipenv install --deploy --system
 
-FROM python:3.9.16-slim-bullseye AS runtime
+FROM python:3.9.18-slim-bullseye AS runtime
 
 LABEL "maintainer"="Eugene Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
