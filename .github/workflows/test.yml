@@ -32,9 +32,6 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Test Molecule default pipeline
-        env:
-          ANSIBLE_FORCE_COLOR: '1'
-          PY_COLORS: '1'
         run: |
           docker run \
           -v /var/run/docker.sock:/var/run/docker.sock \
