@@ -38,6 +38,7 @@ jobs:
         run: |
           docker run \
           -v /var/run/docker.sock:/var/run/docker.sock \
+          -e PY_COLORS=1 \
           ${{ env.DOCKER_IMAGE_NAME }}:test \
           sh -c "\
             molecule --version \
