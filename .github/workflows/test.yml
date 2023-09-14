@@ -33,6 +33,7 @@ jobs:
 
       - name: Test Molecule default pipeline
         env:
+          ANSIBLE_FORCE_COLOR: '1'
           PY_COLORS: '1'
         run: |
           docker run \
