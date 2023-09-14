@@ -25,21 +25,20 @@ jobs:
         uses: docker/build-push-action@v4.1.1
         with:
           context: .
+          file: Dockerfile.buster
           load: true
           tags: ${{ env.DOCKER_IMAGE_NAME }}:test
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
       - name: Test Molecule default pipeline
-        env:
-          ANSIBLE_FORCE_COLOR: '1'
         run: |
           docker run \
           -v /var/run/docker.sock:/var/run/docker.sock \
+          -e PY_COLORS=1 \
           ${{ env.DOCKER_IMAGE_NAME }}:test \
           sh -c "\
             molecule --version \
-            && molecule init role --driver-name docker gofrolist.validate && cd validate \
-            && sed -i 's/gofrolist.//g' molecule/default/converge.yml \
-            && molecule test \
+            && molecule init scenario --driver-name docker validate \
+            && molecule test --scenario-name validate --driver-name docker \
           "
