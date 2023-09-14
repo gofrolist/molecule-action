@@ -1,4 +1,4 @@
-FROM python:3.9.17-alpine3.18 AS builder
+FROM python:3.9.18-alpine3.18 AS builder
 
 ARG BUILD_DEPS="\
     docker \
@@ -13,13 +13,14 @@ ARG BUILD_DEPS="\
 
 RUN apk add --update --no-cache ${BUILD_DEPS}
 
+
 COPY Pipfile* .
 RUN pip install pipenv && \
     pipenv install --deploy --system
 
-FROM python:3.9.17-alpine3.18 AS runtime
+FROM python:3.9.18-alpine3.18 AS runtime
 
-LABEL "maintainer"="Eugene Vasilenko <gmrnsk@gmail.com>"
+LABEL "maintainer"="Evgenii Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
 LABEL "com.github.actions.name"="molecule"
 LABEL "com.github.actions.description"="Run Ansible Molecule"
@@ -28,7 +29,6 @@ LABEL "com.github.actions.color"="green"
 
 COPY --from=builder /usr/local/lib/python3.9/site-packages/ /usr/local/lib/python3.9/site-packages/
 COPY --from=builder /usr/local/bin/ansible* \
-                    /usr/local/bin/cookiecutter \
                     /usr/local/bin/molecule \
                     /usr/local/bin/pre-commit* \
                     /usr/local/bin/yamllint \

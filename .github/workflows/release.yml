@@ -41,6 +41,7 @@ jobs:
         uses: docker/build-push-action@v4.1.1
         with:
           context: .
+          file: Dockerfile.buster
           load: true
           tags: ${{ env.DOCKER_IMAGE_NAME }}:test
           cache-from: type=gha
