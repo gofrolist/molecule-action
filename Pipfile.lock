@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f3c68dbc59cb06030dc0c9fc7f9e951ef8a2d0a6cd99ed8fbd74cd19b6fecc2c"
+            "sha256": "4cd601fb9696ca2fd61ce75c5199cdf07097cc53b27a017ef83d1d6748104cd5"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -34,11 +34,11 @@
         },
         "ansible-core": {
             "hashes": [
-                "sha256:351278fb8685fec1d645e2ddcfdca0c73456ff1db06426b86b6dd53774f7d7ba",
-                "sha256:fab3a5994482991274cae17500ca852007dbd76f564418f172f07cb00edbb293"
+                "sha256:55e6f4350fb98ac5441620ba981b1d9f7b90aa5f320885965af996e149bd3caa",
+                "sha256:8aa49cb1ddbf33d88c2bb4bf09ecd4b0dd8b788e174adca8b88dda6e6bdbf59b"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==2.15.6"
+            "version": "==2.15.8"
         },
         "ansible-lint": {
             "hashes": [
@@ -261,10 +261,10 @@
         },
         "click-help-colors": {
             "hashes": [
-                "sha256:756245e542d29226bb3bc056bfa58886f212ba2b82f4e8cf5fc884176ac96d72",
-                "sha256:82ef028cb0a332a154fa42fd7cca2c728a019b32bcb5a26bb32367551014a16f"
+                "sha256:b33c5803eeaeb084393b1ab5899dc5476c7196b87a18713045afe76f840b42db",
+                "sha256:f4cabe52cf550299b8888f4f2ee4c5f359ac27e33bcfe4d61db47785a5cc936c"
             ],
-            "version": "==0.9.2"
+            "version": "==0.9.4"
         },
         "cryptography": {
             "hashes": [
@@ -360,11 +360,11 @@
         },
         "jsonschema-specifications": {
             "hashes": [
-                "sha256:c9b234904ffe02f079bf91b14d79987faa685fd4b39c377a0996954c0090b9ca",
-                "sha256:f596778ab612b3fd29f72ea0d990393d0540a5aab18bf0407a46632eab540779"
+                "sha256:9472fc4fea474cd74bea4a2b190daeccb5a9e4db2ea80efcf7a1b582fc9a81b8",
+                "sha256:e74ba7c0a65e8cb49dc26837d6cfe576557084a8b423ed16a420984228104f93"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==2023.11.1"
+            "version": "==2023.11.2"
         },
         "markdown-it-py": {
             "hashes": [
@@ -450,12 +450,12 @@
         },
         "molecule": {
             "hashes": [
-                "sha256:b919353f799746de60b16a27575627783e39c268fdf2f2aa0372f0162c7b5478",
-                "sha256:f4e941017587d6aadf4c75ec55338d16c17ad6119a2f8306cfe7b9e05d49db11"
+                "sha256:8e5d7a7841f9ed5dd26878d24951ec030b86f780aca17ffc509db8076f42de3d",
+                "sha256:d2a881062fcc5ef1e08c1e5127c04354d2c95171955e270bd82b3fbfef72d3b0"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==6.0.2"
+            "version": "==6.0.3"
         },
         "molecule-inspec": {
             "hashes": [
@@ -570,11 +570,11 @@
         },
         "referencing": {
             "hashes": [
-                "sha256:81a1471c68c9d5e3831c30ad1dd9815c45b558e596653db751a2bfdd17b3b9ec",
-                "sha256:c19c4d006f1757e3dd75c4f784d38f8698d87b649c54f9ace14e5e8c9667c01d"
+                "sha256:689e64fe121843dcfd57b71933318ef1f91188ffb45367332700a86ac8fd6161",
+                "sha256:bdcd3efb936f82ff86f993093f6da7435c7de69a3b3a5a06678a6050184bee99"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==0.31.1"
+            "version": "==0.32.0"
         },
         "requests": {
             "hashes": [
@@ -793,11 +793,11 @@
         },
         "typing-extensions": {
             "hashes": [
-                "sha256:8f92fc8806f9a6b641eaa5318da32b44d401efaac0f6678c9bc448ba3605faa0",
-                "sha256:df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef"
+                "sha256:23478f88c37f27d76ac8aee6c905017a143b0b1b886c3c9f66bc2fd94f9f5783",
+                "sha256:af72aea155e91adfc61c3ae9e0e342dbc0cba726d6cba4b6c72c1f34e47291cd"
             ],
             "markers": "python_version < '3.10'",
-            "version": "==4.8.0"
+            "version": "==4.9.0"
         },
         "urllib3": {
             "hashes": [
