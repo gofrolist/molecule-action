@@ -104,8 +104,7 @@ jobs:
         with:
           image: ${{ env.DOCKER_IMAGE_NAME }}:test
           sarif: true
-          args: --file=Dockerfile
-            --sarif-file-output=snyk-${{ github.sha }}.sarif
+          args: --sarif-file-output=snyk-${{ github.sha }}.sarif
 
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v3
