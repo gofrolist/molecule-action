@@ -1,4 +1,4 @@
-FROM python:3.9.18-slim-bookworm AS builder
+FROM python:3.11.7-slim-bookworm AS builder
 
 ARG BUILD_DEPS="\
     docker \
@@ -18,7 +18,7 @@ COPY Pipfile* .
 RUN pip install --no-cache-dir pipenv && \
     pipenv install --deploy --system
 
-FROM python:3.9.18-slim-bookworm AS runtime
+FROM python:3.11.7-slim-bookworm AS runtime
 
 LABEL "maintainer"="Evgenii Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
@@ -27,7 +27,7 @@ LABEL "com.github.actions.description"="Run Ansible Molecule"
 LABEL "com.github.actions.icon"="upload"
 LABEL "com.github.actions.color"="green"
 
-COPY --from=builder /usr/local/lib/python3.9/site-packages/ /usr/local/lib/python3.9/site-packages/
+COPY --from=builder /usr/local/lib/python3.11/site-packages/ /usr/local/lib/python3.11/site-packages/
 COPY --from=builder /usr/local/bin/ansible* \
     /usr/local/bin/molecule \
     /usr/local/bin/pre-commit* \
