@@ -78,6 +78,9 @@ jobs:
     needs:
       - build
     runs-on: ubuntu-22.04
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
@@ -103,15 +106,18 @@ jobs:
           sarif: true
           args: --file=Dockerfile
 
-#       - name: Upload result to GitHub Code Scanning
-#         uses: github/codeql-action/upload-sarif@v3
-#         with:
-#           sarif_file: snyk.sarif
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: snyk.sarif
 
   snyk-python:
     needs:
       - build
     runs-on: ubuntu-22.04
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
