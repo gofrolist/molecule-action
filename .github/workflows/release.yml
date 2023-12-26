@@ -104,12 +104,12 @@ jobs:
         with:
           image: ${{ env.DOCKER_IMAGE_NAME }}:test
           sarif: true
-          args: --file=Dockerfile --sarif-file-output=snyk-${{ env.GITHUB_SHA }}.sarif
+          args: --file=Dockerfile --sarif-file-output=snyk-${{ github.sha }}.sarif
 
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: snyk-${{ env.GITHUB_SHA }}.sarif
+          sarif_file: snyk-${{ github.sha }}.sarif
 
   snyk-python:
     needs:
