@@ -1,4 +1,4 @@
-FROM python:3.9.18-alpine3.18 AS builder
+FROM python:3.9.18-slim-bookworm AS builder
 
 ARG BUILD_DEPS="\
     docker \
@@ -8,17 +8,17 @@ ARG BUILD_DEPS="\
     make \
     musl-dev \
     openssh-client \
-    openssl-dev \
     "
 
-RUN apk add --update --no-cache ${BUILD_DEPS}
-
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y ${BUILD_DEPS} && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY Pipfile* .
-RUN pip install pipenv && \
+RUN pip install --no-cache-dir pipenv && \
     pipenv install --deploy --system
 
-FROM python:3.9.18-alpine3.18 AS runtime
+FROM python:3.9.18-slim-bookworm AS runtime
 
 LABEL "maintainer"="Evgenii Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
@@ -29,13 +29,13 @@ LABEL "com.github.actions.color"="green"
 
 COPY --from=builder /usr/local/lib/python3.9/site-packages/ /usr/local/lib/python3.9/site-packages/
 COPY --from=builder /usr/local/bin/ansible* \
-                    /usr/local/bin/molecule \
-                    /usr/local/bin/pre-commit* \
-                    /usr/local/bin/yamllint \
-                    /usr/local/bin/
+    /usr/local/bin/molecule \
+    /usr/local/bin/pre-commit* \
+    /usr/local/bin/yamllint \
+    /usr/local/bin/
 
 ARG PACKAGES="\
-    docker \
+    docker.io \
     git \
     openssh-client \
     podman \
@@ -43,8 +43,9 @@ ARG PACKAGES="\
     tini \
     "
 
-RUN apk add --update --no-cache ${PACKAGES} && \
-    rm -rf /root/.cache
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y ${PACKAGES} && \
+    rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["/sbin/tini", "--"]
+ENTRYPOINT ["/usr/bin/tini", "--"]
 CMD cd ${INPUT_MOLECULE_WORKING_DIR}; molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}
