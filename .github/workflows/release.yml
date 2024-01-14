@@ -147,7 +147,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4.0.1
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Release
         env:
