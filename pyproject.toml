@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "molecule-action"
+version = "2.6.13"
+description = "GitHub action that allows you to run Molecule to test Ansible role."
+readme = "README.md"
+license = "MIT"
+authors = ["Evgenii Vasilenko <gmrnsk@gmail.com>"]
+maintainers = ["Evgenii Vasilenko <gmrnsk@gmail.com>"]
+repository = "https://github.com/gofrolist/molecule-action"
+
+[tool.poetry.dependencies]
+python = '^3.10'
+ansible-lint = "==6.8.7"
+molecule = "==6.0.3"
+molecule-plugins = {version = "*", extras = ["docker", "podman"]}
+
+[tool.poetry.group.dev.dependencies]
+toml = "==0.10.2"
+
+[build-system]
+requires = ["poetry-core>=1.8.1"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+match = "(main|master)"
+version_toml = ["pyproject.toml:tool.poetry.version"]
+commit_message = "chore(release): bump version to v{version} [skip ci]"
+build_command = "pip install toml && python update_version.py"
+
+[tool.semantic_release.changelog]
+exclude_commit_patterns = [
+    "^Merge pull request",
+    "^Merge branch",
+]

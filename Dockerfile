@@ -1,4 +1,12 @@
-FROM python:3.11.7-slim-bookworm AS builder
+ARG PYTHON_VERSION=3.11.7-slim-bookworm
+
+FROM python:${PYTHON_VERSION} AS builder
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=true \
+    POETRY_VIRTUALENVS_IN_PROJECT=true
 
 ARG BUILD_DEPS="\
     docker \
@@ -12,13 +20,30 @@ ARG BUILD_DEPS="\
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y ${BUILD_DEPS} && \
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-COPY Pipfile* .
-RUN pip install --no-cache-dir pipenv && \
-    pipenv install --deploy --system
+WORKDIR /app
+COPY . .
 
-FROM python:3.11.7-slim-bookworm AS runtime
+RUN --mount=type=cache,mode=0755,target=/root/.cache/pip \
+    pip install \
+        --upgrade \
+        pip \
+        poetry \
+        setuptools \
+        wheel
+
+RUN --mount=type=cache,mode=0755,target=/root/.cache/pypoetry \
+    poetry install \
+        --without dev \
+        --no-root
+
+##################
+# runtime
+##################
+
+FROM python:${PYTHON_VERSION} AS runtime
 
 LABEL "maintainer"="Evgenii Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
@@ -27,12 +52,10 @@ LABEL "com.github.actions.description"="Run Ansible Molecule"
 LABEL "com.github.actions.icon"="upload"
 LABEL "com.github.actions.color"="green"
 
-COPY --from=builder /usr/local/lib/python3.11/site-packages/ /usr/local/lib/python3.11/site-packages/
-COPY --from=builder /usr/local/bin/ansible* \
-    /usr/local/bin/molecule \
-    /usr/local/bin/pre-commit* \
-    /usr/local/bin/yamllint \
-    /usr/local/bin/
+ENV PATH="/app/.venv/bin:$PATH"
+
+WORKDIR /app
+COPY --from=builder /app/.venv /app/.venv
 
 ARG PACKAGES="\
     docker.io \

@@ -143,13 +143,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4.0.1
         with:
-          node-version: '20'
+          fetch-depth: 0
+          persist-credentials: false
 
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
-        run: npx semantic-release -p @semantic-release/commit-analyzer -p @semantic-release/release-notes-generator -p @semantic-release/github
+      - name: Python Semantic Release
+        uses: python-semantic-release/python-semantic-release@v8.7.2
+        with:
+          github_token: ${{ secrets.PAT }}
