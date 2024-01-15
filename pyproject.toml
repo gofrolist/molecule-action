@@ -22,7 +22,7 @@ requires = ["poetry-core>=1.8.1"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.semantic_release]
-match = "(main|master)"
+assets = ["action.yml"]
 version_toml = ["pyproject.toml:tool.poetry.version"]
 commit_message = "chore(release): bump version to v{version} [skip ci]"
 build_command = "pip install toml && python update_version.py"
