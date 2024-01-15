@@ -6,7 +6,24 @@
 
 ### Feature
 
-* feat: move from pipenv to poetry ([`de48a30`](https://github.com/gofrolist/molecule-action/commit/de48a30167b24d3cc34aa30db4a0b7be97e85db0))
+* feat: move from pipenv to poetry (#308) ([`0cfb72a`](https://github.com/gofrolist/molecule-action/commit/0cfb72a0d0f3139471c0b9ecc79ab6e0260f0e75))
+
+### Fix
+
+* fix(deps): bump actions/upload-artifact from 4.0.0 to 4.1.0
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.0.0 to 4.1.0.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v4.0.0...v4.1.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0267e81`](https://github.com/gofrolist/molecule-action/commit/0267e8154151db8fbfdd1e309be20b44d56f45d4))
 
 
 ## v2.6.13 (2024-01-14)
