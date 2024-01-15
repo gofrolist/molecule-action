@@ -2,7 +2,18 @@
 
 
 
+## v2.7.1 (2024-01-15)
+
+### Fix
+
+* fix(ci): add action.yml to semantic_release assets (#310) ([`95ae864`](https://github.com/gofrolist/molecule-action/commit/95ae864c539950425f60fd0a0dc6dae58dfb4741))
+
+
 ## v2.7.0 (2024-01-15)
+
+### Chore
+
+* chore(release): bump version to v2.7.0 [skip ci] ([`e309a7b`](https://github.com/gofrolist/molecule-action/commit/e309a7b6ce027166aef70ecc7870b6e6cd6ede29))
 
 ### Feature
 
