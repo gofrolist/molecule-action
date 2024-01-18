@@ -2,7 +2,18 @@
 
 
 
+## v2.7.2 (2024-01-18)
+
+### Fix
+
+* fix: point molecule_working_dir to github.repository (#311) ([`752d8df`](https://github.com/gofrolist/molecule-action/commit/752d8df3eee74378f34376fefb6a79b1358d6be9))
+
+
 ## v2.7.1 (2024-01-15)
+
+### Chore
+
+* chore(release): bump version to v2.7.1 [skip ci] ([`5b5c080`](https://github.com/gofrolist/molecule-action/commit/5b5c08091bb8b21eb5789a0f05b29a18fc7a65a9))
 
 ### Fix
 
