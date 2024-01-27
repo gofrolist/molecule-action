@@ -2,7 +2,31 @@
 
 
 
+## v2.7.4 (2024-01-27)
+
+### Fix
+
+* fix(deps): bump actions/upload-artifact from 4.2.0 to 4.3.0
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.2.0 to 4.3.0.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v4.2.0...v4.3.0)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`3de4950`](https://github.com/gofrolist/molecule-action/commit/3de4950aa73f772d7ba351a8980ca298d1898350))
+
+
 ## v2.7.3 (2024-01-20)
+
+### Chore
+
+* chore(release): bump version to v2.7.3 [skip ci] ([`412678e`](https://github.com/gofrolist/molecule-action/commit/412678ee4f2a86051c7b0dd9eab7808da0f122b1))
 
 ### Fix
 
