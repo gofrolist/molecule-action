@@ -2,7 +2,31 @@
 
 
 
+## v2.7.5 (2024-02-03)
+
+### Fix
+
+* fix(deps): bump docker/metadata-action from 5.5.0 to 5.5.1
+
+Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5.5.0 to 5.5.1.
+- [Release notes](https://github.com/docker/metadata-action/releases)
+- [Commits](https://github.com/docker/metadata-action/compare/v5.5.0...v5.5.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/metadata-action
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`f8fb68a`](https://github.com/gofrolist/molecule-action/commit/f8fb68a31e9adccb320d305ba87dd99689eb2e33))
+
+
 ## v2.7.4 (2024-01-27)
+
+### Chore
+
+* chore(release): bump version to v2.7.4 [skip ci] ([`065dfb8`](https://github.com/gofrolist/molecule-action/commit/065dfb8cfefb6ff68cab8507b2f370f7b38dc881))
 
 ### Fix
 
