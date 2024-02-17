@@ -2,7 +2,32 @@
 
 
 
+## v2.7.7 (2024-02-17)
+
+### Fix
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.0.3 to 9.1.0.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.0.3...v9.1.0)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`e63ce79`](https://github.com/gofrolist/molecule-action/commit/e63ce79be95b264125d58c2594c3c067fbd78377))
+
+
 ## v2.7.6 (2024-02-10)
+
+### Chore
+
+* chore(release): bump version to v2.7.6 [skip ci] ([`3e1b687`](https://github.com/gofrolist/molecule-action/commit/3e1b687f1c4a6c7e4989dc00b89e4a16731af47c))
 
 ### Fix
 
