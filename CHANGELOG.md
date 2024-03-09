@@ -2,7 +2,46 @@
 
 
 
+## v2.7.10 (2024-03-09)
+
+### Fix
+
+* fix(deps): bump docker/build-push-action from 5.1.0 to 5.2.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 5.1.0 to 5.2.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v5.1.0...v5.2.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`4de7320`](https://github.com/gofrolist/molecule-action/commit/4de7320740f2e34ae4443d102467419567dd1046))
+
+* fix(deps): bump actions/download-artifact from 4.1.3 to 4.1.4
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 4.1.3 to 4.1.4.
+- [Release notes](https://github.com/actions/download-artifact/releases)
+- [Commits](https://github.com/actions/download-artifact/compare/v4.1.3...v4.1.4)
+
+---
+updated-dependencies:
+- dependency-name: actions/download-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`e8e86aa`](https://github.com/gofrolist/molecule-action/commit/e8e86aab5a9efdb75af7ddbee949eebeeff3f47d))
+
+
 ## v2.7.9 (2024-03-02)
+
+### Chore
+
+* chore(release): bump version to v2.7.9 [skip ci] ([`e84b423`](https://github.com/gofrolist/molecule-action/commit/e84b423b773f050f6d0f31b10682ffd0a4a17c17))
 
 ### Fix
 
