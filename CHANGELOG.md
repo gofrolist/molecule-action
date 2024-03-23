@@ -2,7 +2,78 @@
 
 
 
+## v2.7.12 (2024-03-23)
+
+### Fix
+
+* fix(deps): bump dependabot/fetch-metadata from 1.6.0 to 2.0.0
+
+Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) from 1.6.0 to 2.0.0.
+- [Release notes](https://github.com/dependabot/fetch-metadata/releases)
+- [Commits](https://github.com/dependabot/fetch-metadata/compare/v1.6.0...v2.0.0)
+
+---
+updated-dependencies:
+- dependency-name: dependabot/fetch-metadata
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dd408de`](https://github.com/gofrolist/molecule-action/commit/dd408de3a88cc4bba16b7f35dabd06456b478ae2))
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.2.2 to 9.3.0.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.2.2...v9.3.0)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`34d7323`](https://github.com/gofrolist/molecule-action/commit/34d732383d955e548765caa412070fbb775c9faa))
+
+* fix(deps): bump black from 23.12.1 to 24.3.0
+
+Bumps [black](https://github.com/psf/black) from 23.12.1 to 24.3.0.
+- [Release notes](https://github.com/psf/black/releases)
+- [Changelog](https://github.com/psf/black/blob/main/CHANGES.md)
+- [Commits](https://github.com/psf/black/compare/23.12.1...24.3.0)
+
+---
+updated-dependencies:
+- dependency-name: black
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2de1f7b`](https://github.com/gofrolist/molecule-action/commit/2de1f7b0f33cfe53da2cdf76aef3834af7ffb484))
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.1.1 to 9.2.2.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.1.1...v9.2.2)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`f517268`](https://github.com/gofrolist/molecule-action/commit/f5172688345b02a31d16ebbae2780f59cb1f98f3))
+
+
 ## v2.7.11 (2024-03-16)
+
+### Chore
+
+* chore(release): bump version to v2.7.11 [skip ci] ([`2790165`](https://github.com/gofrolist/molecule-action/commit/279016584fba1d252379bd6c3068320def7e3ce1))
 
 ### Fix
 
@@ -836,7 +907,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`634c53c`](https://github.com/gofrolist/molecule-action/commit/634c53c9036c5360b52b98f184879561c95c8f4e))
 
 
-## v2.5.4 (2023-10-21)
+## v2.5.4 (2023-10-20)
 
 ### Fix
 
@@ -902,7 +973,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b54bef1`](https://github.com/gofrolist/molecule-action/commit/b54bef10617088d1eef26528f4a30c8514d88f22))
 
 
-## v2.5.3 (2023-10-05)
+## v2.5.3 (2023-10-04)
 
 ### Fix
 
@@ -988,7 +1059,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`fde6b46`](https://github.com/gofrolist/molecule-action/commit/fde6b46724959518330f6638cf1ac6ce570ba20f))
 
 
-## v2.5.1 (2023-09-21)
+## v2.5.1 (2023-09-20)
 
 ### Fix
 
@@ -1008,7 +1079,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`d0cd6c8`](https://github.com/gofrolist/molecule-action/commit/d0cd6c8bf0b9d6f9b5b2c5fc861137a275e1a5da))
 
 
-## v2.5.0 (2023-09-15)
+## v2.5.0 (2023-09-14)
 
 ### Feature
 
@@ -1192,7 +1263,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a915234`](https://github.com/gofrolist/molecule-action/commit/a915234963d69032da2df022020d9077b5bfb2f6))
 
 
-## v2.4.0 (2023-07-07)
+## v2.4.0 (2023-07-06)
 
 ### Feature
 
@@ -1205,7 +1276,7 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a915234`](https://g
 * fix(deps): remove unused packages ([`8eab718`](https://github.com/gofrolist/molecule-action/commit/8eab71897acf291015874339d1137cbcf370cb46))
 
 
-## v2.3.22 (2023-07-05)
+## v2.3.22 (2023-07-04)
 
 ### Ci
 
@@ -1296,7 +1367,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`fb283fc`](https://github.com/gofrolist/molecule-action/commit/fb283fcfc5d71f5376d1f962cf2ddbbd83982124))
 
 
-## v2.3.20 (2023-06-13)
+## v2.3.20 (2023-06-12)
 
 ### Fix
 
@@ -1419,7 +1490,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`ee538e9`](https://github.com/gofrolist/molecule-action/commit/ee538e9a49741bbe4ce6954cc5f92846f2779051))
 
 
-## v2.3.18 (2023-04-19)
+## v2.3.18 (2023-04-18)
 
 ### Fix
 
@@ -1485,7 +1556,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`470703d`](https://github.com/gofrolist/molecule-action/commit/470703d13692541c45fc3c7812f97c5668f5812a))
 
 
-## v2.3.17 (2023-03-28)
+## v2.3.17 (2023-03-27)
 
 ### Fix
 
@@ -1521,7 +1592,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`6d7c6bb`](https://github.com/gofrolist/molecule-action/commit/6d7c6bbd2846622266865f3b9cf0d8ce61379230))
 
 
-## v2.3.16 (2023-03-17)
+## v2.3.16 (2023-03-16)
 
 ### Fix
 
@@ -1572,7 +1643,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`00b2ea6`](https://github.com/gofrolist/molecule-action/commit/00b2ea6f6fa3d35baa873eb1ea64dc1cec6d0409))
 
 
-## v2.3.15 (2023-03-09)
+## v2.3.15 (2023-03-08)
 
 ### Fix
 
@@ -1607,7 +1678,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`cb356d3`](https://github.com/gofrolist/molecule-action/commit/cb356d3072e179a572a62ca41374a44f67d9a593))
 
 
-## v2.3.14 (2023-02-24)
+## v2.3.14 (2023-02-23)
 
 ### Fix
 
@@ -1642,7 +1713,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`6515494`](https://github.com/gofrolist/molecule-action/commit/6515494017d1b06b0cc6c105d1d4c1a3642c098c))
 
 
-## v2.3.13 (2023-02-17)
+## v2.3.13 (2023-02-16)
 
 ### Fix
 
@@ -1677,7 +1748,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`30bd0f5`](https://github.com/gofrolist/molecule-action/commit/30bd0f5ae1bcf98819c950bd042c019549442afe))
 
 
-## v2.3.12 (2023-02-11)
+## v2.3.12 (2023-02-10)
 
 ### Fix
 
@@ -1742,7 +1813,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a5704e9`](https://github.com/gofrolist/molecule-action/commit/a5704e910f74a947ea32de2f61862f519aa7cf1c))
 
 
-## v2.3.11 (2023-02-01)
+## v2.3.11 (2023-01-31)
 
 ### Fix
 
@@ -1896,7 +1967,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0bfb567`](https://github.com/gofrolist/molecule-action/commit/0bfb5674032c4c49b4736c736faa628e78a3a75c))
 
 
-## v2.3.8 (2023-01-07)
+## v2.3.8 (2023-01-06)
 
 ### Fix
 
@@ -1965,7 +2036,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`7f055ff`](https://github.com/gofrolist/molecule-action/commit/7f055ff9c06c6fa7e942003fb6c215aa8ec56833))
 
 
-## v2.3.7 (2022-12-16)
+## v2.3.7 (2022-12-15)
 
 ### Fix
 
@@ -2001,7 +2072,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`155a7b6`](https://github.com/gofrolist/molecule-action/commit/155a7b65370daf24bc8b589561f076a4ac30bfa3))
 
 
-## v2.3.6 (2022-12-10)
+## v2.3.6 (2022-12-09)
 
 ### Fix
 
@@ -2113,7 +2184,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`36bf9cb`](https://github.com/gofrolist/molecule-action/commit/36bf9cb6ec947ff5603c8e885c75202e24c0977d))
 
 
-## v2.3.4 (2022-11-04)
+## v2.3.4 (2022-11-03)
 
 ### Fix
 
@@ -2293,7 +2364,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`daa0179`](https://github.com/gofrolist/molecule-action/commit/daa0179ba18d513adea8ab6901c3cbf12726d7b5))
 
 
-## v2.3.1 (2022-10-15)
+## v2.3.1 (2022-10-14)
 
 ### Fix
 
@@ -2416,7 +2487,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`d3713dd`](https://github.com/gofrolist/molecule-action/commit/d3713ddd60bf2fcf521eb4d36760c5d044c38f6b))
 
 
-## v2.3.0 (2022-10-11)
+## v2.3.0 (2022-10-10)
 
 ### Feature
 
@@ -2474,7 +2545,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b66f7ac`](https://github.com/gofrolist/molecule-action/commit/b66f7ac607b585b105716ce50c521e4eadcd0983))
 
 
-## v2.2.43 (2022-09-29)
+## v2.2.43 (2022-09-28)
 
 ### Fix
 
@@ -2664,7 +2735,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`acf5c87`](https://github.com/gofrolist/molecule-action/commit/acf5c871f1adfbe35313aec3ffc29d3c0a7e1a96))
 
 
-## v2.2.37 (2022-08-09)
+## v2.2.37 (2022-08-08)
 
 ### Fix
 
@@ -2699,7 +2770,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0679937`](https://github.com/gofrolist/molecule-action/commit/067993737f31dc37632bae22bf7896c3e6577a17))
 
 
-## v2.2.36 (2022-07-26)
+## v2.2.36 (2022-07-25)
 
 ### Fix
 
@@ -2719,7 +2790,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dfbfd1a`](https://github.com/gofrolist/molecule-action/commit/dfbfd1af6a77523c8a937a1532f92808065a00a4))
 
 
-## v2.2.35 (2022-07-21)
+## v2.2.35 (2022-07-20)
 
 ### Fix
 
@@ -2739,7 +2810,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`3f2d594`](https://github.com/gofrolist/molecule-action/commit/3f2d5945481a41df8a38ce86ae33cd9048ce959d))
 
 
-## v2.2.34 (2022-07-16)
+## v2.2.34 (2022-07-15)
 
 ### Fix
 
@@ -2774,7 +2845,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0c344da`](https://github.com/gofrolist/molecule-action/commit/0c344da31f5d0db0e84e31181bcdbea5961154af))
 
 
-## v2.2.33 (2022-07-07)
+## v2.2.33 (2022-07-06)
 
 ### Fix
 
@@ -2816,7 +2887,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`7c76d08`](https://github.com/gofrolist/molecule-action/commit/7c76d08cf07244d910cc533ab3ec49f1939ded08))
 
 
-## v2.2.31 (2022-06-27)
+## v2.2.31 (2022-06-26)
 
 ### Ci
 
@@ -2848,7 +2919,7 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`3191316`](https://g
 * add ansible-lint (#111) ([`8afbb5d`](https://github.com/gofrolist/molecule-action/commit/8afbb5d58bc067e96c6561a22bb7b887701f59e9))
 
 
-## v2.2.30 (2022-06-10)
+## v2.2.30 (2022-06-09)
 
 ### Fix
 
@@ -2903,7 +2974,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`fdb9a4e`](https://github.com/gofrolist/molecule-action/commit/fdb9a4ea88de0461b049eed456bf5a619a9cafe3))
 
 
-## v2.2.28 (2022-05-19)
+## v2.2.28 (2022-05-18)
 
 ### Fix
 
@@ -2936,7 +3007,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`f2cb42f`](https://github.com/gofrolist/molecule-action/commit/f2cb42fca2fd542e7804ef2247082fca8c5dc506))
 
 
-## v2.2.27 (2022-05-07)
+## v2.2.27 (2022-05-06)
 
 ### Fix
 
@@ -3002,7 +3073,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`bd74052`](https://github.com/gofrolist/molecule-action/commit/bd740524c84780cce5e9087a32d32d73ec97e084))
 
 
-## v2.2.26 (2022-04-30)
+## v2.2.26 (2022-04-29)
 
 ### Fix
 
@@ -3053,7 +3124,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dd2db23`](https://github.com/gofrolist/molecule-action/commit/dd2db2398038010db6c2c79ff7e1c7b450a97ad3))
 
 
-## v2.2.25 (2022-04-23)
+## v2.2.25 (2022-04-22)
 
 ### Fix
 
@@ -3125,7 +3196,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`8baf80f`](https://github.com/gofrolist/molecule-action/commit/8baf80fd19a80b9a60af52fa13022ddaa8a0d22e))
 
 
-## v2.2.23 (2022-04-08)
+## v2.2.23 (2022-04-07)
 
 ### Fix
 
@@ -3145,7 +3216,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`1af7ad4`](https://github.com/gofrolist/molecule-action/commit/1af7ad49c38fabc2a15949b51b604b125d0b7fb3))
 
 
-## v2.2.22 (2022-04-02)
+## v2.2.22 (2022-04-01)
 
 ### Fix
 
@@ -3165,7 +3236,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dbbf4ac`](https://github.com/gofrolist/molecule-action/commit/dbbf4ac207e30ac9a1cb535dba501ce457e64e11))
 
 
-## v2.2.21 (2022-03-28)
+## v2.2.21 (2022-03-27)
 
 ### Ci
 
@@ -3176,14 +3247,14 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dbbf4ac`](https://g
 * fix(deps): actions/setup-node 14 to 16 (#89) ([`4fc9875`](https://github.com/gofrolist/molecule-action/commit/4fc9875755c49b04a6940b2fb50935ba343ac0f2))
 
 
-## v2.2.20 (2022-03-28)
+## v2.2.20 (2022-03-27)
 
 ### Fix
 
 * fix(deps): bump python from 3.9.10-alpine3.14 to 3.9.12-alpine3.15 (#85) ([`3f0e533`](https://github.com/gofrolist/molecule-action/commit/3f0e533998e27fc0c7a67affe8ed8dc946e7cce8))
 
 
-## v2.2.19 (2022-03-28)
+## v2.2.19 (2022-03-27)
 
 ### Fix
 
@@ -3196,7 +3267,7 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dbbf4ac`](https://g
 * fix(deps): bump actions/checkout from 2.4.0 to 3.0.0 ([`aff20b1`](https://github.com/gofrolist/molecule-action/commit/aff20b186326ff78fc700e1501b029dc2efc157b))
 
 
-## v2.2.18 (2022-03-16)
+## v2.2.18 (2022-03-15)
 
 ### Fix
 
@@ -3246,7 +3317,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`6051b5c`](https://github.com/gofrolist/molecule-action/commit/6051b5ca1424d1a515bbb80a60e2eb9bc4c1f387))
 
 
-## v2.2.17 (2022-03-02)
+## v2.2.17 (2022-03-01)
 
 ### Fix
 
@@ -3281,7 +3352,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`1bff36c`](https://github.com/gofrolist/molecule-action/commit/1bff36cbe2b8545a145d42e907f0e7affd01d23f))
 
 
-## v2.2.16 (2022-02-26)
+## v2.2.16 (2022-02-25)
 
 ### Fix
 
@@ -3316,7 +3387,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`f37d3e4`](https://github.com/gofrolist/molecule-action/commit/f37d3e4a63db797739494dfb9a1bcf0504dbee1d))
 
 
-## v2.2.15 (2022-02-19)
+## v2.2.15 (2022-02-18)
 
 ### Fix
 
@@ -3366,7 +3437,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`409ff31`](https://github.com/gofrolist/molecule-action/commit/409ff3102415d08e47da2e0453a39604d8e27219))
 
 
-## v2.2.14 (2022-02-03)
+## v2.2.14 (2022-02-02)
 
 ### Fix
 
@@ -3400,7 +3471,7 @@ The following vulnerabilities are fixed with an upgrade:
 - https://snyk.io/vuln/SNYK-ALPINE314-EXPAT-2342154 ([`fe9796e`](https://github.com/gofrolist/molecule-action/commit/fe9796e189ea390980cba7739ed9cb19568f701a))
 
 
-## v2.2.12 (2022-01-21)
+## v2.2.12 (2022-01-20)
 
 ### Fix
 
@@ -3510,7 +3581,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`7d7783b`](https://github.com/gofrolist/molecule-action/commit/7d7783b8a3d61cce3a89a70d8e2847bd3a8929c8))
 
 
-## v2.2.8 (2021-12-08)
+## v2.2.8 (2021-12-07)
 
 ### Fix
 
@@ -3530,7 +3601,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`9eae2a4`](https://github.com/gofrolist/molecule-action/commit/9eae2a4f6503a8b64eefc1e7641f156f44fde92f))
 
 
-## v2.2.7 (2021-12-01)
+## v2.2.7 (2021-11-30)
 
 ### Fix
 
@@ -3565,7 +3636,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`51d414d`](https://github.com/gofrolist/molecule-action/commit/51d414d065ed9425c5e1338368e7f0d26e0b9b53))
 
 
-## v2.2.6 (2021-11-30)
+## v2.2.6 (2021-11-29)
 
 ### Ci
 
@@ -3631,7 +3702,7 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`ad5eb3e`](https://github.com/gofrolist/molecule-action/commit/ad5eb3ebffb0d72b866069e1eb90a15f0b7a457e))
 
 
-## v2.2.3 (2021-10-20)
+## v2.2.3 (2021-10-19)
 
 ### Fix
 
@@ -3745,14 +3816,14 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`3ca61bc`](https://github.com/gofrolist/molecule-action/commit/3ca61bc772a20e516c8e67a00bb6bf6b401b6d31))
 
 
-## v2.1.8 (2021-10-09)
+## v2.1.8 (2021-10-08)
 
 ### Fix
 
 * fix: replace update tag action in publish workflow ([`fae6b2b`](https://github.com/gofrolist/molecule-action/commit/fae6b2b97e34fca4245ca682220b89b590283ba4))
 
 
-## v2.1.7 (2021-10-09)
+## v2.1.7 (2021-10-08)
 
 ### Build
 
@@ -3889,7 +3960,7 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`ea0309c`](https://g
 * Update README.md ([`556b30f`](https://github.com/gofrolist/molecule-action/commit/556b30fedd1793e025149779320f3931ff3891bb))
 
 
-## v2.1.2 (2021-10-04)
+## v2.1.2 (2021-10-03)
 
 ### Unknown
 
@@ -4090,7 +4161,7 @@ openssh-client=8.3_p1-r0 -&gt; 8.3_p1-r1 ([`26377f2`](https://github.com/gofroli
 * change pr workflow ([`404a9b9`](https://github.com/gofrolist/molecule-action/commit/404a9b93001554d284da7193fb28d56e91783462))
 
 
-## v1.0.1 (2020-01-10)
+## v1.0.1 (2020-01-09)
 
 ### Unknown
 
