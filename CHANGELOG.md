@@ -2,7 +2,62 @@
 
 
 
+## v2.7.16 (2024-04-20)
+
+### Fix
+
+* fix(deps): bump actions/upload-artifact from 4.3.1 to 4.3.2
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.3.1 to 4.3.2.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v4.3.1...v4.3.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a8e149c`](https://github.com/gofrolist/molecule-action/commit/a8e149cf8ed7f3a2a3dc7c741e4d4689d5a7c4c9))
+
+* fix(deps): bump actions/download-artifact from 4.1.4 to 4.1.5
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 4.1.4 to 4.1.5.
+- [Release notes](https://github.com/actions/download-artifact/releases)
+- [Commits](https://github.com/actions/download-artifact/compare/v4.1.4...v4.1.5)
+
+---
+updated-dependencies:
+- dependency-name: actions/download-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`8ae80e3`](https://github.com/gofrolist/molecule-action/commit/8ae80e3197c5a49f0f97fe57f6b0682872107471))
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.4.1 to 9.4.2.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.4.1...v9.4.2)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2a981ba`](https://github.com/gofrolist/molecule-action/commit/2a981ba9fa7d652bed15190cd2df7cbe83b6b009))
+
+
 ## v2.7.15 (2024-04-13)
+
+### Chore
+
+* chore(release): bump version to v2.7.15 [skip ci] ([`6107250`](https://github.com/gofrolist/molecule-action/commit/61072502a717fc7a134600a3282d03a7642a8837))
 
 ### Fix
 
