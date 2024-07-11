@@ -648,13 +648,13 @@ files = [
 
 [[package]]
 name = "molecule"
-version = "24.6.1"
+version = "24.7.0"
 description = "Molecule aids in the development and testing of Ansible roles"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "molecule-24.6.1-py3-none-any.whl", hash = "sha256:d1694cfeea787630105f83cd550c697532824e5efe55e40ac39a0eb11b5a0608"},
-    {file = "molecule-24.6.1.tar.gz", hash = "sha256:41c1903a597297c2602bd059e107b5ef2e32c9da24797dcb78ff9873c6615ee6"},
+    {file = "molecule-24.7.0-py3-none-any.whl", hash = "sha256:d204a615a3951abaec8fe34e6e50150721d9fd07ea48631dddb5774cb27b55dd"},
+    {file = "molecule-24.7.0.tar.gz", hash = "sha256:db2c7fa59923e9bf23d61a92a5b19d6881ec9ee5fe96ed9e9e9d700b02723f03"},
 ]
 
 [package.dependencies]
@@ -1241,4 +1241,4 @@ dev = ["doc8", "flake8", "flake8-import-order", "rstcheck[sphinx]", "sphinx"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "35750a75294c82c5d78ff78d12f4e1db783b61dd298d662e84dca2379f571fd8"
+content-hash = "d99e55acc781f0322b8f9f356f5a3bcea090fc9e576b240da98dcb8c0a91fad4"
