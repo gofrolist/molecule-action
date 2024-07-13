@@ -1,6 +1,90 @@
 # CHANGELOG
 
+## v2.7.27 (2024-07-13)
+
+### Fix
+
+* fix(deps): bump molecule from 24.6.1 to 24.7.0
+
+Bumps [molecule](https://github.com/ansible-community/molecule) from 24.6.1 to 24.7.0.
+- [Release notes](https://github.com/ansible-community/molecule/releases)
+- [Commits](https://github.com/ansible-community/molecule/compare/v24.6.1...v24.7.0)
+
+---
+updated-dependencies:
+- dependency-name: molecule
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`6bcf2e9`](https://github.com/gofrolist/molecule-action/commit/6bcf2e9388938b6b2372efb2b7a1276f3fa93281))
+
+* fix(deps): bump actions/upload-artifact from 4.3.3 to 4.3.4
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.3.3 to 4.3.4.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v4.3.3...v4.3.4)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2162da6`](https://github.com/gofrolist/molecule-action/commit/2162da68c073916e8d19bd30b5a236217c97ce42))
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.8.4 to 9.8.5.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.8.4...v9.8.5)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`8245bc3`](https://github.com/gofrolist/molecule-action/commit/8245bc3187420c96cba26b628839be9ddc13c81d))
+
+* fix(deps): bump actions/download-artifact from 4.1.7 to 4.1.8
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 4.1.7 to 4.1.8.
+- [Release notes](https://github.com/actions/download-artifact/releases)
+- [Commits](https://github.com/actions/download-artifact/compare/v4.1.7...v4.1.8)
+
+---
+updated-dependencies:
+- dependency-name: actions/download-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`68628c1`](https://github.com/gofrolist/molecule-action/commit/68628c1ce6eaee29db611e0ff8add012584cba0d))
+
+* fix(deps): bump molecule from 24.6.0 to 24.6.1
+
+Bumps [molecule](https://github.com/ansible-community/molecule) from 24.6.0 to 24.6.1.
+- [Release notes](https://github.com/ansible-community/molecule/releases)
+- [Commits](https://github.com/ansible-community/molecule/compare/v24.6.0...v24.6.1)
+
+---
+updated-dependencies:
+- dependency-name: molecule
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`6fbed40`](https://github.com/gofrolist/molecule-action/commit/6fbed4003d3c79f3d4bac6be16249dfccd4505f5))
+
 ## v2.7.26 (2024-07-06)
+
+### Chore
+
+* chore(release): bump version to v2.7.26 [skip ci] ([`9ae9ac1`](https://github.com/gofrolist/molecule-action/commit/9ae9ac1380f1b82ce527ac2d81b2eecc993a2ffe))
 
 ### Fix
 
@@ -1904,20 +1988,6 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2db8699`](https://github.com/gofrolist/molecule-action/commit/2db8699b6c9ec56e6f0ad8d328ae1c5d5da84ce1))
 
-* fix(deps): bump cryptography from 41.0.1 to 41.0.2
-
-Bumps [cryptography](https://github.com/pyca/cryptography) from 41.0.1 to 41.0.2.
-- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
-- [Commits](https://github.com/pyca/cryptography/compare/41.0.1...41.0.2)
-
----
-updated-dependencies:
-- dependency-name: cryptography
-  dependency-type: indirect
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`22a6d87`](https://github.com/gofrolist/molecule-action/commit/22a6d870f848bb52dbb854f39dfa98e5ed11fff3))
-
 * fix(deps): bump docker/setup-buildx-action from 2.9.0 to 2.9.1
 
 Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 2.9.0 to 2.9.1.
@@ -1932,6 +2002,20 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`c97d1ec`](https://github.com/gofrolist/molecule-action/commit/c97d1ec6f96c33686c7dae74f0654b5c02be53bb))
+
+* fix(deps): bump cryptography from 41.0.1 to 41.0.2
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 41.0.1 to 41.0.2.
+- [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst)
+- [Commits](https://github.com/pyca/cryptography/compare/41.0.1...41.0.2)
+
+---
+updated-dependencies:
+- dependency-name: cryptography
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`22a6d87`](https://github.com/gofrolist/molecule-action/commit/22a6d870f848bb52dbb854f39dfa98e5ed11fff3))
 
 ## v2.4.1 (2023-07-07)
 
@@ -2104,6 +2188,21 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`18f5269`](https://github.com/gofrolist/molecule-action/commit/18f52697f7adcd40d9ef9e1d88dced0d470023ca))
 
+* fix(deps): bump dependabot/fetch-metadata from 1.4.0 to 1.5.1
+
+Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) from 1.4.0 to 1.5.1.
+- [Release notes](https://github.com/dependabot/fetch-metadata/releases)
+- [Commits](https://github.com/dependabot/fetch-metadata/compare/v1.4.0...v1.5.1)
+
+---
+updated-dependencies:
+- dependency-name: dependabot/fetch-metadata
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`74d3251`](https://github.com/gofrolist/molecule-action/commit/74d32516aa2bbdcecada08d6a8d7be7b30528f6a))
+
 * fix(deps): bump docker/metadata-action from 4.4.0 to 4.5.0 (#221)
 
 Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4.4.0 to 4.5.0.
@@ -2151,21 +2250,6 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`5c4f7d8`](https://github.com/gofrolist/molecule-action/commit/5c4f7d8283749e4f11da746ddbaccd42eb244ea6))
 
-* fix(deps): bump dependabot/fetch-metadata from 1.4.0 to 1.5.1
-
-Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) from 1.4.0 to 1.5.1.
-- [Release notes](https://github.com/dependabot/fetch-metadata/releases)
-- [Commits](https://github.com/dependabot/fetch-metadata/compare/v1.4.0...v1.5.1)
-
----
-updated-dependencies:
-- dependency-name: dependabot/fetch-metadata
-  dependency-type: direct:production
-  update-type: version-update:semver-minor
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`74d3251`](https://github.com/gofrolist/molecule-action/commit/74d32516aa2bbdcecada08d6a8d7be7b30528f6a))
-
 ## v2.3.19 (2023-04-27)
 
 ### Ci
@@ -2193,6 +2277,21 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`ee538e9`](https://g
 
 ### Fix
 
+* fix(deps): bump docker/metadata-action from 4.3.0 to 4.4.0
+
+Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4.3.0 to 4.4.0.
+- [Release notes](https://github.com/docker/metadata-action/releases)
+- [Commits](https://github.com/docker/metadata-action/compare/v4.3.0...v4.4.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/metadata-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`48c9fc2`](https://github.com/gofrolist/molecule-action/commit/48c9fc2040bd2a2f4023ef19c37c586e9d76519d))
+
 * fix(deps): bump dependabot/fetch-metadata from 1.3.6 to 1.4.0
 
 Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) from 1.3.6 to 1.4.0.
@@ -2208,20 +2307,20 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`c64ef2b`](https://github.com/gofrolist/molecule-action/commit/c64ef2b88307c83964b5cf0d08768777bd8a4092))
 
-* fix(deps): bump docker/metadata-action from 4.3.0 to 4.4.0
+* fix(deps): bump ansible-lint from 6.14.3 to 6.14.6
 
-Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4.3.0 to 4.4.0.
-- [Release notes](https://github.com/docker/metadata-action/releases)
-- [Commits](https://github.com/docker/metadata-action/compare/v4.3.0...v4.4.0)
+Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.14.3 to 6.14.6.
+- [Release notes](https://github.com/ansible/ansible-lint/releases)
+- [Commits](https://github.com/ansible/ansible-lint/compare/v6.14.3...v6.14.6)
 
 ---
 updated-dependencies:
-- dependency-name: docker/metadata-action
+- dependency-name: ansible-lint
   dependency-type: direct:production
-  update-type: version-update:semver-minor
+  update-type: version-update:semver-patch
 ...
 
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`48c9fc2`](https://github.com/gofrolist/molecule-action/commit/48c9fc2040bd2a2f4023ef19c37c586e9d76519d))
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`470703d`](https://github.com/gofrolist/molecule-action/commit/470703d13692541c45fc3c7812f97c5668f5812a))
 
 * fix(deps): bump actions/checkout from 3.5.0 to 3.5.2
 
@@ -2238,21 +2337,6 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`3bd161f`](https://github.com/gofrolist/molecule-action/commit/3bd161f1da931717ab0cd93fb5d783d63d6ce541))
-
-* fix(deps): bump ansible-lint from 6.14.3 to 6.14.6
-
-Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.14.3 to 6.14.6.
-- [Release notes](https://github.com/ansible/ansible-lint/releases)
-- [Commits](https://github.com/ansible/ansible-lint/compare/v6.14.3...v6.14.6)
-
----
-updated-dependencies:
-- dependency-name: ansible-lint
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`470703d`](https://github.com/gofrolist/molecule-action/commit/470703d13692541c45fc3c7812f97c5668f5812a))
 
 ## v2.3.17 (2023-03-27)
 
@@ -3065,21 +3149,6 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`7ca7523`](https://github.com/gofrolist/molecule-action/commit/7ca75230fba1290b90f70abd5d58e9e7f08cacd0))
 
-* fix(deps): bump ansible-lint from 6.8.1 to 6.8.2
-
-Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.8.1 to 6.8.2.
-- [Release notes](https://github.com/ansible-community/ansible-lint/releases)
-- [Commits](https://github.com/ansible-community/ansible-lint/compare/v6.8.1...v6.8.2)
-
----
-updated-dependencies:
-- dependency-name: ansible-lint
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`8ac7f6f`](https://github.com/gofrolist/molecule-action/commit/8ac7f6fceea0200390744d1ea542b04ff29f9678))
-
 * fix(deps): bump actions/setup-node from 3.5.0 to 3.5.1
 
 Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.5.0 to 3.5.1.
@@ -3094,6 +3163,21 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2712019`](https://github.com/gofrolist/molecule-action/commit/27120192009deeeedf848e2e8420b0beafddc1e1))
+
+* fix(deps): bump ansible-lint from 6.8.1 to 6.8.2
+
+Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.8.1 to 6.8.2.
+- [Release notes](https://github.com/ansible-community/ansible-lint/releases)
+- [Commits](https://github.com/ansible-community/ansible-lint/compare/v6.8.1...v6.8.2)
+
+---
+updated-dependencies:
+- dependency-name: ansible-lint
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`8ac7f6f`](https://github.com/gofrolist/molecule-action/commit/8ac7f6fceea0200390744d1ea542b04ff29f9678))
 
 * fix(deps): bump python from 3.9.14-alpine3.16 to 3.9.15-alpine3.16
 
@@ -3820,6 +3904,21 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0ef63d6`](https://github.com/gofrolist/molecule-action/commit/0ef63d61fb20e59562efc370587bae3b07c9c049))
 
+* fix(deps): bump molecule from 3.4.1 to 3.6.1
+
+Bumps [molecule](https://github.com/ansible-community/molecule) from 3.4.1 to 3.6.1.
+- [Release notes](https://github.com/ansible-community/molecule/releases)
+- [Commits](https://github.com/ansible-community/molecule/compare/3.4.1...v3.6.1)
+
+---
+updated-dependencies:
+- dependency-name: molecule
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`283c847`](https://github.com/gofrolist/molecule-action/commit/283c8477cef2132142f0694cfc82f2bec8b3ef89))
+
 ## v2.2.24 (2022-04-15)
 
 ### Fix
@@ -3921,25 +4020,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`dbbf4ac`](https://g
 
 * fix(deps): bump actions/checkout from 2.4.0 to 3.0.0 ([`aff20b1`](https://github.com/gofrolist/molecule-action/commit/aff20b186326ff78fc700e1501b029dc2efc157b))
 
-## v2.2.18 (2022-03-15)
-
-### Fix
-
-* fix(deps): bump docker/build-push-action from 2.9.0 to 2.10.0
-
-Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2.9.0 to 2.10.0.
-- [Release notes](https://github.com/docker/build-push-action/releases)
-- [Commits](https://github.com/docker/build-push-action/compare/v2.9.0...v2.10.0)
-
----
-updated-dependencies:
-- dependency-name: docker/build-push-action
-  dependency-type: direct:production
-  update-type: version-update:semver-minor
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`de35084`](https://github.com/gofrolist/molecule-action/commit/de3508457133b8bd783cf9707c5d6b1f3c6f3b26))
-
 * fix(deps): bump docker/login-action from 1.14.0 to 1.14.1
 
 Bumps [docker/login-action](https://github.com/docker/login-action) from 1.14.0 to 1.14.1.
@@ -3969,6 +4049,25 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`6051b5c`](https://github.com/gofrolist/molecule-action/commit/6051b5ca1424d1a515bbb80a60e2eb9bc4c1f387))
+
+## v2.2.18 (2022-03-15)
+
+### Fix
+
+* fix(deps): bump docker/build-push-action from 2.9.0 to 2.10.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 2.9.0 to 2.10.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v2.9.0...v2.10.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`de35084`](https://github.com/gofrolist/molecule-action/commit/de3508457133b8bd783cf9707c5d6b1f3c6f3b26))
 
 ## v2.2.17 (2022-03-01)
 
@@ -4056,21 +4155,6 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2cad70e`](https://github.com/gofrolist/molecule-action/commit/2cad70e92ec09e93ef22c8ffb0d6a9d5b7e266f6))
-
-* fix(deps): bump molecule from 3.4.1 to 3.6.1
-
-Bumps [molecule](https://github.com/ansible-community/molecule) from 3.4.1 to 3.6.1.
-- [Release notes](https://github.com/ansible-community/molecule/releases)
-- [Commits](https://github.com/ansible-community/molecule/compare/3.4.1...v3.6.1)
-
----
-updated-dependencies:
-- dependency-name: molecule
-  dependency-type: direct:production
-  update-type: version-update:semver-minor
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`283c847`](https://github.com/gofrolist/molecule-action/commit/283c8477cef2132142f0694cfc82f2bec8b3ef89))
 
 * fix(deps): bump dependabot/fetch-metadata from 1.1.1 to 1.2.0
 
@@ -4368,22 +4452,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`a77f4e2`](https://g
 
 ### Fix
 
-* fix(deps): bump boto3 from 1.18.60 to 1.18.63
-
-Bumps [boto3](https://github.com/boto/boto3) from 1.18.60 to 1.18.63.
-- [Release notes](https://github.com/boto/boto3/releases)
-- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
-- [Commits](https://github.com/boto/boto3/compare/1.18.60...1.18.63)
-
----
-updated-dependencies:
-- dependency-name: boto3
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`eaf9816`](https://github.com/gofrolist/molecule-action/commit/eaf981663f37e6a38f8a7c970cfbecaa7c7e1eee))
-
 * fix(deps): bump actions/checkout from 2.3.4 to 2.3.5
 
 Bumps [actions/checkout](https://github.com/actions/checkout) from 2.3.4 to 2.3.5.
@@ -4399,6 +4467,22 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`c18c849`](https://github.com/gofrolist/molecule-action/commit/c18c849187cd720f6ade3015fdeafad41f918aef))
+
+* fix(deps): bump boto3 from 1.18.60 to 1.18.63
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.18.60 to 1.18.63.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.18.60...1.18.63)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`eaf9816`](https://github.com/gofrolist/molecule-action/commit/eaf981663f37e6a38f8a7c970cfbecaa7c7e1eee))
 
 ## v2.2.1 (2021-10-14)
 
@@ -4790,7 +4874,7 @@ openssh-client=8.3_p1-r0 -&gt; 8.3_p1-r1 ([`26377f2`](https://github.com/gofroli
 
 * change pr workflow ([`404a9b9`](https://github.com/gofrolist/molecule-action/commit/404a9b93001554d284da7193fb28d56e91783462))
 
-## v1.0.1 (2020-01-09)
+## v1.0.0 (2020-01-09)
 
 ### Unknown
 
