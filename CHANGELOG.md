@@ -1,6 +1,44 @@
 # CHANGELOG
 
+## v2.7.28 (2024-07-20)
+
+### Fix
+
+* fix(deps): bump docker/build-push-action from 6.4.0 to 6.4.1
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.4.0 to 6.4.1.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v6.4.0...v6.4.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`9e6454d`](https://github.com/gofrolist/molecule-action/commit/9e6454da430d5bd59328bb58032ada91cc0e37da))
+
+* fix(deps): bump docker/build-push-action from 6.3.0 to 6.4.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.3.0 to 6.4.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v6.3.0...v6.4.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`8d8dce3`](https://github.com/gofrolist/molecule-action/commit/8d8dce38711d886c9c13842c44dae5d1fead7bbc))
+
 ## v2.7.27 (2024-07-13)
+
+### Chore
+
+* chore(release): bump version to v2.7.27 [skip ci] ([`8c3bef4`](https://github.com/gofrolist/molecule-action/commit/8c3bef4f1a370bd80de59dfa340acf89075bb802))
 
 ### Fix
 
