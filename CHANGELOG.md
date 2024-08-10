@@ -1,6 +1,74 @@
 # CHANGELOG
 
+## v2.7.31 (2024-08-10)
+
+### Fix
+
+* fix(deps): bump docker/build-push-action from 6.6.0 to 6.6.1
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.6.0 to 6.6.1.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v6.6.0...v6.6.1)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2b9d0fb`](https://github.com/gofrolist/molecule-action/commit/2b9d0fb8bff883cc01981991b9f481202aa2324f))
+
+* fix(deps): bump actions/upload-artifact from 4.3.5 to 4.3.6
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.3.5 to 4.3.6.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v4.3.5...v4.3.6)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`75c1a14`](https://github.com/gofrolist/molecule-action/commit/75c1a14da6ff9cb5490bc8eaad8c6bc747883e6a))
+
+* fix(deps): bump docker/build-push-action from 6.5.0 to 6.6.0
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.5.0 to 6.6.0.
+- [Release notes](https://github.com/docker/build-push-action/releases)
+- [Commits](https://github.com/docker/build-push-action/compare/v6.5.0...v6.6.0)
+
+---
+updated-dependencies:
+- dependency-name: docker/build-push-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`6baf7f5`](https://github.com/gofrolist/molecule-action/commit/6baf7f596b8933f01d977a280eccd8d2c9a3deb5))
+
+* fix(deps): bump actions/upload-artifact from 4.3.4 to 4.3.5
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.3.4 to 4.3.5.
+- [Release notes](https://github.com/actions/upload-artifact/releases)
+- [Commits](https://github.com/actions/upload-artifact/compare/v4.3.4...v4.3.5)
+
+---
+updated-dependencies:
+- dependency-name: actions/upload-artifact
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`93b975e`](https://github.com/gofrolist/molecule-action/commit/93b975e9fb13dcc087d7bfac5a3c2933846cd1e5))
+
 ## v2.7.30 (2024-08-03)
+
+### Chore
+
+* chore(release): bump version to v2.7.30 [skip ci] ([`b6df054`](https://github.com/gofrolist/molecule-action/commit/b6df0549bf5f4886c87a67c7c0018bbbef977f38))
 
 ### Fix
 
