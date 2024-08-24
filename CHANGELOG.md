@@ -1,6 +1,45 @@
 # CHANGELOG
 
+## v2.7.33 (2024-08-24)
+
+### Fix
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.8.6 to 9.8.7.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.8.6...v9.8.7)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`cea0c26`](https://github.com/gofrolist/molecule-action/commit/cea0c26c5159d2f2da716bc2cc45df7028e26c80))
+
+* fix(deps): bump molecule from 24.7.0 to 24.8.0
+
+Bumps [molecule](https://github.com/ansible-community/molecule) from 24.7.0 to 24.8.0.
+- [Release notes](https://github.com/ansible-community/molecule/releases)
+- [Commits](https://github.com/ansible-community/molecule/compare/v24.7.0...v24.8.0)
+
+---
+updated-dependencies:
+- dependency-name: molecule
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`2528d17`](https://github.com/gofrolist/molecule-action/commit/2528d17abdea3eaa498c5c0bfc726f039688c7d5))
+
 ## v2.7.32 (2024-08-17)
+
+### Chore
+
+* chore(release): bump version to v2.7.32 [skip ci] ([`fc19a17`](https://github.com/gofrolist/molecule-action/commit/fc19a17a1f94d1bba294c457a95cfa739b09a59e))
 
 ### Fix
 
