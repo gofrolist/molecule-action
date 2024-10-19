@@ -1,9 +1,62 @@
 # CHANGELOG
 
 
+## v2.7.39 (2024-10-19)
+
+### Bug Fixes
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.11.1 to 9.12.0.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.11.1...v9.12.0)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([`4be9002`](https://github.com/gofrolist/molecule-action/commit/4be90022fa4c06580f6058fc53331c9e5157b3ee))
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.11.0 to 9.11.1.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.11.0...v9.11.1)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([`25f22e7`](https://github.com/gofrolist/molecule-action/commit/25f22e7a4d6af0d8bdc5844181ae4f57d7c1b555))
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.10.1 to 9.11.0.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.10.1...v9.11.0)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([`25b448e`](https://github.com/gofrolist/molecule-action/commit/25b448e1ac80f5876a938787535a60a7a622ed7c))
+
+
 ## v2.7.38 (2024-10-12)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/upload-artifact from 4.4.2 to 4.4.3
 
@@ -98,14 +151,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`038e7d8`](https://github.com/gofrolist/molecule-action/commit/038e7d8f9849b99be1ca8f4ca831015dce07e55d))
 
+### Chores
+
+* chore(release): bump version to v2.7.38 [skip ci] ([`c605ae1`](https://github.com/gofrolist/molecule-action/commit/c605ae17211508cc6a7be17bc5a1cb38d09bd0ee))
+
 
 ## v2.7.37 (2024-10-05)
 
-### Chores
-
-* chore(release): bump version to v2.7.37 [skip ci] ([`82d5f23`](https://github.com/gofrolist/molecule-action/commit/82d5f23d144a476e5a2962fac15c364368f419a9))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 3.7.0 to 3.7.1
 
@@ -183,14 +236,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`bca8a01`](https://github.com/gofrolist/molecule-action/commit/bca8a010db58133777b1b9011f3358732928e2b9))
 
+### Chores
+
+* chore(release): bump version to v2.7.37 [skip ci] ([`82d5f23`](https://github.com/gofrolist/molecule-action/commit/82d5f23d144a476e5a2962fac15c364368f419a9))
+
 
 ## v2.7.36 (2024-09-28)
 
-### Chores
-
-* chore(release): bump version to v2.7.36 [skip ci] ([`5a0a73e`](https://github.com/gofrolist/molecule-action/commit/5a0a73eab88b66b6ea2564bf8d6a19601796f8c4))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python-semantic-release/python-semantic-release
 
@@ -224,14 +277,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`4972cd4`](https://github.com/gofrolist/molecule-action/commit/4972cd48cfccb899acb0556ac84be3db863a9a86))
 
+### Chores
+
+* chore(release): bump version to v2.7.36 [skip ci] ([`5a0a73e`](https://github.com/gofrolist/molecule-action/commit/5a0a73eab88b66b6ea2564bf8d6a19601796f8c4))
+
 
 ## v2.7.35 (2024-09-14)
 
-### Chores
-
-* chore(release): bump version to v2.7.35 [skip ci] ([`bb90008`](https://github.com/gofrolist/molecule-action/commit/bb90008fd9007d58940394879d975cf08d13c56f))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump molecule from 24.8.0 to 24.9.0
 
@@ -248,14 +301,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`83ae403`](https://github.com/gofrolist/molecule-action/commit/83ae403730967a5cf92fe1cef97d104da7fbd58e))
 
+### Chores
+
+* chore(release): bump version to v2.7.35 [skip ci] ([`bb90008`](https://github.com/gofrolist/molecule-action/commit/bb90008fd9007d58940394879d975cf08d13c56f))
+
 
 ## v2.7.34 (2024-09-07)
 
-### Chores
-
-* chore(release): bump version to v2.7.34 [skip ci] ([`56d6b03`](https://github.com/gofrolist/molecule-action/commit/56d6b03704b13dc3abb9ca8724cea56ad0d52bef))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump cryptography from 42.0.4 to 43.0.1
 
@@ -302,14 +355,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`1fc0ba4`](https://github.com/gofrolist/molecule-action/commit/1fc0ba48379319946e88f79900779ef515f37580))
 
+### Chores
+
+* chore(release): bump version to v2.7.34 [skip ci] ([`56d6b03`](https://github.com/gofrolist/molecule-action/commit/56d6b03704b13dc3abb9ca8724cea56ad0d52bef))
+
 
 ## v2.7.33 (2024-08-24)
 
-### Chores
-
-* chore(release): bump version to v2.7.33 [skip ci] ([`49460ee`](https://github.com/gofrolist/molecule-action/commit/49460eec8ee48e0151709cdb7e062954914dd57e))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python-semantic-release/python-semantic-release
 
@@ -342,14 +395,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`2528d17`](https://github.com/gofrolist/molecule-action/commit/2528d17abdea3eaa498c5c0bfc726f039688c7d5))
 
+### Chores
+
+* chore(release): bump version to v2.7.33 [skip ci] ([`49460ee`](https://github.com/gofrolist/molecule-action/commit/49460eec8ee48e0151709cdb7e062954914dd57e))
+
 
 ## v2.7.32 (2024-08-17)
 
-### Chores
-
-* chore(release): bump version to v2.7.32 [skip ci] ([`fc19a17`](https://github.com/gofrolist/molecule-action/commit/fc19a17a1f94d1bba294c457a95cfa739b09a59e))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 6.6.1 to 6.7.0
 
@@ -366,14 +419,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`4660dce`](https://github.com/gofrolist/molecule-action/commit/4660dce17831636f358b9f5def6ed1c36804111e))
 
+### Chores
+
+* chore(release): bump version to v2.7.32 [skip ci] ([`fc19a17`](https://github.com/gofrolist/molecule-action/commit/fc19a17a1f94d1bba294c457a95cfa739b09a59e))
+
 
 ## v2.7.31 (2024-08-10)
 
-### Chores
-
-* chore(release): bump version to v2.7.31 [skip ci] ([`2680ed4`](https://github.com/gofrolist/molecule-action/commit/2680ed4e6b0302df3d5de6669a99ed1b04ac514f))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 6.6.0 to 6.6.1
 
@@ -435,14 +488,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`93b975e`](https://github.com/gofrolist/molecule-action/commit/93b975e9fb13dcc087d7bfac5a3c2933846cd1e5))
 
+### Chores
+
+* chore(release): bump version to v2.7.31 [skip ci] ([`2680ed4`](https://github.com/gofrolist/molecule-action/commit/2680ed4e6b0302df3d5de6669a99ed1b04ac514f))
+
 
 ## v2.7.30 (2024-08-03)
 
-### Chores
-
-* chore(release): bump version to v2.7.30 [skip ci] ([`b6df054`](https://github.com/gofrolist/molecule-action/commit/b6df0549bf5f4886c87a67c7c0018bbbef977f38))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 3.5.0 to 3.6.1
 
@@ -459,14 +512,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`9f2f0da`](https://github.com/gofrolist/molecule-action/commit/9f2f0da6d6f11d824986bd39fc67808f3468c1ca))
 
+### Chores
+
+* chore(release): bump version to v2.7.30 [skip ci] ([`b6df054`](https://github.com/gofrolist/molecule-action/commit/b6df0549bf5f4886c87a67c7c0018bbbef977f38))
+
 
 ## v2.7.29 (2024-07-27)
 
-### Chores
-
-* chore(release): bump version to v2.7.29 [skip ci] ([`d7a53c9`](https://github.com/gofrolist/molecule-action/commit/d7a53c913e5d98151b1f469c98a6dd208576c28f))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 3.4.0 to 3.5.0
 
@@ -529,14 +582,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`5e841a3`](https://github.com/gofrolist/molecule-action/commit/5e841a3aa1ab85dff428ee6e36df32cf46a8e562))
 
+### Chores
+
+* chore(release): bump version to v2.7.29 [skip ci] ([`d7a53c9`](https://github.com/gofrolist/molecule-action/commit/d7a53c913e5d98151b1f469c98a6dd208576c28f))
+
 
 ## v2.7.28 (2024-07-20)
 
-### Chores
-
-* chore(release): bump version to v2.7.28 [skip ci] ([`2a5dc58`](https://github.com/gofrolist/molecule-action/commit/2a5dc580c001a20c14a353fdd5f2c47af8635b8e))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 6.4.0 to 6.4.1
 
@@ -568,14 +621,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`8d8dce3`](https://github.com/gofrolist/molecule-action/commit/8d8dce38711d886c9c13842c44dae5d1fead7bbc))
 
+### Chores
+
+* chore(release): bump version to v2.7.28 [skip ci] ([`2a5dc58`](https://github.com/gofrolist/molecule-action/commit/2a5dc580c001a20c14a353fdd5f2c47af8635b8e))
+
 
 ## v2.7.27 (2024-07-13)
 
-### Chores
-
-* chore(release): bump version to v2.7.27 [skip ci] ([`8c3bef4`](https://github.com/gofrolist/molecule-action/commit/8c3bef4f1a370bd80de59dfa340acf89075bb802))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump molecule from 24.6.1 to 24.7.0
 
@@ -653,14 +706,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`6fbed40`](https://github.com/gofrolist/molecule-action/commit/6fbed4003d3c79f3d4bac6be16249dfccd4505f5))
 
+### Chores
+
+* chore(release): bump version to v2.7.27 [skip ci] ([`8c3bef4`](https://github.com/gofrolist/molecule-action/commit/8c3bef4f1a370bd80de59dfa340acf89075bb802))
+
 
 ## v2.7.26 (2024-07-06)
 
-### Chores
-
-* chore(release): bump version to v2.7.26 [skip ci] ([`9ae9ac1`](https://github.com/gofrolist/molecule-action/commit/9ae9ac1380f1b82ce527ac2d81b2eecc993a2ffe))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump certifi from 2023.11.17 to 2024.7.4
 
@@ -736,14 +789,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`f546c08`](https://github.com/gofrolist/molecule-action/commit/f546c0859d8e6ca01c42e24c072266e7e0942963))
 
+### Chores
+
+* chore(release): bump version to v2.7.26 [skip ci] ([`9ae9ac1`](https://github.com/gofrolist/molecule-action/commit/9ae9ac1380f1b82ce527ac2d81b2eecc993a2ffe))
+
 
 ## v2.7.25 (2024-06-29)
 
-### Chores
-
-* chore(release): bump version to v2.7.25 [skip ci] ([`cbbb306`](https://github.com/gofrolist/molecule-action/commit/cbbb3060eefff039425ec6231c9358f0b368552e))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 6.1.0 to 6.2.0
 
@@ -760,14 +813,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`12e376f`](https://github.com/gofrolist/molecule-action/commit/12e376f12c0204146e48e25108b1b6a75bfd676f))
 
+### Chores
+
+* chore(release): bump version to v2.7.25 [skip ci] ([`cbbb306`](https://github.com/gofrolist/molecule-action/commit/cbbb3060eefff039425ec6231c9358f0b368552e))
+
 
 ## v2.7.24 (2024-06-22)
 
-### Chores
-
-* chore(release): bump version to v2.7.24 [skip ci] ([`ef5349b`](https://github.com/gofrolist/molecule-action/commit/ef5349b7ea7f971eac0bba613a7e06b240993ad9))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 6.0.1 to 6.1.0
 
@@ -846,14 +899,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`dfa1e83`](https://github.com/gofrolist/molecule-action/commit/dfa1e83deef882773de1904c59d3b894cc2ba08d))
 
+### Chores
+
+* chore(release): bump version to v2.7.24 [skip ci] ([`ef5349b`](https://github.com/gofrolist/molecule-action/commit/ef5349b7ea7f971eac0bba613a7e06b240993ad9))
+
 
 ## v2.7.23 (2024-06-15)
 
-### Chores
-
-* chore(release): bump version to v2.7.23 [skip ci] ([`53bacb4`](https://github.com/gofrolist/molecule-action/commit/53bacb49f603b08c50240d0a1f045051c03260a2))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 4.1.6 to 4.1.7
 
@@ -886,14 +939,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`42d30b2`](https://github.com/gofrolist/molecule-action/commit/42d30b295d877f59190983b232d213dde3d47b35))
 
+### Chores
+
+* chore(release): bump version to v2.7.23 [skip ci] ([`53bacb4`](https://github.com/gofrolist/molecule-action/commit/53bacb49f603b08c50240d0a1f045051c03260a2))
+
 
 ## v2.7.22 (2024-06-08)
 
-### Chores
-
-* chore(release): bump version to v2.7.22 [skip ci] ([`11d43ca`](https://github.com/gofrolist/molecule-action/commit/11d43ca78e3d0473c81c7a20dee02e8460f7e285))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump molecule from 24.2.1 to 24.6.0
 
@@ -926,14 +979,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`b91cd4f`](https://github.com/gofrolist/molecule-action/commit/b91cd4ffe6d118c44c0fa3c6270ec909a991c619))
 
+### Chores
+
+* chore(release): bump version to v2.7.22 [skip ci] ([`11d43ca`](https://github.com/gofrolist/molecule-action/commit/11d43ca78e3d0473c81c7a20dee02e8460f7e285))
+
 
 ## v2.7.21 (2024-06-01)
 
-### Chores
-
-* chore(release): bump version to v2.7.21 [skip ci] ([`1dbc986`](https://github.com/gofrolist/molecule-action/commit/1dbc986983fafc16191944549d8e415248edc7ef))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python-semantic-release/python-semantic-release
 
@@ -966,14 +1019,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`6dfba32`](https://github.com/gofrolist/molecule-action/commit/6dfba32b43d0caa7fb6acdc68a3ab681527f8790))
 
+### Chores
+
+* chore(release): bump version to v2.7.21 [skip ci] ([`1dbc986`](https://github.com/gofrolist/molecule-action/commit/1dbc986983fafc16191944549d8e415248edc7ef))
+
 
 ## v2.7.20 (2024-05-18)
 
-### Chores
-
-* chore(release): bump version to v2.7.20 [skip ci] ([`6e56c77`](https://github.com/gofrolist/molecule-action/commit/6e56c7723f41a80831d0e3c64c2c2589ee91a0fc))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 4.1.5 to 4.1.6
 
@@ -1023,14 +1076,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`130defc`](https://github.com/gofrolist/molecule-action/commit/130defca67a5360a112af4ed456baa894454718f))
 
+### Chores
+
+* chore(release): bump version to v2.7.20 [skip ci] ([`6e56c77`](https://github.com/gofrolist/molecule-action/commit/6e56c7723f41a80831d0e3c64c2c2589ee91a0fc))
+
 
 ## v2.7.19 (2024-05-11)
 
-### Chores
-
-* chore(release): bump version to v2.7.19 [skip ci] ([`3276ca9`](https://github.com/gofrolist/molecule-action/commit/3276ca9d5d51ba2354d61cbdff5a31726f9888b1))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 4.1.4 to 4.1.5
 
@@ -1095,14 +1148,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`2c67232`](https://github.com/gofrolist/molecule-action/commit/2c672324deea8be59e69c7dcfa8b8607cee4bfc9))
 
+### Chores
+
+* chore(release): bump version to v2.7.19 [skip ci] ([`3276ca9`](https://github.com/gofrolist/molecule-action/commit/3276ca9d5d51ba2354d61cbdff5a31726f9888b1))
+
 
 ## v2.7.18 (2024-05-04)
 
-### Chores
-
-* chore(release): bump version to v2.7.18 [skip ci] ([`3de0382`](https://github.com/gofrolist/molecule-action/commit/3de0382a619b8bf936a4af40ab6f3f35cba80d49))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python-semantic-release/python-semantic-release
 
@@ -1120,14 +1173,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`9fe82c7`](https://github.com/gofrolist/molecule-action/commit/9fe82c71ee4f051c2999a2422a1dd41c99ff5a0b))
 
+### Chores
+
+* chore(release): bump version to v2.7.18 [skip ci] ([`3de0382`](https://github.com/gofrolist/molecule-action/commit/3de0382a619b8bf936a4af40ab6f3f35cba80d49))
+
 
 ## v2.7.17 (2024-04-27)
 
-### Chores
-
-* chore(release): bump version to v2.7.17 [skip ci] ([`2a6c9fc`](https://github.com/gofrolist/molecule-action/commit/2a6c9fcb9829488226c70c8e8f7ddcd3b170bcdb))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 4.1.3 to 4.1.4
 
@@ -1237,14 +1290,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`bf6fbec`](https://github.com/gofrolist/molecule-action/commit/bf6fbec1867a429cff23a188d4e967f4d3636ffd))
 
+### Chores
+
+* chore(release): bump version to v2.7.17 [skip ci] ([`2a6c9fc`](https://github.com/gofrolist/molecule-action/commit/2a6c9fcb9829488226c70c8e8f7ddcd3b170bcdb))
+
 
 ## v2.7.16 (2024-04-20)
 
-### Chores
-
-* chore(release): bump version to v2.7.16 [skip ci] ([`db731da`](https://github.com/gofrolist/molecule-action/commit/db731da2411f4ee1d883cc706ddb22316f107088))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/upload-artifact from 4.3.1 to 4.3.2
 
@@ -1292,14 +1345,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`2a981ba`](https://github.com/gofrolist/molecule-action/commit/2a981ba9fa7d652bed15190cd2df7cbe83b6b009))
 
+### Chores
+
+* chore(release): bump version to v2.7.16 [skip ci] ([`db731da`](https://github.com/gofrolist/molecule-action/commit/db731da2411f4ee1d883cc706ddb22316f107088))
+
 
 ## v2.7.15 (2024-04-13)
 
-### Chores
-
-* chore(release): bump version to v2.7.15 [skip ci] ([`6107250`](https://github.com/gofrolist/molecule-action/commit/61072502a717fc7a134600a3282d03a7642a8837))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump idna from 3.6 to 3.7
 
@@ -1362,14 +1415,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`d426f79`](https://github.com/gofrolist/molecule-action/commit/d426f79d2d3702204a18e6a52ec3b72e2fa6ae32))
 
+### Chores
+
+* chore(release): bump version to v2.7.15 [skip ci] ([`6107250`](https://github.com/gofrolist/molecule-action/commit/61072502a717fc7a134600a3282d03a7642a8837))
+
 
 ## v2.7.14 (2024-04-06)
 
-### Chores
-
-* chore(release): bump version to v2.7.14 [skip ci] ([`742a535`](https://github.com/gofrolist/molecule-action/commit/742a535d1057e603c35b47d73ba3178956894594))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python-semantic-release/python-semantic-release
 
@@ -1387,14 +1440,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`c81b41a`](https://github.com/gofrolist/molecule-action/commit/c81b41a0a5664222a429bfc8fe8b6a9814c1da07))
 
+### Chores
+
+* chore(release): bump version to v2.7.14 [skip ci] ([`742a535`](https://github.com/gofrolist/molecule-action/commit/742a535d1057e603c35b47d73ba3178956894594))
+
 
 ## v2.7.13 (2024-03-30)
 
-### Chores
-
-* chore(release): bump version to v2.7.13 [skip ci] ([`141cbc4`](https://github.com/gofrolist/molecule-action/commit/141cbc41069986366ed12bcf4a693bad6611489d))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python-semantic-release/python-semantic-release
 
@@ -1412,14 +1465,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`a4d18f3`](https://github.com/gofrolist/molecule-action/commit/a4d18f3a4880a2e95bd69a1d8c5a19c712bd17af))
 
+### Chores
+
+* chore(release): bump version to v2.7.13 [skip ci] ([`141cbc4`](https://github.com/gofrolist/molecule-action/commit/141cbc41069986366ed12bcf4a693bad6611489d))
+
 
 ## v2.7.12 (2024-03-23)
 
-### Chores
-
-* chore(release): bump version to v2.7.12 [skip ci] ([`a89119c`](https://github.com/gofrolist/molecule-action/commit/a89119cebe4e2fef9476ac75e00c23666745bb77))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump dependabot/fetch-metadata from 1.6.0 to 2.0.0
 
@@ -1483,14 +1536,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`f517268`](https://github.com/gofrolist/molecule-action/commit/f5172688345b02a31d16ebbae2780f59cb1f98f3))
 
+### Chores
+
+* chore(release): bump version to v2.7.12 [skip ci] ([`a89119c`](https://github.com/gofrolist/molecule-action/commit/a89119cebe4e2fef9476ac75e00c23666745bb77))
+
 
 ## v2.7.11 (2024-03-16)
 
-### Chores
-
-* chore(release): bump version to v2.7.11 [skip ci] ([`2790165`](https://github.com/gofrolist/molecule-action/commit/279016584fba1d252379bd6c3068320def7e3ce1))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/login-action from 3.0.0 to 3.1.0
 
@@ -1553,14 +1606,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`89cd0ba`](https://github.com/gofrolist/molecule-action/commit/89cd0bac97bb35c9f5e9dd065da047d8cefc5967))
 
+### Chores
+
+* chore(release): bump version to v2.7.11 [skip ci] ([`2790165`](https://github.com/gofrolist/molecule-action/commit/279016584fba1d252379bd6c3068320def7e3ce1))
+
 
 ## v2.7.10 (2024-03-09)
 
-### Chores
-
-* chore(release): bump version to v2.7.10 [skip ci] ([`1d05d16`](https://github.com/gofrolist/molecule-action/commit/1d05d16a62be1407c46602d2babd364f314fadc7))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 5.1.0 to 5.2.0
 
@@ -1592,14 +1645,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`e8e86aa`](https://github.com/gofrolist/molecule-action/commit/e8e86aab5a9efdb75af7ddbee949eebeeff3f47d))
 
+### Chores
+
+* chore(release): bump version to v2.7.10 [skip ci] ([`1d05d16`](https://github.com/gofrolist/molecule-action/commit/1d05d16a62be1407c46602d2babd364f314fadc7))
+
 
 ## v2.7.9 (2024-03-02)
 
-### Chores
-
-* chore(release): bump version to v2.7.9 [skip ci] ([`e84b423`](https://github.com/gofrolist/molecule-action/commit/e84b423b773f050f6d0f31b10682ffd0a4a17c17))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 3.0.0 to 3.1.0
 
@@ -1647,14 +1700,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`684f5cc`](https://github.com/gofrolist/molecule-action/commit/684f5cce4150381a2daff6c65bfa3eb0d73b7c0a))
 
+### Chores
+
+* chore(release): bump version to v2.7.9 [skip ci] ([`e84b423`](https://github.com/gofrolist/molecule-action/commit/e84b423b773f050f6d0f31b10682ffd0a4a17c17))
+
 
 ## v2.7.8 (2024-02-24)
 
-### Chores
-
-* chore(release): bump version to v2.7.8 [skip ci] ([`0e14b12`](https://github.com/gofrolist/molecule-action/commit/0e14b12f039c16ca8845d5421d51266848042ee3))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump cryptography from 42.0.2 to 42.0.4
 
@@ -1684,14 +1737,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`308d7e2`](https://github.com/gofrolist/molecule-action/commit/308d7e2858d5ba85e5172bb6df19d49c8d30fcd8))
 
+### Chores
+
+* chore(release): bump version to v2.7.8 [skip ci] ([`0e14b12`](https://github.com/gofrolist/molecule-action/commit/0e14b12f039c16ca8845d5421d51266848042ee3))
+
 
 ## v2.7.7 (2024-02-17)
 
-### Chores
-
-* chore(release): bump version to v2.7.7 [skip ci] ([`b7889ad`](https://github.com/gofrolist/molecule-action/commit/b7889adc09aa77746bd058c7b4a768caa38ad8b9))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python-semantic-release/python-semantic-release
 
@@ -1709,14 +1762,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`e63ce79`](https://github.com/gofrolist/molecule-action/commit/e63ce79be95b264125d58c2594c3c067fbd78377))
 
+### Chores
+
+* chore(release): bump version to v2.7.7 [skip ci] ([`b7889ad`](https://github.com/gofrolist/molecule-action/commit/b7889adc09aa77746bd058c7b4a768caa38ad8b9))
+
 
 ## v2.7.6 (2024-02-10)
 
-### Chores
-
-* chore(release): bump version to v2.7.6 [skip ci] ([`3e1b687`](https://github.com/gofrolist/molecule-action/commit/3e1b687f1c4a6c7e4989dc00b89e4a16731af47c))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump molecule from 6.0.3 to 24.2.0
 
@@ -1838,14 +1891,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`569a65c`](https://github.com/gofrolist/molecule-action/commit/569a65c7b8fcecfa751e5748d7711b07499417c5))
 
+### Chores
+
+* chore(release): bump version to v2.7.6 [skip ci] ([`3e1b687`](https://github.com/gofrolist/molecule-action/commit/3e1b687f1c4a6c7e4989dc00b89e4a16731af47c))
+
 
 ## v2.7.5 (2024-02-03)
 
-### Chores
-
-* chore(release): bump version to v2.7.5 [skip ci] ([`d9dc5a2`](https://github.com/gofrolist/molecule-action/commit/d9dc5a2e9755d0b9558c767e5a41ef1113064371))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 5.5.0 to 5.5.1
 
@@ -1862,14 +1915,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`f8fb68a`](https://github.com/gofrolist/molecule-action/commit/f8fb68a31e9adccb320d305ba87dd99689eb2e33))
 
+### Chores
+
+* chore(release): bump version to v2.7.5 [skip ci] ([`d9dc5a2`](https://github.com/gofrolist/molecule-action/commit/d9dc5a2e9755d0b9558c767e5a41ef1113064371))
+
 
 ## v2.7.4 (2024-01-27)
 
-### Chores
-
-* chore(release): bump version to v2.7.4 [skip ci] ([`065dfb8`](https://github.com/gofrolist/molecule-action/commit/065dfb8cfefb6ff68cab8507b2f370f7b38dc881))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/upload-artifact from 4.2.0 to 4.3.0
 
@@ -1886,14 +1939,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`3de4950`](https://github.com/gofrolist/molecule-action/commit/3de4950aa73f772d7ba351a8980ca298d1898350))
 
+### Chores
+
+* chore(release): bump version to v2.7.4 [skip ci] ([`065dfb8`](https://github.com/gofrolist/molecule-action/commit/065dfb8cfefb6ff68cab8507b2f370f7b38dc881))
+
 
 ## v2.7.3 (2024-01-20)
 
-### Chores
-
-* chore(release): bump version to v2.7.3 [skip ci] ([`412678e`](https://github.com/gofrolist/molecule-action/commit/412678ee4f2a86051c7b0dd9eab7808da0f122b1))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/upload-artifact from 4.1.0 to 4.2.0
 
@@ -1910,40 +1963,36 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`bac2c76`](https://github.com/gofrolist/molecule-action/commit/bac2c761b05cadb9895b6b9bc310146911f02879))
 
+### Chores
+
+* chore(release): bump version to v2.7.3 [skip ci] ([`412678e`](https://github.com/gofrolist/molecule-action/commit/412678ee4f2a86051c7b0dd9eab7808da0f122b1))
+
 
 ## v2.7.2 (2024-01-18)
+
+### Bug Fixes
+
+* fix: point molecule_working_dir to github.repository (#311) ([`752d8df`](https://github.com/gofrolist/molecule-action/commit/752d8df3eee74378f34376fefb6a79b1358d6be9))
 
 ### Chores
 
 * chore(release): bump version to v2.7.2 [skip ci] ([`6536bf8`](https://github.com/gofrolist/molecule-action/commit/6536bf8b2859b0c9822ee76f891202bbcceae900))
 
-### Fixes
-
-* fix: point molecule_working_dir to github.repository (#311) ([`752d8df`](https://github.com/gofrolist/molecule-action/commit/752d8df3eee74378f34376fefb6a79b1358d6be9))
-
 
 ## v2.7.1 (2024-01-15)
+
+### Bug Fixes
+
+* fix(ci): add action.yml to semantic_release assets (#310) ([`95ae864`](https://github.com/gofrolist/molecule-action/commit/95ae864c539950425f60fd0a0dc6dae58dfb4741))
 
 ### Chores
 
 * chore(release): bump version to v2.7.1 [skip ci] ([`5b5c080`](https://github.com/gofrolist/molecule-action/commit/5b5c08091bb8b21eb5789a0f05b29a18fc7a65a9))
 
-### Fixes
-
-* fix(ci): add action.yml to semantic_release assets (#310) ([`95ae864`](https://github.com/gofrolist/molecule-action/commit/95ae864c539950425f60fd0a0dc6dae58dfb4741))
-
 
 ## v2.7.0 (2024-01-15)
 
-### Chores
-
-* chore(release): bump version to v2.7.0 [skip ci] ([`e309a7b`](https://github.com/gofrolist/molecule-action/commit/e309a7b6ce027166aef70ecc7870b6e6cd6ede29))
-
-### Features
-
-* feat: move from pipenv to poetry (#308) ([`0cfb72a`](https://github.com/gofrolist/molecule-action/commit/0cfb72a0d0f3139471c0b9ecc79ab6e0260f0e75))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/upload-artifact from 4.0.0 to 4.1.0
 
@@ -1960,17 +2009,25 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`0267e81`](https://github.com/gofrolist/molecule-action/commit/0267e8154151db8fbfdd1e309be20b44d56f45d4))
 
+### Chores
+
+* chore(release): bump version to v2.7.0 [skip ci] ([`e309a7b`](https://github.com/gofrolist/molecule-action/commit/e309a7b6ce027166aef70ecc7870b6e6cd6ede29))
+
+### Features
+
+* feat: move from pipenv to poetry (#308) ([`0cfb72a`](https://github.com/gofrolist/molecule-action/commit/0cfb72a0d0f3139471c0b9ecc79ab6e0260f0e75))
+
 
 ## v2.6.13 (2024-01-14)
 
-### Fixes
+### Bug Fixes
 
 * fix(ci): update node-version from 18 to 20 (#307) ([`db03704`](https://github.com/gofrolist/molecule-action/commit/db037041b8b455e619cd57604310a3e092dbd0cc))
 
 
 ## v2.6.12 (2024-01-11)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 5.4.0 to 5.5.0 (#304)
 
@@ -1991,7 +2048,7 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 ## v2.6.11 (2024-01-11)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/download-artifact from 4.1.0 to 4.1.1 (#305)
 
@@ -2012,74 +2069,74 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 ## v2.6.10 (2023-12-28)
 
-### Fixes
+### Bug Fixes
 
 * fix: revert add MOLECULE_CONTAINER_VERSION variable (#303) ([`0a3188c`](https://github.com/gofrolist/molecule-action/commit/0a3188c2ed940ebcd045fb1a799abf891806a931))
 
 
 ## v2.6.9 (2023-12-28)
 
-### Fixes
+### Bug Fixes
 
 * fix: add MOLECULE_CONTAINER_VERSION variable (#302) ([`dec924d`](https://github.com/gofrolist/molecule-action/commit/dec924d9f1fe091ed40ef0fd580710f0b981479c))
 
 
 ## v2.6.8 (2023-12-26)
 
-### Fixes
+### Bug Fixes
 
 * fix: exclude-app-vulns (#301) ([`7dbbacc`](https://github.com/gofrolist/molecule-action/commit/7dbbacc14e11a15d1211e31711928e7c15672157))
 
 
 ## v2.6.7 (2023-12-26)
 
-### Fixes
+### Bug Fixes
 
 * fix: sarif-file-output (#300) ([`4b452b9`](https://github.com/gofrolist/molecule-action/commit/4b452b9859659f9d0f9ff52795c9c98b4e0d4ad6))
 
 
 ## v2.6.6 (2023-12-26)
 
-### Fixes
+### Bug Fixes
 
 * fix: sarif-file-output (#299) ([`29f540d`](https://github.com/gofrolist/molecule-action/commit/29f540dcb6b56b1b50c20bd53289db6f7aa39442))
 
 
 ## v2.6.5 (2023-12-26)
 
-### Fixes
+### Bug Fixes
 
 * fix: add newline to args (#298) ([`733b4c4`](https://github.com/gofrolist/molecule-action/commit/733b4c4a63b82f408bdff6335a21394aa8e06731))
 
 
 ## v2.6.4 (2023-12-26)
 
-### Fixes
+### Bug Fixes
 
 * fix: replace var to github.sha (#297) ([`a3d6386`](https://github.com/gofrolist/molecule-action/commit/a3d6386698714052daaf61e2a8360b3908976f94))
 
 
 ## v2.6.3 (2023-12-26)
 
+### Bug Fixes
+
+* fix: rename sarif file for docker (#296) ([`aa458b0`](https://github.com/gofrolist/molecule-action/commit/aa458b090c6b7b3ada244abd594597290ba3e95d))
+
 ### Continuous Integration
 
 * ci: update snyk/actions/docker and upload sarif files (#295) ([`8f17cb9`](https://github.com/gofrolist/molecule-action/commit/8f17cb96fc5b842b30f6bfcaabf93fce90169311))
 
-### Fixes
-
-* fix: rename sarif file for docker (#296) ([`aa458b0`](https://github.com/gofrolist/molecule-action/commit/aa458b090c6b7b3ada244abd594597290ba3e95d))
-
 
 ## v2.6.2 (2023-12-26)
 
-### Fixes
+### Bug Fixes
 
 * fix: change snyk/actions/python-3.11 to python (#294) ([`04ca44f`](https://github.com/gofrolist/molecule-action/commit/04ca44f2cf4c0c799fc5e73631b5056e2da85d8c))
 
 
 ## v2.6.1 (2023-12-26)
 
-### Fixes
+### Bug Fixes
 
 * fix: update python from 3.9 to 3.11 and remove molecule-inspec ([`f04ac42`](https://github.com/gofrolist/molecule-action/commit/f04ac42ff1db28f2b11786111a3a2f6824f28884))
 
@@ -2093,7 +2150,7 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 ## v2.5.10 (2023-12-26)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/setup-node from 4.0.0 to 4.0.1 (#289)
 
@@ -2114,11 +2171,7 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 ## v2.5.9 (2023-12-26)
 
-### Continuous Integration
-
-* ci: remove automerge workflow (#291) ([`88cd640`](https://github.com/gofrolist/molecule-action/commit/88cd640ce6072e733afbd492dea39fb218d3361e))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/download-artifact from 3.0.2 to 4.1.0 (#290)
 
@@ -2211,10 +2264,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`0a60f2a`](https://github.com/gofrolist/molecule-action/commit/0a60f2aab1933287fdf9303cd87dc271a9b3e78b))
 
+### Continuous Integration
+
+* ci: remove automerge workflow (#291) ([`88cd640`](https://github.com/gofrolist/molecule-action/commit/88cd640ce6072e733afbd492dea39fb218d3361e))
+
 
 ## v2.5.8 (2023-12-07)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 5.2.0 to 5.3.0
 
@@ -2249,7 +2306,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`0ec50c3`](https://github.
 
 ## v2.5.7 (2023-11-30)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.22.0 to 6.22.1
 
@@ -2284,7 +2341,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`27c0e65`](https://github.
 
 ## v2.5.6 (2023-11-08)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.21.1 to 6.22.0
 
@@ -2304,7 +2361,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`a5343a4`](https://github.
 
 ## v2.5.5 (2023-11-02)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/setup-node from 3.8.1 to 4.0.0
 
@@ -2324,7 +2381,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`634c53c`](https://github.
 
 ## v2.5.4 (2023-10-20)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.21.0 to 6.21.1
 
@@ -2390,7 +2447,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`b54bef1`](https://github.
 
 ## v2.5.3 (2023-10-04)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.20.2 to 6.20.3
 
@@ -2440,7 +2497,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`edbdb1d`](https://github.
 
 ## v2.5.2 (2023-09-29)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.20.0 to 6.20.1
 
@@ -2476,7 +2533,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`fde6b46`](https://github.
 
 ## v2.5.1 (2023-09-20)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.19.0 to 6.20.0
 
@@ -2496,15 +2553,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`d0cd6c8`](https://github.
 
 ## v2.5.0 (2023-09-14)
 
-### Features
-
-* feat(deps): update molecule to 6.0.2 (#265)
-
-* feat(deps): update molecule to 6.0.2
-* ci: move PY_COLORS to docker env
-* ci: remove ANSIBLE_FORCE_COLOR and PY_COLORS from env ([`c9dfe76`](https://github.com/gofrolist/molecule-action/commit/c9dfe7692f077b85d17a26331d93b0cffd4302a0))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/upload-artifact from 3.1.2 to 3.1.3
 
@@ -2642,10 +2691,18 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`22a6d87`](https://github.com/gofrolist/molecule-action/commit/22a6d870f848bb52dbb854f39dfa98e5ed11fff3))
 
+### Features
+
+* feat(deps): update molecule to 6.0.2 (#265)
+
+* feat(deps): update molecule to 6.0.2
+* ci: move PY_COLORS to docker env
+* ci: remove ANSIBLE_FORCE_COLOR and PY_COLORS from env ([`c9dfe76`](https://github.com/gofrolist/molecule-action/commit/c9dfe7692f077b85d17a26331d93b0cffd4302a0))
+
 
 ## v2.4.1 (2023-07-07)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 2.8.0 to 2.9.0
 
@@ -2693,11 +2750,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`a915234`](https://github.
 
 ## v2.3.22 (2023-07-04)
 
-### Continuous Integration
-
-* ci: update snyk/actions/python to snyk/actions/python-3.9 (#234) ([`e759240`](https://github.com/gofrolist/molecule-action/commit/e7592405e2778ca8b59d37b584430a52e5a35a8d))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 2.7.0 to 2.8.0
 
@@ -2729,10 +2782,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`87e2751`](https://github.com/gofrolist/molecule-action/commit/87e275147af19eb6dda81d86be377b583bad704b))
 
+### Continuous Integration
+
+* ci: update snyk/actions/python to snyk/actions/python-3.9 (#234) ([`e759240`](https://github.com/gofrolist/molecule-action/commit/e7592405e2778ca8b59d37b584430a52e5a35a8d))
+
 
 ## v2.3.21 (2023-06-16)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 4.5.0 to 4.6.0 (#226)
 
@@ -2784,7 +2841,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`fb283fc`](https://github.
 
 ## v2.3.20 (2023-06-12)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 4.0.0 to 4.1.0 (#224)
 
@@ -2883,11 +2940,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`5c4f7d8`](https://github.
 
 ## v2.3.19 (2023-04-27)
 
-### Continuous Integration
-
-* ci: disable sarif upload (#212) ([`9866bc4`](https://github.com/gofrolist/molecule-action/commit/9866bc43fb400855b5838f47c3310f524664b924))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.14.6 to 6.15.0
 
@@ -2904,10 +2957,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`ee538e9`](https://github.com/gofrolist/molecule-action/commit/ee538e9a49741bbe4ce6954cc5f92846f2779051))
 
+### Continuous Integration
+
+* ci: disable sarif upload (#212) ([`9866bc4`](https://github.com/gofrolist/molecule-action/commit/9866bc43fb400855b5838f47c3310f524664b924))
+
 
 ## v2.3.18 (2023-04-18)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 4.3.0 to 4.4.0
 
@@ -2973,7 +3030,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`3bd161f`](https://github.
 
 ## v2.3.17 (2023-03-27)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.14.2 to 6.14.3
 
@@ -3009,7 +3066,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`6d7c6bb`](https://github.
 
 ## v2.3.16 (2023-03-16)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 3.3.0 to 3.4.0
 
@@ -3060,7 +3117,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`00b2ea6`](https://github.
 
 ## v2.3.15 (2023-03-08)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.14.0 to 6.14.1
 
@@ -3095,7 +3152,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`cb356d3`](https://github.
 
 ## v2.3.14 (2023-02-23)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump markdown-it-py from 2.1.0 to 2.2.0
 
@@ -3130,7 +3187,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`6515494`](https://github.
 
 ## v2.3.13 (2023-02-16)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.12.2 to 6.13.0
 
@@ -3165,7 +3222,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`30bd0f5`](https://github.
 
 ## v2.3.12 (2023-02-10)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 2.4.0 to 2.4.1
 
@@ -3230,7 +3287,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`a5704e9`](https://github.
 
 ## v2.3.11 (2023-01-31)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 2.3.0 to 2.4.0
 
@@ -3280,7 +3337,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`da0d45f`](https://github.
 
 ## v2.3.10 (2023-01-18)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.10.2 to 6.11.0
 
@@ -3330,7 +3387,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`9187be2`](https://github.
 
 ## v2.3.9 (2023-01-14)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): update ubuntu from 20.04 to 22.04 (#180)
 
@@ -3384,7 +3441,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`0bfb567`](https://github.
 
 ## v2.3.8 (2023-01-06)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/setup-node from 3.5.1 to 3.6.0 (#175)
 
@@ -3453,7 +3510,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`7f055ff`](https://github.
 
 ## v2.3.7 (2022-12-15)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.9.1 to 6.10.0
 
@@ -3489,7 +3546,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`155a7b6`](https://github.
 
 ## v2.3.6 (2022-12-09)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump certifi from 2022.9.24 to 2022.12.7
 
@@ -3551,7 +3608,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`85d4b1a`](https://github.
 
 ## v2.3.5 (2022-11-24)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.8.7 to 6.9.0
 
@@ -3601,7 +3658,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`36bf9cb`](https://github.
 
 ## v2.3.4 (2022-11-03)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump dependabot/fetch-metadata from 1.3.4 to 1.3.5
 
@@ -3651,7 +3708,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`a30cf0c`](https://github.
 
 ## v2.3.3 (2022-10-28)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.8.3 to 6.8.4
 
@@ -3716,7 +3773,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`1d3586b`](https://github.
 
 ## v2.3.2 (2022-10-21)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/download-artifact from 3.0.0 to 3.0.1
 
@@ -3781,7 +3838,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`daa0179`](https://github.
 
 ## v2.3.1 (2022-10-14)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/setup-buildx-action from 2.0.0 to 2.1.0
 
@@ -3911,7 +3968,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`d3713dd`](https://github.
 
 ## v2.2.44 (2022-10-07)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.7.0 to 6.8.0
 
@@ -3962,7 +4019,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`b66f7ac`](https://github.
 
 ## v2.2.43 (2022-09-28)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/setup-node from 3.4.1 to 3.5.0
 
@@ -3997,7 +4054,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`e6d0e2f`](https://github.
 
 ## v2.2.42 (2022-09-23)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.6.0 to 6.6.1
 
@@ -4036,7 +4093,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`f1a3dd3`](https://github.
 
 ## v2.2.41 (2022-09-08)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python from 3.9.13-alpine3.16 to 3.9.14-alpine3.16
 
@@ -4054,7 +4111,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`f78a714`](https://github.
 
 ## v2.2.40 (2022-09-02)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.5.1 to 6.5.2
 
@@ -4094,7 +4151,7 @@ to use an init system (like tini)[1].
 
 ## v2.2.39 (2022-08-31)
 
-### Fixes
+### Bug Fixes
 
 * fix: set correct `molecule_working_dir` (#125)
 
@@ -4117,7 +4174,7 @@ This patch enforces color by default so the output looks nice in GitHub Actions.
 
 ## v2.2.38 (2022-08-26)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump ansible-lint from 6.5.0 to 6.5.1
 
@@ -4152,7 +4209,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`acf5c87`](https://github.
 
 ## v2.2.37 (2022-08-08)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 3.1.0 to 3.1.1
 
@@ -4187,7 +4244,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`0679937`](https://github.
 
 ## v2.2.36 (2022-07-25)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump molecule from 4.0.0 to 4.0.1
 
@@ -4207,7 +4264,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`dfbfd1a`](https://github.
 
 ## v2.2.35 (2022-07-20)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 3.0.0 to 3.1.0
 
@@ -4227,7 +4284,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`3f2d594`](https://github.
 
 ## v2.2.34 (2022-07-15)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/setup-node from 3.4.0 to 3.4.1
 
@@ -4262,7 +4319,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`0c344da`](https://github.
 
 ## v2.2.33 (2022-07-06)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump dependabot/fetch-metadata from 1.3.2 to 1.3.3 (#114)
 
@@ -4284,7 +4341,7 @@ Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.c
 
 ## v2.2.32 (2022-07-01)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump dependabot/fetch-metadata from 1.3.1 to 1.3.2
 
@@ -4304,15 +4361,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`7c76d08`](https://github.
 
 ## v2.2.31 (2022-06-26)
 
-### Continuous Integration
-
-* ci: extend molecule test (#88)
-
-* ci: extend molecule test
-
-* add namespace to role ([`7dd8eb9`](https://github.com/gofrolist/molecule-action/commit/7dd8eb9650c6e6c2dc9e3e79576e597edd0c623f))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump molecule from 3.6.1 to 4.0.0
 
@@ -4329,6 +4378,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`3191316`](https://github.com/gofrolist/molecule-action/commit/31913169282d7b42cda97b2469ce941ecc9bc73b))
 
+### Continuous Integration
+
+* ci: extend molecule test (#88)
+
+* ci: extend molecule test
+
+* add namespace to role ([`7dd8eb9`](https://github.com/gofrolist/molecule-action/commit/7dd8eb9650c6e6c2dc9e3e79576e597edd0c623f))
+
 ### Unknown
 
 * add ansible-lint (#111) ([`8afbb5d`](https://github.com/gofrolist/molecule-action/commit/8afbb5d58bc067e96c6561a22bb7b887701f59e9))
@@ -4336,7 +4393,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`3191316`](https://github.
 
 ## v2.2.30 (2022-06-09)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump cookiecutter from 1.7.3 to 2.1.1
 
@@ -4371,7 +4428,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`32c02fb`](https://github.
 
 ## v2.2.29 (2022-05-23)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/upload-artifact from 3.0.0 to 3.1.0
 
@@ -4391,7 +4448,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`fdb9a4e`](https://github.
 
 ## v2.2.28 (2022-05-18)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python from 3.9.12-alpine3.15 to 3.9.13-alpine3.15
 
@@ -4424,7 +4481,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`f2cb42f`](https://github.
 
 ## v2.2.27 (2022-05-06)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 2.10.0 to 3.0.0
 
@@ -4490,7 +4547,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`bd74052`](https://github.
 
 ## v2.2.26 (2022-04-29)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 3.7.0 to 3.8.0
 
@@ -4541,7 +4598,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`dd2db23`](https://github.
 
 ## v2.2.25 (2022-04-22)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 3.0.1 to 3.0.2
 
@@ -4592,7 +4649,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`283c847`](https://github.
 
 ## v2.2.24 (2022-04-15)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 3.0.0 to 3.0.1
 
@@ -4628,7 +4685,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`8baf80f`](https://github.
 
 ## v2.2.23 (2022-04-07)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 3.6.2 to 3.7.0
 
@@ -4648,7 +4705,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`1af7ad4`](https://github.
 
 ## v2.2.22 (2022-04-01)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/setup-node from 3.0.0 to 3.1.0
 
@@ -4668,25 +4725,25 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`dbbf4ac`](https://github.
 
 ## v2.2.21 (2022-03-27)
 
+### Bug Fixes
+
+* fix(deps): actions/setup-node 14 to 16 (#89) ([`4fc9875`](https://github.com/gofrolist/molecule-action/commit/4fc9875755c49b04a6940b2fb50935ba343ac0f2))
+
 ### Continuous Integration
 
 * ci: exclude dependabot for docker python (#87) ([`38f9a6f`](https://github.com/gofrolist/molecule-action/commit/38f9a6f4b42d66b5e019fb65f0201f2128c47a16))
 
-### Fixes
-
-* fix(deps): actions/setup-node 14 to 16 (#89) ([`4fc9875`](https://github.com/gofrolist/molecule-action/commit/4fc9875755c49b04a6940b2fb50935ba343ac0f2))
-
 
 ## v2.2.20 (2022-03-27)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump python from 3.9.10-alpine3.14 to 3.9.12-alpine3.15 (#85) ([`3f0e533`](https://github.com/gofrolist/molecule-action/commit/3f0e533998e27fc0c7a67affe8ed8dc946e7cce8))
 
 
 ## v2.2.19 (2022-03-27)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): upload-artifact, download-artifact, checkout (#84)
 
@@ -4729,7 +4786,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`6051b5c`](https://github.
 
 ## v2.2.18 (2022-03-15)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 2.9.0 to 2.10.0
 
@@ -4749,7 +4806,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`de35084`](https://github.
 
 ## v2.2.17 (2022-03-01)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/publish-action from 0.1.0 to 0.2.0
 
@@ -4784,7 +4841,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`1bff36c`](https://github.
 
 ## v2.2.16 (2022-02-25)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/setup-node from 2.5.1 to 3
 
@@ -4819,7 +4876,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`f37d3e4`](https://github.
 
 ## v2.2.15 (2022-02-18)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/login-action from 1.12.0 to 1.13.0
 
@@ -4854,7 +4911,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`409ff31`](https://github.
 
 ## v2.2.14 (2022-02-02)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 2.8.0 to 2.9.0
 
@@ -4874,7 +4931,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`e99e4b0`](https://github.
 
 ## v2.2.13 (2022-02-01)
 
-### Fixes
+### Bug Fixes
 
 * fix: Dockerfile to reduce vulnerabilities (#64)
 
@@ -4888,7 +4945,7 @@ The following vulnerabilities are fixed with an upgrade:
 
 ## v2.2.12 (2022-01-20)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/build-push-action from 2.7.0 to 2.8.0
 
@@ -4908,7 +4965,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`e7e028f`](https://github.
 
 ## v2.2.11 (2021-12-29)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/setup-node from 2.5.0 to 2.5.1
 
@@ -4928,7 +4985,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`505c762`](https://github.
 
 ## v2.2.10 (2021-12-21)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/login-action from 1.10.0 to 1.12.0
 
@@ -4948,7 +5005,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`6d5600e`](https://github.
 
 ## v2.2.9 (2021-12-16)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/upload-artifact from 2.3.0 to 2.3.1
 
@@ -4998,7 +5055,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`7d7783b`](https://github.
 
 ## v2.2.8 (2021-12-07)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 3.6.1 to 3.6.2
 
@@ -5018,7 +5075,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`9eae2a4`](https://github.
 
 ## v2.2.7 (2021-11-30)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 3.6.0 to 3.6.1
 
@@ -5053,28 +5110,18 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`51d414d`](https://github.
 
 ## v2.2.6 (2021-11-29)
 
+### Bug Fixes
+
+* fix: update python in Dockerfile 3.9.7 -> 3.9.8 ([`0e1ff1d`](https://github.com/gofrolist/molecule-action/commit/0e1ff1d6047ca4c4c12cb4887d92f1b5cc556ab7))
+
 ### Continuous Integration
 
 * ci: remove hardcoded versions of apt packages ([`3fc00ff`](https://github.com/gofrolist/molecule-action/commit/3fc00ffce70f97aec35bd51f85b280ebbadc2866))
 
-### Fixes
-
-* fix: update python in Dockerfile 3.9.7 -> 3.9.8 ([`0e1ff1d`](https://github.com/gofrolist/molecule-action/commit/0e1ff1d6047ca4c4c12cb4887d92f1b5cc556ab7))
-
 
 ## v2.2.5 (2021-11-03)
 
-### Continuous Integration
-
-* ci: fix snyk upload ([`c8f2857`](https://github.com/gofrolist/molecule-action/commit/c8f285752da478689a10c4e81e55127fdd5ceb82))
-
-* ci: fix snyk-python ([`7636781`](https://github.com/gofrolist/molecule-action/commit/7636781080896e4065e674a83846f9aa993441c5))
-
-### Documentation
-
-* docs: add ANSIBLE_FORCE_COLOR ([`1414de3`](https://github.com/gofrolist/molecule-action/commit/1414de3b0b5ce6f7c387811f6d59048b50e20ef5))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 2.3.5 to 2.4.0
 
@@ -5092,14 +5139,20 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`751a8f7`](https://github.com/gofrolist/molecule-action/commit/751a8f72524c63c8173189bf530365baed4dfaa1))
 
+### Continuous Integration
+
+* ci: fix snyk upload ([`c8f2857`](https://github.com/gofrolist/molecule-action/commit/c8f285752da478689a10c4e81e55127fdd5ceb82))
+
+* ci: fix snyk-python ([`7636781`](https://github.com/gofrolist/molecule-action/commit/7636781080896e4065e674a83846f9aa993441c5))
+
+### Documentation
+
+* docs: add ANSIBLE_FORCE_COLOR ([`1414de3`](https://github.com/gofrolist/molecule-action/commit/1414de3b0b5ce6f7c387811f6d59048b50e20ef5))
+
 
 ## v2.2.4 (2021-10-29)
 
-### Continuous Integration
-
-* ci: add snyk python (#47) ([`2d7a43e`](https://github.com/gofrolist/molecule-action/commit/2d7a43ebef16b339ca5220f3db74eca274e589b4))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump docker/metadata-action from 3.5.0 to 3.6.0
 
@@ -5116,10 +5169,14 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`ad5eb3e`](https://github.com/gofrolist/molecule-action/commit/ad5eb3ebffb0d72b866069e1eb90a15f0b7a457e))
 
+### Continuous Integration
+
+* ci: add snyk python (#47) ([`2d7a43e`](https://github.com/gofrolist/molecule-action/commit/2d7a43ebef16b339ca5220f3db74eca274e589b4))
+
 
 ## v2.2.3 (2021-10-19)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump flake8 from 3.9.2 to 4.0.1
 
@@ -5139,11 +5196,7 @@ Signed-off-by: dependabot[bot] <support@github.com> ([`a77f4e2`](https://github.
 
 ## v2.2.2 (2021-10-19)
 
-### Build System
-
-* build(pip): migrate to pipenv ([`64ad314`](https://github.com/gofrolist/molecule-action/commit/64ad3143b3fd3595d6a2bbce0a9f57f507c5f9ff))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump actions/checkout from 2.3.4 to 2.3.5
 
@@ -5177,27 +5230,21 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`eaf9816`](https://github.com/gofrolist/molecule-action/commit/eaf981663f37e6a38f8a7c970cfbecaa7c7e1eee))
 
+### Build System
+
+* build(pip): migrate to pipenv ([`64ad314`](https://github.com/gofrolist/molecule-action/commit/64ad3143b3fd3595d6a2bbce0a9f57f507c5f9ff))
+
 
 ## v2.2.1 (2021-10-14)
 
-### Fixes
+### Bug Fixes
 
 * fix(deps): add missing podman package (#40) ([`295fc3a`](https://github.com/gofrolist/molecule-action/commit/295fc3a6cc07b2ee31ecfe30aef002ba18571462))
 
 
 ## v2.2.0 (2021-10-14)
 
-### Documentation
-
-* docs: add semantic-release badge ([`826336d`](https://github.com/gofrolist/molecule-action/commit/826336ddead4f04225a9b957a52b08dd4b42e55f))
-
-### Features
-
-* feat(deps): add podman (#36)
-
-if you want to use driver: podman you are able to do so now ([`006715f`](https://github.com/gofrolist/molecule-action/commit/006715f0c9bdddd4f00ec33a4ee9f8e4160f8d48))
-
-### Fixes
+### Bug Fixes
 
 * fix(deps): bump boto3 from 1.18.57 to 1.18.60
 
@@ -5230,47 +5277,27 @@ updated-dependencies:
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`3ca61bc`](https://github.com/gofrolist/molecule-action/commit/3ca61bc772a20e516c8e67a00bb6bf6b401b6d31))
 
+### Documentation
+
+* docs: add semantic-release badge ([`826336d`](https://github.com/gofrolist/molecule-action/commit/826336ddead4f04225a9b957a52b08dd4b42e55f))
+
+### Features
+
+* feat(deps): add podman (#36)
+
+if you want to use driver: podman you are able to do so now ([`006715f`](https://github.com/gofrolist/molecule-action/commit/006715f0c9bdddd4f00ec33a4ee9f8e4160f8d48))
+
 
 ## v2.1.8 (2021-10-08)
 
-### Fixes
+### Bug Fixes
 
 * fix: replace update tag action in publish workflow ([`fae6b2b`](https://github.com/gofrolist/molecule-action/commit/fae6b2b97e34fca4245ca682220b89b590283ba4))
 
 
 ## v2.1.7 (2021-10-08)
 
-### Build System
-
-* build: semantic release and publish ([`59f4f42`](https://github.com/gofrolist/molecule-action/commit/59f4f42174fb9b832b9dd677b7562221403dfb8d))
-
-* build: add checkout step to release job ([`587bb72`](https://github.com/gofrolist/molecule-action/commit/587bb72466d9b053937f22b9d4ef32aa6735e02c))
-
-* build: change release job ([`5009cf3`](https://github.com/gofrolist/molecule-action/commit/5009cf37c5207be9b01249e05843a250021c9119))
-
-### Continuous Integration
-
-* ci: move update release major tag to publish workflow ([`79336ca`](https://github.com/gofrolist/molecule-action/commit/79336caf67811b95cd6e43218b45482d008f3d24))
-
-* ci: change trigger on publish release ([`ee78969`](https://github.com/gofrolist/molecule-action/commit/ee789692b240d473c67544db37894a644dd44498))
-
-* ci: add release job ([`6db9b78`](https://github.com/gofrolist/molecule-action/commit/6db9b783eef9c82319939c9073bb1e48900fad09))
-
-* ci: fix uses molecule image ([`ca5536a`](https://github.com/gofrolist/molecule-action/commit/ca5536a9f59a5a94fd10d48a41e8df2bdaac41b3))
-
-* ci: molecule uses test image ([`607cf4e`](https://github.com/gofrolist/molecule-action/commit/607cf4e568a19db55dc3d69c142dedfc044d769a))
-
-* ci: snyk uses test image ([`9440b18`](https://github.com/gofrolist/molecule-action/commit/9440b18d17b8f3bc5f202c3a4307a25a77593da4))
-
-* ci(semantic): add commitizen and pre-commit hook ([`a1d19ad`](https://github.com/gofrolist/molecule-action/commit/a1d19ad37d165d2c10ca917801cd45b90f171137))
-
-### Documentation
-
-* docs: move badges ([`2cb9df4`](https://github.com/gofrolist/molecule-action/commit/2cb9df483937fc703e8c5dbb7d46d2b83f940d62))
-
-* docs: add troubleshooting section ([`05848f2`](https://github.com/gofrolist/molecule-action/commit/05848f2d30ca1995fe5035ec3c8d25e17cd98e0a))
-
-### Fixes
+### Bug Fixes
 
 * fix: add missing env variables to publish workflow ([`53bd5c6`](https://github.com/gofrolist/molecule-action/commit/53bd5c69f90f284e4520412f9f56a80962a5ff3b))
 
@@ -5308,6 +5335,36 @@ docker 20.10.7-r2 -> 20.10.9-r0
 openssh-client 8.6_p1-r2 -> 8.6_p1-r3 ([`db3b607`](https://github.com/gofrolist/molecule-action/commit/db3b6077723628cebcc200530ee3983648355e05))
 
 * fix(dockerfile): remove unnecessary ansible-galaxy collection install ([`0736f0b`](https://github.com/gofrolist/molecule-action/commit/0736f0bae49f4e9b1d1dd72ba0ba195568455835))
+
+### Build System
+
+* build: semantic release and publish ([`59f4f42`](https://github.com/gofrolist/molecule-action/commit/59f4f42174fb9b832b9dd677b7562221403dfb8d))
+
+* build: add checkout step to release job ([`587bb72`](https://github.com/gofrolist/molecule-action/commit/587bb72466d9b053937f22b9d4ef32aa6735e02c))
+
+* build: change release job ([`5009cf3`](https://github.com/gofrolist/molecule-action/commit/5009cf37c5207be9b01249e05843a250021c9119))
+
+### Continuous Integration
+
+* ci: move update release major tag to publish workflow ([`79336ca`](https://github.com/gofrolist/molecule-action/commit/79336caf67811b95cd6e43218b45482d008f3d24))
+
+* ci: change trigger on publish release ([`ee78969`](https://github.com/gofrolist/molecule-action/commit/ee789692b240d473c67544db37894a644dd44498))
+
+* ci: add release job ([`6db9b78`](https://github.com/gofrolist/molecule-action/commit/6db9b783eef9c82319939c9073bb1e48900fad09))
+
+* ci: fix uses molecule image ([`ca5536a`](https://github.com/gofrolist/molecule-action/commit/ca5536a9f59a5a94fd10d48a41e8df2bdaac41b3))
+
+* ci: molecule uses test image ([`607cf4e`](https://github.com/gofrolist/molecule-action/commit/607cf4e568a19db55dc3d69c142dedfc044d769a))
+
+* ci: snyk uses test image ([`9440b18`](https://github.com/gofrolist/molecule-action/commit/9440b18d17b8f3bc5f202c3a4307a25a77593da4))
+
+* ci(semantic): add commitizen and pre-commit hook ([`a1d19ad`](https://github.com/gofrolist/molecule-action/commit/a1d19ad37d165d2c10ca917801cd45b90f171137))
+
+### Documentation
+
+* docs: move badges ([`2cb9df4`](https://github.com/gofrolist/molecule-action/commit/2cb9df483937fc703e8c5dbb7d46d2b83f940d62))
+
+* docs: add troubleshooting section ([`05848f2`](https://github.com/gofrolist/molecule-action/commit/05848f2d30ca1995fe5035ec3c8d25e17cd98e0a))
 
 ### Unknown
 
