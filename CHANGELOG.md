@@ -1,6 +1,27 @@
 # CHANGELOG
 
 
+## v2.7.40 (2024-10-26)
+
+### Bug Fixes
+
+* fix(deps): bump actions/checkout from 4.2.1 to 4.2.2
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.2.1 to 4.2.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v4.2.1...v4.2.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([`f242064`](https://github.com/gofrolist/molecule-action/commit/f2420648162a1e03de0c8db08e7e8edb315816c8))
+
+
 ## v2.7.39 (2024-10-19)
 
 ### Bug Fixes
@@ -52,6 +73,10 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`25b448e`](https://github.com/gofrolist/molecule-action/commit/25b448e1ac80f5876a938787535a60a7a622ed7c))
+
+### Chores
+
+* chore(release): bump version to v2.7.39 [skip ci] ([`91db6a4`](https://github.com/gofrolist/molecule-action/commit/91db6a4410154cb7f137c7339fc95322caa71499))
 
 
 ## v2.7.38 (2024-10-12)
