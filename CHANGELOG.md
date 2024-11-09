@@ -1,6 +1,57 @@
 # CHANGELOG
 
 
+## v2.7.41 (2024-11-09)
+
+### Bug Fixes
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.12.1 to 9.12.2.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.12.1...v9.12.2)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([`992c99e`](https://github.com/gofrolist/molecule-action/commit/992c99e944404e9affb3ce9b9b613d440ad3f8b3))
+
+* fix(deps): bump ansible-core from 2.16.3 to 2.17.6
+
+Bumps [ansible-core](https://github.com/ansible/ansible) from 2.16.3 to 2.17.6.
+- [Release notes](https://github.com/ansible/ansible/releases)
+- [Commits](https://github.com/ansible/ansible/compare/v2.16.3...v2.17.6)
+
+---
+updated-dependencies:
+- dependency-name: ansible-core
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([`bae9686`](https://github.com/gofrolist/molecule-action/commit/bae968609f6a0b6a4691dbca464c097744aa095b))
+
+* fix(deps): bump python-semantic-release/python-semantic-release
+
+Bumps [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) from 9.12.0 to 9.12.1.
+- [Release notes](https://github.com/python-semantic-release/python-semantic-release/releases)
+- [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.12.0...v9.12.1)
+
+---
+updated-dependencies:
+- dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([`615c996`](https://github.com/gofrolist/molecule-action/commit/615c9968efaca863689d0296f3f9a475f7e916ee))
+
+
 ## v2.7.40 (2024-10-26)
 
 ### Bug Fixes
@@ -20,6 +71,10 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com> ([`f242064`](https://github.com/gofrolist/molecule-action/commit/f2420648162a1e03de0c8db08e7e8edb315816c8))
+
+### Chores
+
+* chore(release): bump version to v2.7.40 [skip ci] ([`deaa675`](https://github.com/gofrolist/molecule-action/commit/deaa675f864a33443fe373378fbb5cd63ac1036b))
 
 
 ## v2.7.39 (2024-10-19)
