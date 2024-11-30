@@ -1,6 +1,23 @@
 # CHANGELOG
 
 
+## v2.7.44 (2024-11-30)
+
+### Bug Fixes
+
+- **deps**: Bump docker/build-push-action from 6.9.0 to 6.10.0
+  ([`0e636d5`](https://github.com/gofrolist/molecule-action/commit/0e636d5bed31e35122529781872a7a16de11f316))
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.9.0 to 6.10.0.
+  - [Release notes](https://github.com/docker/build-push-action/releases) -
+  [Commits](https://github.com/docker/build-push-action/compare/v6.9.0...v6.10.0)
+
+--- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
+  direct:production update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.43 (2024-11-23)
 
 ### Bug Fixes
@@ -16,6 +33,11 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5
   direct:production update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
+
+### Chores
+
+- **release**: Bump version to v2.7.43 [skip ci]
+  ([`c0533e2`](https://github.com/gofrolist/molecule-action/commit/c0533e2c0455edc3760ba09a4cf8ac1b0a510918))
 
 
 ## v2.7.42 (2024-11-16)
