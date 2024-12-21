@@ -1,6 +1,78 @@
 # CHANGELOG
 
 
+## v2.7.46 (2024-12-21)
+
+### Bug Fixes
+
+- **deps**: Bump actions/upload-artifact from 4.4.3 to 4.5.0
+  ([`4e4b2d9`](https://github.com/gofrolist/molecule-action/commit/4e4b2d99acc817c8bbfb0018fdfe9b2d3975f5ac))
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.4.3 to 4.5.0. -
+  [Release notes](https://github.com/actions/upload-artifact/releases) -
+  [Commits](https://github.com/actions/upload-artifact/compare/v4.4.3...v4.5.0)
+
+--- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/setup-buildx-action from 3.7.1 to 3.8.0
+  ([`8a8725c`](https://github.com/gofrolist/molecule-action/commit/8a8725c982e4268c0d45ea54529859e6c55687d0))
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 3.7.1 to
+  3.8.0. - [Release notes](https://github.com/docker/setup-buildx-action/releases) -
+  [Commits](https://github.com/docker/setup-buildx-action/compare/v3.7.1...v3.8.0)
+
+--- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump molecule-plugins from 23.5.3 to 23.6.0
+  ([`372369c`](https://github.com/gofrolist/molecule-action/commit/372369c04d6d8a3edc0c63704d502570cd5eb007))
+
+Bumps [molecule-plugins](https://github.com/ansible-community/molecule-plugins) from 23.5.3 to
+  23.6.0. - [Release notes](https://github.com/ansible-community/molecule-plugins/releases) -
+  [Commits](https://github.com/ansible-community/molecule-plugins/compare/v23.5.3...v23.6.0)
+
+--- updated-dependencies: - dependency-name: molecule-plugins dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([`2d7f6b2`](https://github.com/gofrolist/molecule-action/commit/2d7f6b24593be7392364da7f802e498e85038171))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.15.1 to 9.15.2. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.15.1...v9.15.2)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.45 (2024-12-07)
 
 ### Bug Fixes
@@ -72,6 +144,11 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
+
+### Chores
+
+- **release**: Bump version to v2.7.45 [skip ci]
+  ([`d9a782b`](https://github.com/gofrolist/molecule-action/commit/d9a782b5bed1604b52df9bc88254b50abb828f79))
 
 
 ## v2.7.44 (2024-11-30)
