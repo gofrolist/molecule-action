@@ -1,6 +1,57 @@
 # CHANGELOG
 
 
+## v2.7.47 (2025-01-11)
+
+### Bug Fixes
+
+- **deps**: Bump actions/upload-artifact from 4.5.0 to 4.6.0
+  ([`cc91798`](https://github.com/gofrolist/molecule-action/commit/cc91798162c02fe0052e376e9cd188f6bfbb6d2b))
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.5.0 to 4.6.0. -
+  [Release notes](https://github.com/actions/upload-artifact/releases) -
+  [Commits](https://github.com/actions/upload-artifact/compare/v4.5.0...v4.6.0)
+
+--- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/build-push-action from 6.10.0 to 6.11.0
+  ([`a8411e0`](https://github.com/gofrolist/molecule-action/commit/a8411e0b3d84b49e2ce8c50c6bafb43c07baa04b))
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.10.0 to 6.11.0.
+  - [Release notes](https://github.com/docker/build-push-action/releases) -
+  [Commits](https://github.com/docker/build-push-action/compare/v6.10.0...v6.11.0)
+
+--- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump jinja2 from 3.1.4 to 3.1.5
+  ([`f142b02`](https://github.com/gofrolist/molecule-action/commit/f142b025ddec07a48f6cd67df214f5d560b27274))
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.4 to 3.1.5. - [Release
+  notes](https://github.com/pallets/jinja/releases) -
+  [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
+  [Commits](https://github.com/pallets/jinja/compare/3.1.4...3.1.5)
+
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.46 (2024-12-21)
 
 ### Bug Fixes
@@ -71,6 +122,11 @@ update-type: version-update:semver-patch
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
+
+### Chores
+
+- **release**: Bump version to v2.7.46 [skip ci]
+  ([`07bf9b2`](https://github.com/gofrolist/molecule-action/commit/07bf9b255f1f5d3fd2f492a468e0dc53abe6ea12))
 
 
 ## v2.7.45 (2024-12-07)
