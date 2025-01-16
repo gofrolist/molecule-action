@@ -53,6 +53,7 @@ jobs:
         with:
           name: testimage
           path: /tmp/test.tar
+          retention-days: 1
 
   molecule:
     needs:
@@ -106,6 +107,18 @@ jobs:
           sarif: true
           args: --file=Dockerfile --exclude-app-vulns
 
+      - name: list files
+        run: |
+          pwd
+          ls -la
+
+      - name: Upload snyk.sarif
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: snyk.sarif
+          path: ./snyk.sarif
+          retention-days: 1
+
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v3
         with:
@@ -129,6 +142,18 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --sarif-file-output=snyk-python.sarif
+
+      - name: list files
+        run: |
+          pwd
+          ls -la
+
+      - name: Upload snyk-python.sarif
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: snyk-python.sarif
+          path: ./snyk-python.sarif
+          retention-days: 1
 
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v3
