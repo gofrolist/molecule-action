@@ -105,12 +105,7 @@ jobs:
         with:
           image: ${{ env.DOCKER_IMAGE_NAME }}:test
           sarif: true
-          args: --file=Dockerfile --exclude-app-vulns
-
-      - name: list files
-        run: |
-          pwd
-          ls -la
+          args: --file=Dockerfile --exclude-app-vulns --severity-threshold=low
 
       - name: Upload snyk.sarif
         uses: actions/upload-artifact@v4.6.0
@@ -142,11 +137,6 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --sarif-file-output=snyk-python.sarif
-
-      - name: list files
-        run: |
-          pwd
-          ls -la
 
       - name: Upload snyk-python.sarif
         uses: actions/upload-artifact@v4.6.0
