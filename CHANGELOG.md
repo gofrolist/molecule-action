@@ -1,6 +1,47 @@
 # CHANGELOG
 
 
+## v2.7.48 (2025-01-16)
+
+### Bug Fixes
+
+- **deps**: Bump docker/build-push-action from 6.11.0 to 6.12.0
+  ([`b4ab34b`](https://github.com/gofrolist/molecule-action/commit/b4ab34b11e942f7e81459065a7c4578d8c9baab0))
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.11.0 to 6.12.0.
+  - [Release notes](https://github.com/docker/build-push-action/releases) -
+  [Commits](https://github.com/docker/build-push-action/compare/v6.11.0...v6.12.0)
+
+--- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([`250c781`](https://github.com/gofrolist/molecule-action/commit/250c7816b40ca423b6bb5386cada71e619636ebc))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.15.2 to 9.16.1. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.md)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.15.2...v9.16.1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.47 (2025-01-11)
 
 ### Bug Fixes
@@ -123,11 +164,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.46 [skip ci]
-  ([`07bf9b2`](https://github.com/gofrolist/molecule-action/commit/07bf9b255f1f5d3fd2f492a468e0dc53abe6ea12))
-
 
 ## v2.7.45 (2024-12-07)
 
@@ -201,11 +237,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.45 [skip ci]
-  ([`d9a782b`](https://github.com/gofrolist/molecule-action/commit/d9a782b5bed1604b52df9bc88254b50abb828f79))
-
 
 ## v2.7.44 (2024-11-30)
 
@@ -227,11 +258,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.44 [skip ci]
-  ([`cf4000d`](https://github.com/gofrolist/molecule-action/commit/cf4000d3e6c8ed82ed8cb8122b9a552a43583eaa))
-
 
 ## v2.7.43 (2024-11-23)
 
@@ -252,11 +278,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.43 [skip ci]
-  ([`c0533e2`](https://github.com/gofrolist/molecule-action/commit/c0533e2c0455edc3760ba09a4cf8ac1b0a510918))
 
 
 ## v2.7.42 (2024-11-16)
@@ -282,11 +303,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.42 [skip ci]
-  ([`5e7cdbc`](https://github.com/gofrolist/molecule-action/commit/5e7cdbce9fa74cbcaf32e5dca3c09df2348fde6b))
 
 
 ## v2.7.41 (2024-11-09)
@@ -346,11 +362,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.41 [skip ci]
-  ([`8066eae`](https://github.com/gofrolist/molecule-action/commit/8066eaebc89c3baaf7742a47eb5aed9b951bb92d))
-
 
 ## v2.7.40 (2024-10-26)
 
@@ -371,11 +382,6 @@ update-type: version-update:semver-patch
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.40 [skip ci]
-  ([`deaa675`](https://github.com/gofrolist/molecule-action/commit/deaa675f864a33443fe373378fbb5cd63ac1036b))
 
 
 ## v2.7.39 (2024-10-19)
@@ -441,11 +447,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.39 [skip ci]
-  ([`91db6a4`](https://github.com/gofrolist/molecule-action/commit/91db6a4410154cb7f137c7339fc95322caa71499))
 
 
 ## v2.7.38 (2024-10-12)
@@ -556,11 +557,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.38 [skip ci]
-  ([`c605ae1`](https://github.com/gofrolist/molecule-action/commit/c605ae17211508cc6a7be17bc5a1cb38d09bd0ee))
-
 
 ## v2.7.37 (2024-10-05)
 
@@ -650,11 +646,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.37 [skip ci]
-  ([`82d5f23`](https://github.com/gofrolist/molecule-action/commit/82d5f23d144a476e5a2962fac15c364368f419a9))
-
 
 ## v2.7.36 (2024-09-28)
 
@@ -696,11 +687,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.36 [skip ci]
-  ([`5a0a73e`](https://github.com/gofrolist/molecule-action/commit/5a0a73eab88b66b6ea2564bf8d6a19601796f8c4))
-
 
 ## v2.7.35 (2024-09-14)
 
@@ -720,11 +706,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.35 [skip ci]
-  ([`bb90008`](https://github.com/gofrolist/molecule-action/commit/bb90008fd9007d58940394879d975cf08d13c56f))
 
 
 ## v2.7.34 (2024-09-07)
@@ -780,11 +761,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.34 [skip ci]
-  ([`56d6b03`](https://github.com/gofrolist/molecule-action/commit/56d6b03704b13dc3abb9ca8724cea56ad0d52bef))
-
 
 ## v2.7.33 (2024-08-24)
 
@@ -825,11 +801,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.33 [skip ci]
-  ([`49460ee`](https://github.com/gofrolist/molecule-action/commit/49460eec8ee48e0151709cdb7e062954914dd57e))
-
 
 ## v2.7.32 (2024-08-17)
 
@@ -850,11 +821,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.32 [skip ci]
-  ([`fc19a17`](https://github.com/gofrolist/molecule-action/commit/fc19a17a1f94d1bba294c457a95cfa739b09a59e))
 
 
 ## v2.7.31 (2024-08-10)
@@ -925,11 +891,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.31 [skip ci]
-  ([`2680ed4`](https://github.com/gofrolist/molecule-action/commit/2680ed4e6b0302df3d5de6669a99ed1b04ac514f))
-
 
 ## v2.7.30 (2024-08-03)
 
@@ -950,11 +911,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.30 [skip ci]
-  ([`b6df054`](https://github.com/gofrolist/molecule-action/commit/b6df0549bf5f4886c87a67c7c0018bbbef977f38))
 
 
 ## v2.7.29 (2024-07-27)
@@ -1028,11 +984,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.29 [skip ci]
-  ([`d7a53c9`](https://github.com/gofrolist/molecule-action/commit/d7a53c913e5d98151b1f469c98a6dd208576c28f))
-
 
 ## v2.7.28 (2024-07-20)
 
@@ -1069,11 +1020,6 @@ update-type: version-update:semver-patch
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.28 [skip ci]
-  ([`2a5dc58`](https://github.com/gofrolist/molecule-action/commit/2a5dc580c001a20c14a353fdd5f2c47af8635b8e))
 
 
 ## v2.7.27 (2024-07-13)
@@ -1162,11 +1108,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.27 [skip ci]
-  ([`8c3bef4`](https://github.com/gofrolist/molecule-action/commit/8c3bef4f1a370bd80de59dfa340acf89075bb802))
-
 
 ## v2.7.26 (2024-07-06)
 
@@ -1252,11 +1193,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.26 [skip ci]
-  ([`9ae9ac1`](https://github.com/gofrolist/molecule-action/commit/9ae9ac1380f1b82ce527ac2d81b2eecc993a2ffe))
-
 
 ## v2.7.25 (2024-06-29)
 
@@ -1277,11 +1213,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.25 [skip ci]
-  ([`cbbb306`](https://github.com/gofrolist/molecule-action/commit/cbbb3060eefff039425ec6231c9358f0b368552e))
 
 
 ## v2.7.24 (2024-06-22)
@@ -1374,11 +1305,6 @@ Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.1.0 to 2.2.2. - [Rele
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.24 [skip ci]
-  ([`ef5349b`](https://github.com/gofrolist/molecule-action/commit/ef5349b7ea7f971eac0bba613a7e06b240993ad9))
-
 
 ## v2.7.23 (2024-06-15)
 
@@ -1415,11 +1341,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.23 [skip ci]
-  ([`53bacb4`](https://github.com/gofrolist/molecule-action/commit/53bacb49f603b08c50240d0a1f045051c03260a2))
 
 
 ## v2.7.22 (2024-06-08)
@@ -1461,11 +1382,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.22 [skip ci]
-  ([`11d43ca`](https://github.com/gofrolist/molecule-action/commit/11d43ca78e3d0473c81c7a20dee02e8460f7e285))
-
 
 ## v2.7.21 (2024-06-01)
 
@@ -1505,11 +1421,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.21 [skip ci]
-  ([`1dbc986`](https://github.com/gofrolist/molecule-action/commit/1dbc986983fafc16191944549d8e415248edc7ef))
 
 
 ## v2.7.20 (2024-05-18)
@@ -1571,11 +1482,6 @@ update-type: version-update:semver-patch
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.20 [skip ci]
-  ([`6e56c77`](https://github.com/gofrolist/molecule-action/commit/6e56c7723f41a80831d0e3c64c2c2589ee91a0fc))
 
 
 ## v2.7.19 (2024-05-11)
@@ -1652,11 +1558,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.19 [skip ci]
-  ([`3276ca9`](https://github.com/gofrolist/molecule-action/commit/3276ca9d5d51ba2354d61cbdff5a31726f9888b1))
-
 
 ## v2.7.18 (2024-05-04)
 
@@ -1681,11 +1582,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.18 [skip ci]
-  ([`3de0382`](https://github.com/gofrolist/molecule-action/commit/3de0382a619b8bf936a4af40ab6f3f35cba80d49))
 
 
 ## v2.7.17 (2024-04-27)
@@ -1808,11 +1704,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.17 [skip ci]
-  ([`2a6c9fc`](https://github.com/gofrolist/molecule-action/commit/2a6c9fcb9829488226c70c8e8f7ddcd3b170bcdb))
-
 
 ## v2.7.16 (2024-04-20)
 
@@ -1869,11 +1760,6 @@ update-type: version-update:semver-patch
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.16 [skip ci]
-  ([`db731da`](https://github.com/gofrolist/molecule-action/commit/db731da2411f4ee1d883cc706ddb22316f107088))
 
 
 ## v2.7.15 (2024-04-13)
@@ -1945,11 +1831,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.15 [skip ci]
-  ([`6107250`](https://github.com/gofrolist/molecule-action/commit/61072502a717fc7a134600a3282d03a7642a8837))
-
 
 ## v2.7.14 (2024-04-06)
 
@@ -1975,11 +1856,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.14 [skip ci]
-  ([`742a535`](https://github.com/gofrolist/molecule-action/commit/742a535d1057e603c35b47d73ba3178956894594))
-
 
 ## v2.7.13 (2024-03-30)
 
@@ -2004,11 +1880,6 @@ update-type: version-update:semver-patch
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.13 [skip ci]
-  ([`141cbc4`](https://github.com/gofrolist/molecule-action/commit/141cbc41069986366ed12bcf4a693bad6611489d))
 
 
 ## v2.7.12 (2024-03-23)
@@ -2085,11 +1956,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.12 [skip ci]
-  ([`a89119c`](https://github.com/gofrolist/molecule-action/commit/a89119cebe4e2fef9476ac75e00c23666745bb77))
-
 
 ## v2.7.11 (2024-03-16)
 
@@ -2158,11 +2024,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.11 [skip ci]
-  ([`2790165`](https://github.com/gofrolist/molecule-action/commit/279016584fba1d252379bd6c3068320def7e3ce1))
-
 
 ## v2.7.10 (2024-03-09)
 
@@ -2199,11 +2060,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.10 [skip ci]
-  ([`1d05d16`](https://github.com/gofrolist/molecule-action/commit/1d05d16a62be1407c46602d2babd364f314fadc7))
 
 
 ## v2.7.9 (2024-03-02)
@@ -2262,11 +2118,6 @@ update-type: version-update:semver-patch
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.9 [skip ci]
-  ([`e84b423`](https://github.com/gofrolist/molecule-action/commit/e84b423b773f050f6d0f31b10682ffd0a4a17c17))
-
 
 ## v2.7.8 (2024-02-24)
 
@@ -2298,11 +2149,6 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 42.0.2 to 42.0.4
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.8 [skip ci]
-  ([`0e14b12`](https://github.com/gofrolist/molecule-action/commit/0e14b12f039c16ca8845d5421d51266848042ee3))
-
 
 ## v2.7.7 (2024-02-17)
 
@@ -2327,11 +2173,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.7 [skip ci]
-  ([`b7889ad`](https://github.com/gofrolist/molecule-action/commit/b7889adc09aa77746bd058c7b4a768caa38ad8b9))
 
 
 ## v2.7.6 (2024-02-10)
@@ -2466,11 +2307,6 @@ update-type: version-update:semver-major
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.6 [skip ci]
-  ([`3e1b687`](https://github.com/gofrolist/molecule-action/commit/3e1b687f1c4a6c7e4989dc00b89e4a16731af47c))
-
 
 ## v2.7.5 (2024-02-03)
 
@@ -2491,11 +2327,6 @@ update-type: version-update:semver-patch
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.5 [skip ci]
-  ([`d9dc5a2`](https://github.com/gofrolist/molecule-action/commit/d9dc5a2e9755d0b9558c767e5a41ef1113064371))
 
 
 ## v2.7.4 (2024-01-27)
@@ -2518,11 +2349,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.4 [skip ci]
-  ([`065dfb8`](https://github.com/gofrolist/molecule-action/commit/065dfb8cfefb6ff68cab8507b2f370f7b38dc881))
-
 
 ## v2.7.3 (2024-01-20)
 
@@ -2544,11 +2370,6 @@ update-type: version-update:semver-minor
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
-### Chores
-
-- **release**: Bump version to v2.7.3 [skip ci]
-  ([`412678e`](https://github.com/gofrolist/molecule-action/commit/412678ee4f2a86051c7b0dd9eab7808da0f122b1))
-
 
 ## v2.7.2 (2024-01-18)
 
@@ -2558,11 +2379,6 @@ Signed-off-by: dependabot[bot] <support@github.com>
   ([#311](https://github.com/gofrolist/molecule-action/pull/311),
   [`752d8df`](https://github.com/gofrolist/molecule-action/commit/752d8df3eee74378f34376fefb6a79b1358d6be9))
 
-### Chores
-
-- **release**: Bump version to v2.7.2 [skip ci]
-  ([`6536bf8`](https://github.com/gofrolist/molecule-action/commit/6536bf8b2859b0c9822ee76f891202bbcceae900))
-
 
 ## v2.7.1 (2024-01-15)
 
@@ -2571,11 +2387,6 @@ Signed-off-by: dependabot[bot] <support@github.com>
 - **ci**: Add action.yml to semantic_release assets
   ([#310](https://github.com/gofrolist/molecule-action/pull/310),
   [`95ae864`](https://github.com/gofrolist/molecule-action/commit/95ae864c539950425f60fd0a0dc6dae58dfb4741))
-
-### Chores
-
-- **release**: Bump version to v2.7.1 [skip ci]
-  ([`5b5c080`](https://github.com/gofrolist/molecule-action/commit/5b5c08091bb8b21eb5789a0f05b29a18fc7a65a9))
 
 
 ## v2.7.0 (2024-01-15)
@@ -2597,11 +2408,6 @@ update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
-
-### Chores
-
-- **release**: Bump version to v2.7.0 [skip ci]
-  ([`e309a7b`](https://github.com/gofrolist/molecule-action/commit/e309a7b6ce027166aef70ecc7870b6e6cd6ede29))
 
 ### Features
 
