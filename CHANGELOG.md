@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v2.7.49 (2025-01-17)
+
+### Bug Fixes
+
+- Update python 3.11.7 -> 3.11.11 ([#448](https://github.com/gofrolist/molecule-action/pull/448),
+  [`59d11d6`](https://github.com/gofrolist/molecule-action/commit/59d11d6892bb0b73c7b6343d031d2a5385597d58))
+
+
 ## v2.7.48 (2025-01-16)
 
 ### Bug Fixes
