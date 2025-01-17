@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.11.7-slim-bookworm
+ARG PYTHON_VERSION=3.11.11-slim-bookworm
 
 FROM python:${PYTHON_VERSION} AS builder
 
@@ -71,4 +71,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD cd ${INPUT_MOLECULE_WORKING_DIR}; molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}
+CMD ["/bin/sh", "-c", "cd ${INPUT_MOLECULE_WORKING_DIR} && molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}"]
