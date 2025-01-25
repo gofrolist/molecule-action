@@ -1,6 +1,26 @@
 # CHANGELOG
 
 
+## v2.7.50 (2025-01-25)
+
+### Bug Fixes
+
+- **deps**: Bump ansible-lint from 6.8.7 to 25.1.0
+  ([`50aa1b0`](https://github.com/gofrolist/molecule-action/commit/50aa1b074d0976867cfd3812a2714d8f7ee7a67e))
+
+Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.8.7 to 25.1.0. - [Release
+  notes](https://github.com/ansible/ansible-lint/releases) -
+  [Commits](https://github.com/ansible/ansible-lint/compare/v6.8.7...v25.1.0)
+
+--- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
+
+update-type: version-update:semver-major
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.49 (2025-01-17)
 
 ### Bug Fixes
