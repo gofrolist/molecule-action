@@ -2,17 +2,17 @@
 
 [[package]]
 name = "ansible-compat"
-version = "24.10.0"
+version = "25.1.1"
 description = "Ansible compatibility goodies"
 optional = false
-python-versions = ">=3.9"
+python-versions = ">=3.10"
 files = [
-    {file = "ansible_compat-24.10.0-py3-none-any.whl", hash = "sha256:0415bcd82f7d84e5b344c03439154c1f16576809dc3a523b81178354c86ae5a1"},
-    {file = "ansible_compat-24.10.0.tar.gz", hash = "sha256:0ad873e0dae8b2de79bc33ced813d6c92c716c4d7b82f9a4693e1fd57f43776e"},
+    {file = "ansible_compat-25.1.1-py3-none-any.whl", hash = "sha256:76147025c82c92433feb8317d3fa513026f557dc1b64abd0b2565ffa09a57725"},
+    {file = "ansible_compat-25.1.1.tar.gz", hash = "sha256:b4e4609bb9b91588758be4d26ff25ff46d7ce83e6b8f2cc58cf77d736ec1f1ab"},
 ]
 
 [package.dependencies]
-ansible-core = ">=2.14"
+ansible-core = ">=2.16"
 jsonschema = ">=4.6.0"
 packaging = "*"
 PyYAML = "*"
@@ -20,7 +20,7 @@ subprocess-tee = ">=0.4.1"
 
 [package.extras]
 docs = ["argparse-manpage", "black", "mkdocs-ansible (>=24.3.1)"]
-test = ["coverage", "pip", "pytest (>=7.2.0)", "pytest-mock", "pytest-plus (>=0.6.1)", "uv (>=0.4.30)"]
+test = ["coverage", "pip", "pytest (>=7.2.0)", "pytest-instafail", "pytest-mock", "pytest-plus (>=0.6.1)", "uv (>=0.4.30)"]
 
 [[package]]
 name = "ansible-core"
@@ -42,17 +42,17 @@ resolvelib = ">=0.5.3,<1.1.0"
 
 [[package]]
 name = "ansible-lint"
-version = "25.1.0"
+version = "25.1.1"
 description = "Checks playbooks for practices and behavior that could potentially be improved"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "ansible_lint-25.1.0-py3-none-any.whl", hash = "sha256:9553b2aee124999b2005140bf27619793910454fcf2381e25ceb5b21f7384eed"},
-    {file = "ansible_lint-25.1.0.tar.gz", hash = "sha256:e4d657578a8354832a84a1d5a2b9225a78b9c5fefa8880506b7fa0347d6b5f7e"},
+    {file = "ansible_lint-25.1.1-py3-none-any.whl", hash = "sha256:a417c04a94640302f73ad5b96ba3f09a77b24861fd5441d04245549cf3dc2ac9"},
+    {file = "ansible_lint-25.1.1.tar.gz", hash = "sha256:52ded593ba69831bf8f2882fea9118f96657f115e75904cac9afe1ea931bf0ab"},
 ]
 
 [package.dependencies]
-ansible-compat = ">=24.10.0"
+ansible-compat = ">=25.1.0"
 ansible-core = ">=2.16.0"
 black = ">=24.3.0"
 filelock = ">=3.8.2"
@@ -1286,4 +1286,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "0399be303e02d9c240e1bd4e21e7fa8b73dd88ac88556ea0c6866fc3d9e3c76d"
+content-hash = "1972e80edc66019bc68bff1ffa9b7e4fe6d254de4f129aca953536409c13d9c2"
