@@ -1,6 +1,78 @@
 # CHANGELOG
 
 
+## v2.7.51 (2025-02-01)
+
+### Bug Fixes
+
+- **deps**: Bump ansible-lint from 25.1.0 to 25.1.1
+  ([`4ffb8be`](https://github.com/gofrolist/molecule-action/commit/4ffb8beff1510efb26b9c01aee5e290e416aab5c))
+
+Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.1.0 to 25.1.1. - [Release
+  notes](https://github.com/ansible/ansible-lint/releases) -
+  [Commits](https://github.com/ansible/ansible-lint/compare/v25.1.0...v25.1.1)
+
+--- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
+
+update-type: version-update:semver-patch
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0
+  ([`62c9d2c`](https://github.com/gofrolist/molecule-action/commit/62c9d2cfe969347e7d0407f7eaa609f967b8ab85))
+
+Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) from 2.2.0 to 2.3.0.
+  - [Release notes](https://github.com/dependabot/fetch-metadata/releases) -
+  [Commits](https://github.com/dependabot/fetch-metadata/compare/v2.2.0...v2.3.0)
+
+--- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/build-push-action from 6.12.0 to 6.13.0
+  ([`3219030`](https://github.com/gofrolist/molecule-action/commit/3219030c305f3e18f5e7016dea6a5fc47b2c2110))
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.12.0 to 6.13.0.
+  - [Release notes](https://github.com/docker/build-push-action/releases) -
+  [Commits](https://github.com/docker/build-push-action/compare/v6.12.0...v6.13.0)
+
+--- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([`7b7ff78`](https://github.com/gofrolist/molecule-action/commit/7b7ff787a9fdc5002aee35d3fb0642ed73498432))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.16.1 to 9.17.0. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.16.1...v9.17.0)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.50 (2025-01-25)
 
 ### Bug Fixes
