@@ -1,6 +1,56 @@
 # CHANGELOG
 
 
+## v2.7.52 (2025-02-08)
+
+### Bug Fixes
+
+- **deps**: Bump ansible-lint from 25.1.1 to 25.1.2
+  ([`2fcb4c8`](https://github.com/gofrolist/molecule-action/commit/2fcb4c8cc8e077d4a5831896c0d4d1343da71fc4))
+
+Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.1.1 to 25.1.2. - [Release
+  notes](https://github.com/ansible/ansible-lint/releases) -
+  [Commits](https://github.com/ansible/ansible-lint/compare/v25.1.1...v25.1.2)
+
+--- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/setup-buildx-action from 3.8.0 to 3.9.0
+  ([`36ddaf0`](https://github.com/gofrolist/molecule-action/commit/36ddaf0c281347246451a8779a927aafe1cb960a))
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 3.8.0 to
+  3.9.0. - [Release notes](https://github.com/docker/setup-buildx-action/releases) -
+  [Commits](https://github.com/docker/setup-buildx-action/compare/v3.8.0...v3.9.0)
+
+--- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([`01307b6`](https://github.com/gofrolist/molecule-action/commit/01307b6381222ceaa168327542c0fdc19639f0b2))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.17.0 to 9.18.0. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.17.0...v9.18.0)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.51 (2025-02-01)
 
 ### Bug Fixes
@@ -14,9 +64,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.1.0 to 25.
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -30,9 +78,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -46,9 +92,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -66,9 +110,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -86,9 +128,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.8.7 to 25.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -115,9 +155,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -135,9 +173,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -156,9 +192,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -172,9 +206,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -186,9 +218,7 @@ Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.4 to 3.1.5. - [Release
   [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
   [Commits](https://github.com/pallets/jinja/compare/3.1.4...3.1.5)
 
---- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -207,9 +237,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -223,9 +251,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -238,9 +264,7 @@ Bumps [molecule-plugins](https://github.com/ansible-community/molecule-plugins) 
 
 --- updated-dependencies: - dependency-name: molecule-plugins dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -258,9 +282,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -276,9 +298,7 @@ Bumps [ansible-core](https://github.com/ansible/ansible) from 2.17.6 to 2.17.7. 
   notes](https://github.com/ansible/ansible/releases) -
   [Commits](https://github.com/ansible/ansible/compare/v2.17.6...v2.17.7)
 
---- updated-dependencies: - dependency-name: ansible-core dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: ansible-core dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -291,9 +311,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 24.9.0 to 2
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -311,9 +329,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -331,9 +347,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -352,9 +366,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -373,9 +385,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -398,9 +408,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -416,9 +424,7 @@ Bumps [ansible-core](https://github.com/ansible/ansible) from 2.16.3 to 2.17.6. 
   notes](https://github.com/ansible/ansible/releases) -
   [Commits](https://github.com/ansible/ansible/compare/v2.16.3...v2.17.6)
 
---- updated-dependencies: - dependency-name: ansible-core dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: ansible-core dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -436,9 +442,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -456,9 +460,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -477,9 +479,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.2.1 to 4.2.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -502,9 +502,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -522,9 +520,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -542,9 +538,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -563,9 +557,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.2.0 to 4.2.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -579,9 +571,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -595,9 +585,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -611,9 +599,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -631,9 +617,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -651,9 +635,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -672,9 +654,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -688,9 +668,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -704,9 +682,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -720,9 +696,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -740,9 +714,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -761,9 +733,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.7 to 4.2.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -781,9 +751,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -801,9 +769,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 24.8.0 to 2
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -822,9 +788,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -835,9 +799,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 42.0.4 to 43.0.1
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/42.0.4...43.0.1)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -855,9 +817,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -875,9 +835,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 24.7.0 to 2
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -895,9 +853,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -916,9 +872,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -937,9 +891,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -953,9 +905,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -969,9 +919,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -985,9 +933,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1006,9 +952,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1027,9 +971,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1042,9 +984,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 3.2.0 t
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1058,9 +998,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1078,9 +1016,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1099,9 +1035,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1115,9 +1049,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1136,9 +1068,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1152,9 +1082,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1167,9 +1095,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 24.6.0 to 2
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1182,9 +1108,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 24.6.1 to 2
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1202,9 +1126,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1219,9 +1141,7 @@ Signed-off-by: dependabot[bot] <support@github.com>
 Bumps [certifi](https://github.com/certifi/python-certifi) from 2023.11.17 to 2024.7.4. -
   [Commits](https://github.com/certifi/python-certifi/compare/2023.11.17...2024.07.04)
 
---- updated-dependencies: - dependency-name: certifi dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: certifi dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1235,9 +1155,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1251,9 +1169,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1267,9 +1183,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1287,9 +1201,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1308,9 +1220,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1329,9 +1239,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1345,9 +1253,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1365,9 +1271,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1385,9 +1289,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1399,9 +1301,7 @@ Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.1.0 to 2.2.2. - [Rele
   [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst) -
   [Commits](https://github.com/urllib3/urllib3/compare/2.1.0...2.2.2)
 
---- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1420,9 +1320,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.6 to 4.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1436,9 +1334,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1456,9 +1352,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 24.2.1 to 2
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1476,9 +1370,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1496,9 +1388,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 3.1.0 t
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1516,9 +1406,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1537,9 +1425,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.5 to 4.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1557,9 +1443,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1577,9 +1461,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1598,9 +1480,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.4 to 4.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1612,9 +1492,7 @@ Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.3 to 3.1.4. - [Release
   [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
   [Commits](https://github.com/pallets/jinja/compare/3.1.3...3.1.4)
 
---- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1632,9 +1510,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1652,9 +1528,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1677,9 +1551,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1698,9 +1570,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.2 to 4.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1714,9 +1584,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.3 to 4.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1730,9 +1598,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1746,9 +1612,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1762,9 +1626,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1778,9 +1640,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1798,9 +1658,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1819,9 +1677,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1835,9 +1691,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1855,9 +1709,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1876,9 +1728,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1890,9 +1740,7 @@ Bumps [idna](https://github.com/kjd/idna) from 3.6 to 3.7. - [Release
   [Changelog](https://github.com/kjd/idna/blob/master/HISTORY.rst) -
   [Commits](https://github.com/kjd/idna/compare/v3.6...v3.7)
 
---- updated-dependencies: - dependency-name: idna dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: idna dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1905,9 +1753,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 24.2.0 to 2
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1925,9 +1771,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1950,9 +1794,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1975,9 +1817,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -1994,9 +1834,7 @@ Bumps [black](https://github.com/psf/black) from 23.12.1 to 24.3.0. - [Release
   [Changelog](https://github.com/psf/black/blob/main/CHANGES.md) -
   [Commits](https://github.com/psf/black/compare/23.12.1...24.3.0)
 
---- updated-dependencies: - dependency-name: black dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: black dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2010,9 +1848,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2030,9 +1866,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2050,9 +1884,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2071,9 +1903,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.1 to 4.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2087,9 +1917,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2102,9 +1930,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 3.0.0 t
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2118,9 +1944,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2139,9 +1963,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2155,9 +1977,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2176,9 +1996,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2192,9 +2010,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2212,9 +2028,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2230,9 +2044,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 42.0.0 to 42.0.2
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/42.0.0...42.0.2)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2243,9 +2055,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 42.0.2 to 42.0.4
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/42.0.2...42.0.4)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2268,9 +2078,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2289,9 +2097,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2305,9 +2111,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2318,9 +2122,7 @@ Bumps [ansible-core](https://github.com/ansible/ansible) from 2.16.2 to 2.16.3. 
   notes](https://github.com/ansible/ansible/releases) -
   [Commits](https://github.com/ansible/ansible/compare/v2.16.2...v2.16.3)
 
---- updated-dependencies: - dependency-name: ansible-core dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: ansible-core dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2331,9 +2133,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 41.0.7 to 42.0.0
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/41.0.7...42.0.0)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2346,9 +2146,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 6.0.3 to 24
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2361,9 +2159,7 @@ Bumps [molecule-plugins](https://github.com/ansible-community/molecule-plugins) 
 
 --- updated-dependencies: - dependency-name: molecule-plugins dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2381,9 +2177,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2401,9 +2195,7 @@ Bumps
 --- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
   dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2422,9 +2214,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2443,9 +2233,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2464,9 +2252,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2503,9 +2289,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2539,9 +2323,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2563,9 +2345,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2684,9 +2464,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 4.0.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2708,9 +2486,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2725,9 +2501,7 @@ Bumps [actions/publish-action](https://github.com/actions/publish-action) from 0
 --- updated-dependencies: - dependency-name: actions/publish-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2741,9 +2515,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2757,9 +2529,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2773,9 +2543,7 @@ Bumps [github/codeql-action](https://github.com/github/codeql-action) from 2 to 
 
 --- updated-dependencies: - dependency-name: github/codeql-action dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2788,9 +2556,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 6.0.2 to 6.
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2814,9 +2580,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2830,9 +2594,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2850,9 +2612,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.22.0 to 6.2
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2866,9 +2626,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2886,9 +2644,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.21.1 to 6.2
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2906,9 +2662,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.8.1 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2927,9 +2681,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.0 to 4.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2942,9 +2694,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.20.3 to 6.2
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2957,9 +2707,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.21.0 to 6.2
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2971,9 +2719,7 @@ Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.0.6 to 2.0.7. - [Rele
   [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst) -
   [Commits](https://github.com/urllib3/urllib3/compare/2.0.6...2.0.7)
 
---- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -2991,9 +2737,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.20.1 to 6.2
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3006,9 +2750,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.20.2 to 6.2
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3020,9 +2762,7 @@ Bumps [urllib3](https://github.com/urllib3/urllib3) from 2.0.5 to 2.0.6. - [Rele
   [Changelog](https://github.com/urllib3/urllib3/blob/main/CHANGES.rst) -
   [Commits](https://github.com/urllib3/urllib3/compare/v2.0.5...2.0.6)
 
---- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: urllib3 dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3041,9 +2781,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 4.0.0 to 4.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3056,9 +2794,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.20.0 to 6.2
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3076,9 +2812,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.19.0 to 6.2
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3097,9 +2831,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.5.3 to 4.0.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3112,9 +2844,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.7.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3128,9 +2858,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3141,9 +2869,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 41.0.1 to 41.0.2
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/41.0.1...41.0.2)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3157,9 +2883,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3172,9 +2896,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 2.2.0 t
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3189,9 +2911,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3205,9 +2925,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3221,9 +2939,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3249,9 +2965,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.6.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3265,9 +2979,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3300,9 +3012,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3316,9 +3026,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3343,9 +3051,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3360,9 +3066,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3379,9 +3083,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3402,9 +3104,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.5.2 to 3.5.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3418,9 +3118,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3435,9 +3133,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3453,9 +3149,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 2.1.0 t
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3472,9 +3166,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3490,9 +3182,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3510,9 +3200,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.14.6 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3536,9 +3224,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.5.0 to 3.5.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3551,9 +3237,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.14.3 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3567,9 +3251,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3583,9 +3265,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3604,9 +3284,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.4.0 to 3.5.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3619,9 +3297,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.14.2 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3640,9 +3316,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.3.0 to 3.4.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3655,9 +3329,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.14.1 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3671,9 +3343,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3691,9 +3361,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.13.1 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3706,9 +3374,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.14.0 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3726,9 +3392,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.13.0 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3740,9 +3404,7 @@ Bumps [markdown-it-py](https://github.com/executablebooks/markdown-it-py) from 2
   [Changelog](https://github.com/executablebooks/markdown-it-py/blob/master/CHANGELOG.md) -
   [Commits](https://github.com/executablebooks/markdown-it-py/compare/v2.1.0...v2.2.0)
 
---- updated-dependencies: - dependency-name: markdown-it-py dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: markdown-it-py dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3760,9 +3422,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.12.1 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3775,9 +3435,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.12.2 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3795,9 +3453,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.11.0 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3809,9 +3465,7 @@ Bumps [cryptography](https://github.com/pyca/cryptography) from 39.0.0 to 39.0.1
   [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
   [Commits](https://github.com/pyca/cryptography/compare/39.0.0...39.0.1)
 
---- updated-dependencies: - dependency-name: cryptography dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3825,9 +3479,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3841,9 +3493,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3862,9 +3512,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3878,9 +3526,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3894,9 +3540,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3914,9 +3558,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.10.2 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3930,9 +3572,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3946,9 +3586,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3967,9 +3605,7 @@ Bumps [actions/publish-action](https://github.com/actions/publish-action) from 0
 --- updated-dependencies: - dependency-name: actions/publish-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3983,9 +3619,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -3999,9 +3633,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4026,9 +3658,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.2.0 to 3.3.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4042,9 +3672,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4058,9 +3686,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.5.1 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4075,9 +3701,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.10.0 to 6.1
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4096,9 +3720,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.1.0 to 3.2.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4111,9 +3733,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.9.1 to 6.10
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4131,9 +3751,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.9.0 to 6.9.
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4144,9 +3762,7 @@ Bumps [certifi](https://github.com/certifi/python-certifi) from 2022.9.24 to 202
   notes](https://github.com/certifi/python-certifi/releases) -
   [Commits](https://github.com/certifi/python-certifi/compare/2022.09.24...2022.12.07)
 
---- updated-dependencies: - dependency-name: certifi dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: certifi dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4159,9 +3775,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 4.0.3 to 4.
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4172,9 +3786,7 @@ Bumps python from 3.9.15-alpine3.16 to 3.9.16-alpine3.16.
 
 --- updated-dependencies: - dependency-name: python dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4193,9 +3805,7 @@ Bumps [actions/publish-action](https://github.com/actions/publish-action) from 0
 --- updated-dependencies: - dependency-name: actions/publish-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4208,9 +3818,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.8.6 to 6.8.
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4223,9 +3831,7 @@ Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 6.8.7 to 6.9.
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4243,9 +3849,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.8
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4258,9 +3862,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.8
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4274,9 +3876,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4295,9 +3895,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4310,9 +3908,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.8
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4325,9 +3921,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.8
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4340,9 +3934,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 4.0.2 to 4.
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4361,9 +3953,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4377,9 +3967,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4393,9 +3981,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4408,9 +3994,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 4.0.1 to 4.
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4428,9 +4012,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.5.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4443,9 +4025,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.8
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4458,9 +4038,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.8
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4474,9 +4052,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4489,9 +4065,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 2.0.0 t
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4505,9 +4079,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4521,9 +4093,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4534,9 +4104,7 @@ Bumps python from 3.9.14-alpine3.16 to 3.9.15-alpine3.16.
 
 --- updated-dependencies: - dependency-name: python dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4563,9 +4131,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.0.2 to 3.1.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4578,9 +4144,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.7
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4594,9 +4158,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4614,9 +4176,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.4.1 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4629,9 +4189,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.6
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4649,9 +4207,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.5
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4664,9 +4220,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.6
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4682,9 +4236,7 @@ Bumps python from 3.9.13-alpine3.16 to 3.9.14-alpine3.16.
 
 --- updated-dependencies: - dependency-name: python dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4702,9 +4254,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.5
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4739,9 +4289,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.4
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4754,9 +4302,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.5
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4774,9 +4320,7 @@ Bumps [ansible-lint](https://github.com/ansible-community/ansible-lint) from 6.3
 
 --- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4790,9 +4334,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4810,9 +4352,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 4.0.0 to 4.
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4831,9 +4371,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4851,9 +4389,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.3.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4866,9 +4402,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.4.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4888,9 +4422,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4911,9 +4443,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4931,9 +4461,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 3.6.1 to 4.
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4960,9 +4488,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.2.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4974,9 +4500,7 @@ Bumps [cookiecutter](https://github.com/cookiecutter/cookiecutter) from 1.7.3 to
   [Changelog](https://github.com/cookiecutter/cookiecutter/blob/master/HISTORY.md) -
   [Commits](https://github.com/cookiecutter/cookiecutter/compare/1.7.3...2.1.1)
 
---- updated-dependencies: - dependency-name: cookiecutter dependency-type: indirect
-
-...
+--- updated-dependencies: - dependency-name: cookiecutter dependency-type: indirect ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -4995,9 +4519,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5015,9 +4537,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.1.1 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5028,9 +4548,7 @@ Bumps python from 3.9.12-alpine3.15 to 3.9.13-alpine3.15.
 
 --- updated-dependencies: - dependency-name: python dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5049,9 +4567,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5064,9 +4580,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 1.14.1 
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5081,9 +4595,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 3
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5097,9 +4609,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5118,9 +4628,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 3
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5134,9 +4642,7 @@ Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action
 --- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5150,9 +4656,7 @@ Bumps [github/codeql-action](https://github.com/github/codeql-action) from 1 to 
 
 --- updated-dependencies: - dependency-name: github/codeql-action dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5171,9 +4675,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.0.1 to 3.0.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5187,9 +4689,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5202,9 +4702,7 @@ Bumps [molecule](https://github.com/ansible-community/molecule) from 3.4.1 to 3.
 
 --- updated-dependencies: - dependency-name: molecule dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5223,9 +4721,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 3.0.0 to 3.0.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5238,9 +4734,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.1.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5259,9 +4753,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 3
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5279,9 +4771,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 3.0.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5323,9 +4813,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5338,9 +4826,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 1.14.0 
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5369,9 +4855,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5390,9 +4874,7 @@ Bumps [actions/publish-action](https://github.com/actions/publish-action) from 0
 --- updated-dependencies: - dependency-name: actions/publish-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5405,9 +4887,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 1.13.0 
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5425,9 +4905,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 2.5.1 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5441,9 +4919,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5462,9 +4938,7 @@ Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) 
 --- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5477,9 +4951,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 1.12.0 
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5498,9 +4970,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5534,9 +5004,7 @@ Bumps [docker/build-push-action](https://github.com/docker/build-push-action) fr
 --- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5554,9 +5022,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 2.5.0 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5574,9 +5040,7 @@ Bumps [docker/login-action](https://github.com/docker/login-action) from 1.10.0 
 
 --- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5595,9 +5059,7 @@ Bumps [actions/download-artifact](https://github.com/actions/download-artifact) 
 --- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5611,9 +5073,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5627,9 +5087,7 @@ Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from
 --- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5648,9 +5106,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 3
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5668,9 +5124,7 @@ Bumps [actions/setup-node](https://github.com/actions/setup-node) from 2.4.1 to 
 
 --- updated-dependencies: - dependency-name: actions/setup-node dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5684,9 +5138,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 3
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5718,9 +5170,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 2.3.5 to 2.4.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5752,9 +5202,7 @@ Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 3
 --- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
   direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5777,9 +5225,7 @@ Bumps [flake8](https://github.com/pycqa/flake8) from 3.9.2 to 4.0.1. - [Release
 
 --- updated-dependencies: - dependency-name: flake8 dependency-type: direct:production
 
-update-type: version-update:semver-major
-
-...
+update-type: version-update:semver-major ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5798,9 +5244,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 2.3.4 to 2.3.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5814,9 +5258,7 @@ Bumps [boto3](https://github.com/boto/boto3) from 1.18.60 to 1.18.63. - [Release
 
 --- updated-dependencies: - dependency-name: boto3 dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5847,9 +5289,7 @@ Bumps [ansible-core](https://github.com/ansible/ansible) from 2.11.5 to 2.11.6. 
 
 --- updated-dependencies: - dependency-name: ansible-core dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5863,9 +5303,7 @@ Bumps [boto3](https://github.com/boto/boto3) from 1.18.57 to 1.18.60. - [Release
 
 --- updated-dependencies: - dependency-name: boto3 dependency-type: direct:production
 
-update-type: version-update:semver-patch
-
-...
+update-type: version-update:semver-patch ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
@@ -5919,9 +5357,7 @@ Bumps [actions/checkout](https://github.com/actions/checkout) from 2.2.0 to 2.3.
 
 --- updated-dependencies: - dependency-name: actions/checkout dependency-type: direct:production
 
-update-type: version-update:semver-minor
-
-...
+update-type: version-update:semver-minor ...
 
 Signed-off-by: dependabot[bot] <support@github.com>
 
