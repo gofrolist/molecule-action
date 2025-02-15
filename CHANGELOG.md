@@ -1,6 +1,58 @@
 # CHANGELOG
 
 
+## v2.7.53 (2025-02-15)
+
+### Bug Fixes
+
+- **deps**: Bump cryptography from 43.0.1 to 44.0.1
+  ([`327a110`](https://github.com/gofrolist/molecule-action/commit/327a110288e93eb72e70e27ae075da4d24df43a9))
+
+Bumps [cryptography](https://github.com/pyca/cryptography) from 43.0.1 to 44.0.1. -
+  [Changelog](https://github.com/pyca/cryptography/blob/main/CHANGELOG.rst) -
+  [Commits](https://github.com/pyca/cryptography/compare/43.0.1...44.0.1)
+
+--- updated-dependencies: - dependency-name: cryptography dependency-type: indirect ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([`14c1dab`](https://github.com/gofrolist/molecule-action/commit/14c1dab03c6661eb80709ebb839310641ed35d90))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.19.0 to 9.19.1. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.19.0...v9.19.1)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([`2fc3214`](https://github.com/gofrolist/molecule-action/commit/2fc321429c4437ab58e16b1592ba6ddcf83fae40))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.18.0 to 9.19.0. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.18.0...v9.19.0)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.52 (2025-02-08)
 
 ### Bug Fixes
