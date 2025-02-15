@@ -676,17 +676,17 @@ files = [
 
 [[package]]
 name = "molecule"
-version = "24.12.0"
+version = "25.2.0"
 description = "Molecule aids in the development and testing of Ansible roles"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "molecule-24.12.0-py3-none-any.whl", hash = "sha256:c650d92295860ce17d79048b1dabb787f674718870668d99b52ecdc0e88af541"},
-    {file = "molecule-24.12.0.tar.gz", hash = "sha256:7243ff58e0b8159aa2cf465ba9605d657f1d614617264307bef5b32518467afe"},
+    {file = "molecule-25.2.0-py3-none-any.whl", hash = "sha256:772394855c6511362e5e5312017936975a490b24a6b8fe528ad736842ba3fc0f"},
+    {file = "molecule-25.2.0.tar.gz", hash = "sha256:2f74a31ed03a562c0cb453fe80c2f95a92f663c6104429817c56cb101d903047"},
 ]
 
 [package.dependencies]
-ansible-compat = ">=24.6.1"
+ansible-compat = ">=25.1.0"
 ansible-core = ">=2.15.0"
 click = ">=8.0,<9"
 click-help-colors = "*"
@@ -701,7 +701,7 @@ wcmatch = ">=8.1.2"
 
 [package.extras]
 docs = ["linkchecker (>=10.4.0)", "mkdocs-ansible (>=24.3.0)", "pipdeptree (>=2.4.0)"]
-test = ["ansi2html (>=1.8.0)", "ansible-lint (>=6.12.1)", "black", "check-jsonschema", "coverage[toml]", "docker (>=7.1.0)", "filelock (>=3.9.0)", "mypy", "pexpect (>=4.8.0,<5)", "pip-tools", "pre-commit", "pydoclint", "pylint", "pytest", "pytest-mock (>=3.10.0)", "pytest-plus (>=0.4.0)", "pytest-xdist", "requests (!=2.32.0)", "ruff", "toml-sort", "tox", "types-jsonschema", "types-pexpect", "types-pyyaml"]
+test = ["ansi2html (>=1.8.0)", "ansible-lint (>=6.12.1)", "black", "coverage[toml]", "docker (>=7.1.0)", "filelock (>=3.9.0)", "mypy", "pexpect (>=4.9.0,<5)", "pip-tools", "pre-commit", "pydoclint", "pylint", "pytest", "pytest-instafail", "pytest-mock (>=3.10.0)", "pytest-plus (>=0.7.0)", "pytest-xdist", "requests (!=2.32.0)", "ruff", "toml-sort", "tox", "types-jsonschema", "types-pexpect", "types-pyyaml"]
 testinfra = ["pytest-testinfra (>=8.1.0)"]
 
 [[package]]
@@ -1292,4 +1292,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "8e751105a3707a32e83ec0b4aea9e1f5707b74385b36873a8f67d03991d9bb3e"
+content-hash = "9de25b3c4dff03f2afb7b3420e81a64150caf3829e801b7d3e8e3a98dbbdfee9"
