@@ -1,6 +1,56 @@
 # CHANGELOG
 
 
+## v2.7.54 (2025-02-22)
+
+### Bug Fixes
+
+- **deps**: Bump ansible-lint from 25.1.2 to 25.1.3
+  ([`28fa6f1`](https://github.com/gofrolist/molecule-action/commit/28fa6f12b426a25165b0fcdaeeb0c2ef86a00421))
+
+Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.1.2 to 25.1.3. - [Release
+  notes](https://github.com/ansible/ansible-lint/releases) -
+  [Commits](https://github.com/ansible/ansible-lint/compare/v25.1.2...v25.1.3)
+
+--- updated-dependencies: - dependency-name: ansible-lint dependency-type: direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/build-push-action from 6.13.0 to 6.14.0
+  ([`0ab7544`](https://github.com/gofrolist/molecule-action/commit/0ab7544110f0f638651fc69da70f46afe56898aa))
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.13.0 to 6.14.0.
+  - [Release notes](https://github.com/docker/build-push-action/releases) -
+  [Commits](https://github.com/docker/build-push-action/compare/v6.13.0...v6.14.0)
+
+--- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([`f9b9a95`](https://github.com/gofrolist/molecule-action/commit/f9b9a95edeee908103b3a32d556f93ee993332fc))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.19.1 to 9.20.0. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.19.1...v9.20.0)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.53 (2025-02-15)
 
 ### Bug Fixes
