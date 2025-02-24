@@ -49,7 +49,7 @@ jobs:
           outputs: type=docker,dest=/tmp/test.tar
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4.6.0
+        uses: actions/upload-artifact@v4.6.1
         with:
           name: testimage
           path: /tmp/test.tar
@@ -108,7 +108,7 @@ jobs:
           args: --file=Dockerfile --exclude-app-vulns --severity-threshold=medium
 
       - name: Upload snyk.sarif
-        uses: actions/upload-artifact@v4.6.0
+        uses: actions/upload-artifact@v4.6.1
         with:
           name: snyk.sarif
           path: ./snyk.sarif
@@ -139,7 +139,7 @@ jobs:
           args: --sarif-file-output=snyk-python.sarif
 
       - name: Upload snyk-python.sarif
-        uses: actions/upload-artifact@v4.6.0
+        uses: actions/upload-artifact@v4.6.1
         with:
           name: snyk-python.sarif
           path: ./snyk-python.sarif
