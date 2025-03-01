@@ -1,6 +1,99 @@
 # CHANGELOG
 
 
+## v2.7.55 (2025-03-01)
+
+### Bug Fixes
+
+- **deps**: Bump actions/download-artifact from 4.1.8 to 4.1.9
+  ([`885b34d`](https://github.com/gofrolist/molecule-action/commit/885b34dc3e0acdad02101e6e481e2e42ee9d6480))
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 4.1.8 to 4.1.9.
+  - [Release notes](https://github.com/actions/download-artifact/releases) -
+  [Commits](https://github.com/actions/download-artifact/compare/v4.1.8...v4.1.9)
+
+--- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump actions/upload-artifact from 4.6.0 to 4.6.1
+  ([`97b7417`](https://github.com/gofrolist/molecule-action/commit/97b741753e4a6641ceb5a0c10c03de7996d09dae))
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.6.0 to 4.6.1. -
+  [Release notes](https://github.com/actions/upload-artifact/releases) -
+  [Commits](https://github.com/actions/upload-artifact/compare/v4.6.0...v4.6.1)
+
+--- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/build-push-action from 6.14.0 to 6.15.0
+  ([`b4155da`](https://github.com/gofrolist/molecule-action/commit/b4155da72415ae2e75b6d169fa459cc3e13710c4))
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.14.0 to 6.15.0.
+  - [Release notes](https://github.com/docker/build-push-action/releases) -
+  [Commits](https://github.com/docker/build-push-action/compare/v6.14.0...v6.15.0)
+
+--- updated-dependencies: - dependency-name: docker/build-push-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/metadata-action from 5.6.1 to 5.7.0
+  ([`fdb2681`](https://github.com/gofrolist/molecule-action/commit/fdb2681682711772055fa62be80479c2ed40213c))
+
+Bumps [docker/metadata-action](https://github.com/docker/metadata-action) from 5.6.1 to 5.7.0. -
+  [Release notes](https://github.com/docker/metadata-action/releases) -
+  [Commits](https://github.com/docker/metadata-action/compare/v5.6.1...v5.7.0)
+
+--- updated-dependencies: - dependency-name: docker/metadata-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/setup-buildx-action from 3.9.0 to 3.10.0
+  ([`b7cad10`](https://github.com/gofrolist/molecule-action/commit/b7cad106b518a6a74636148ef7ca006650e4f37f))
+
+Bumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 3.9.0 to
+  3.10.0. - [Release notes](https://github.com/docker/setup-buildx-action/releases) -
+  [Commits](https://github.com/docker/setup-buildx-action/compare/v3.9.0...v3.10.0)
+
+--- updated-dependencies: - dependency-name: docker/setup-buildx-action dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump python-semantic-release/python-semantic-release
+  ([`86b12d9`](https://github.com/gofrolist/molecule-action/commit/86b12d940c4c523d8a41065bd77ce92df510e36c))
+
+Bumps
+  [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+  from 9.20.0 to 9.21.0. - [Release
+  notes](https://github.com/python-semantic-release/python-semantic-release/releases) -
+  [Changelog](https://github.com/python-semantic-release/python-semantic-release/blob/master/CHANGELOG.rst)
+  -
+  [Commits](https://github.com/python-semantic-release/python-semantic-release/compare/v9.20.0...v9.21.0)
+
+--- updated-dependencies: - dependency-name: python-semantic-release/python-semantic-release
+  dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.54 (2025-02-22)
 
 ### Bug Fixes
