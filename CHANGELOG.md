@@ -1,6 +1,78 @@
 # CHANGELOG
 
 
+## v2.7.56 (2025-03-22)
+
+### Bug Fixes
+
+- **deps**: Bump actions/download-artifact from 4.1.9 to 4.2.0
+  ([`ed86a09`](https://github.com/gofrolist/molecule-action/commit/ed86a0998ce19bc2b511d103f56fe49fbe7f7a95))
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 4.1.9 to 4.2.0.
+  - [Release notes](https://github.com/actions/download-artifact/releases) -
+  [Commits](https://github.com/actions/download-artifact/compare/v4.1.9...v4.2.0)
+
+--- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump actions/download-artifact from 4.2.0 to 4.2.1
+  ([`3a038a4`](https://github.com/gofrolist/molecule-action/commit/3a038a45c36b3d4189d4d3e84d46a5fbd7f4f3f8))
+
+Bumps [actions/download-artifact](https://github.com/actions/download-artifact) from 4.2.0 to 4.2.1.
+  - [Release notes](https://github.com/actions/download-artifact/releases) -
+  [Commits](https://github.com/actions/download-artifact/compare/v4.2.0...v4.2.1)
+
+--- updated-dependencies: - dependency-name: actions/download-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump actions/upload-artifact from 4.6.1 to 4.6.2
+  ([`b4f1660`](https://github.com/gofrolist/molecule-action/commit/b4f16609a5c891df2eb2257e14bf449d881c10a5))
+
+Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4.6.1 to 4.6.2. -
+  [Release notes](https://github.com/actions/upload-artifact/releases) -
+  [Commits](https://github.com/actions/upload-artifact/compare/v4.6.1...v4.6.2)
+
+--- updated-dependencies: - dependency-name: actions/upload-artifact dependency-type:
+  direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/login-action from 3.3.0 to 3.4.0
+  ([`aed77d1`](https://github.com/gofrolist/molecule-action/commit/aed77d136e9b63847d35c6e90f7884fed9f076fb))
+
+Bumps [docker/login-action](https://github.com/docker/login-action) from 3.3.0 to 3.4.0. - [Release
+  notes](https://github.com/docker/login-action/releases) -
+  [Commits](https://github.com/docker/login-action/compare/v3.3.0...v3.4.0)
+
+--- updated-dependencies: - dependency-name: docker/login-action dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump jinja2 from 3.1.5 to 3.1.6
+  ([`f1c52c6`](https://github.com/gofrolist/molecule-action/commit/f1c52c64a5e4d84ae3c1dc51256e37cdc6dd279a))
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.5 to 3.1.6. - [Release
+  notes](https://github.com/pallets/jinja/releases) -
+  [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
+  [Commits](https://github.com/pallets/jinja/compare/3.1.5...3.1.6)
+
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: indirect ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.55 (2025-03-01)
 
 ### Bug Fixes
