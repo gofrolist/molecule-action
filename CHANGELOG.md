@@ -1,6 +1,41 @@
 # CHANGELOG
 
 
+## v2.7.57 (2025-04-05)
+
+### Bug Fixes
+
+- **deps**: Bump ansible-lint from 25.1.3 to 25.2.0
+  ([`dc52334`](https://github.com/gofrolist/molecule-action/commit/dc52334e2214d010d338428bdf993f2e042ce571))
+
+Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.1.3 to 25.2.0. - [Release
+  notes](https://github.com/ansible/ansible-lint/releases) -
+  [Commits](https://github.com/ansible/ansible-lint/compare/v25.1.3...v25.2.0)
+
+--- updated-dependencies: - dependency-name: ansible-lint dependency-version: 25.2.0
+
+dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump ansible-lint from 25.2.0 to 25.2.1
+  ([`3b49763`](https://github.com/gofrolist/molecule-action/commit/3b4976337c9d6acf95f97f7baa4f8e63c0fc624d))
+
+Bumps [ansible-lint](https://github.com/ansible/ansible-lint) from 25.2.0 to 25.2.1. - [Release
+  notes](https://github.com/ansible/ansible-lint/releases) -
+  [Commits](https://github.com/ansible/ansible-lint/compare/v25.2.0...v25.2.1)
+
+--- updated-dependencies: - dependency-name: ansible-lint dependency-version: 25.2.1
+
+dependency-type: direct:production
+
+update-type: version-update:semver-patch ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.56 (2025-03-22)
 
 ### Bug Fixes
