@@ -1,6 +1,41 @@
 # CHANGELOG
 
 
+## v2.7.61 (2025-05-17)
+
+### Bug Fixes
+
+- **deps**: Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0
+  ([`09199d7`](https://github.com/gofrolist/molecule-action/commit/09199d700ea0dbb45ba4932f228d6d51cf758c5c))
+
+Bumps [dependabot/fetch-metadata](https://github.com/dependabot/fetch-metadata) from 2.3.0 to 2.4.0.
+  - [Release notes](https://github.com/dependabot/fetch-metadata/releases) -
+  [Commits](https://github.com/dependabot/fetch-metadata/compare/v2.3.0...v2.4.0)
+
+--- updated-dependencies: - dependency-name: dependabot/fetch-metadata dependency-version: 2.4.0
+
+dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+- **deps**: Bump docker/build-push-action from 6.16.0 to 6.17.0
+  ([`01ebd30`](https://github.com/gofrolist/molecule-action/commit/01ebd30d328e221dfc639d86e431bd7e02f2eb7b))
+
+Bumps [docker/build-push-action](https://github.com/docker/build-push-action) from 6.16.0 to 6.17.0.
+  - [Release notes](https://github.com/docker/build-push-action/releases) -
+  [Commits](https://github.com/docker/build-push-action/compare/v6.16.0...v6.17.0)
+
+--- updated-dependencies: - dependency-name: docker/build-push-action dependency-version: 6.17.0
+
+dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+
 ## v2.7.60 (2025-05-10)
 
 ### Bug Fixes
