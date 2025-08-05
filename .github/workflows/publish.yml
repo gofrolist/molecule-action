@@ -41,7 +41,7 @@ jobs:
 
       - name: Login to DockerHub
         if: github.event_name == 'release'
-        uses: docker/login-action@v3.4.0
+        uses: docker/login-action@v3.5.0
         with:
           username: ${{ github.actor }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
