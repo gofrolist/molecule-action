@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "molecule-action"
-version = "2.7.67"
+version = "2.7.68"
 description = "GitHub action that allows you to run Molecule to test Ansible role."
 readme = "README.md"
 license = "MIT"
