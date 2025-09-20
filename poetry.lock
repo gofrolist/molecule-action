@@ -758,19 +758,19 @@ files = [
 
 [[package]]
 name = "molecule"
-version = "24.12.0"
+version = "25.9.0"
 description = "Molecule aids in the development and testing of Ansible roles"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 markers = "sys_platform == \"linux2\" or sys_platform == \"linux\" or sys_platform != \"linux2\" and sys_platform != \"linux\""
 files = [
-    {file = "molecule-24.12.0-py3-none-any.whl", hash = "sha256:c650d92295860ce17d79048b1dabb787f674718870668d99b52ecdc0e88af541"},
-    {file = "molecule-24.12.0.tar.gz", hash = "sha256:7243ff58e0b8159aa2cf465ba9605d657f1d614617264307bef5b32518467afe"},
+    {file = "molecule-25.9.0-py3-none-any.whl", hash = "sha256:0efe39245ccefbb440ef39f1af50eb647bf82fef57892078fa880f6e14c0b505"},
+    {file = "molecule-25.9.0.tar.gz", hash = "sha256:1a56d283b1fb5488439eac945971dbd66b772ed43b2c66a776922cb93d39fbfd"},
 ]
 
 [package.dependencies]
-ansible-compat = ">=24.6.1"
+ansible-compat = ">=25.1.4"
 ansible-core = ">=2.15.0"
 click = ">=8.0,<9"
 click-help-colors = "*"
@@ -784,8 +784,8 @@ rich = ">=9.5.1"
 wcmatch = ">=8.1.2"
 
 [package.extras]
-docs = ["linkchecker (>=10.4.0)", "mkdocs-ansible (>=24.3.0)", "pipdeptree (>=2.4.0)"]
-test = ["ansi2html (>=1.8.0)", "ansible-lint (>=6.12.1)", "black", "check-jsonschema", "coverage[toml]", "docker (>=7.1.0)", "filelock (>=3.9.0)", "mypy", "pexpect (>=4.8.0,<5)", "pip-tools", "pre-commit", "pydoclint", "pylint", "pytest", "pytest-mock (>=3.10.0)", "pytest-plus (>=0.4.0)", "pytest-xdist", "requests (!=2.32.0)", "ruff", "toml-sort", "tox", "types-jsonschema", "types-pexpect", "types-pyyaml"]
+docs = ["linkchecker (>=10.4.0)", "mkdocs-ansible (>=24.3.0)"]
+test = ["ansi2html (>=1.8.0)", "ansible-lint (>=6.12.1)", "ansible-navigator", "coverage[toml]", "docker (>=7.1.0)", "filelock (>=3.9.0)", "mypy", "pexpect (>=4.9.0,<5)", "pre-commit", "pydoclint", "pylint", "pytest", "pytest-instafail", "pytest-mock (>=3.10.0)", "pytest-plus (>=0.7.0)", "pytest-xdist", "requests (!=2.32.0)", "ruff", "toml-sort", "tox", "types-jsonschema", "types-pexpect", "types-pyyaml"]
 testinfra = ["pytest-testinfra (>=8.1.0)"]
 
 [[package]]
@@ -1326,7 +1326,7 @@ description = "A lil' TOML parser"
 optional = false
 python-versions = ">=3.7"
 groups = ["main"]
-markers = "python_version < \"3.11\" and (sys_platform == \"linux2\" or sys_platform == \"linux\" or sys_platform != \"linux2\" and sys_platform != \"linux\")"
+markers = "(sys_platform == \"linux2\" or sys_platform == \"linux\" or sys_platform != \"linux2\" and sys_platform != \"linux\") and python_version < \"3.11\""
 files = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
@@ -1424,4 +1424,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "62a077fb158003d46bc9af0d183ff4fa4e8e7bff731c14ab1ac91b8b245f25f1"
+content-hash = "78d03ec940aea7d9997971886558e70491858aee4d89f7e35b68d4fac351ecc5"
