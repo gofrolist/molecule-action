@@ -61,14 +61,14 @@ resolvelib = ">=0.5.3,<2.0.0"
 
 [[package]]
 name = "ansible-lint"
-version = "25.11.0"
+version = "25.11.1"
 description = "Checks playbooks for practices and behavior that could potentially be improved"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "ansible_lint-25.11.0-py3-none-any.whl", hash = "sha256:4a0f83e292fa70e9922ad2c02e10708013b7e77a93364d729abc2cbf165c75c4"},
-    {file = "ansible_lint-25.11.0.tar.gz", hash = "sha256:79e35246c8bdaacdbe37aa30a6ea471177482ac58fbcf1868f765bdafca3427e"},
+    {file = "ansible_lint-25.11.1-py3-none-any.whl", hash = "sha256:f81946a540dc6b4b0cb5a8b050ab3c67c2b29a12aa0a0ba8dae03a9d44670f19"},
+    {file = "ansible_lint-25.11.1.tar.gz", hash = "sha256:f9d7ce3877eeda5c39ee70acf9b88677732fea4cfc28a005c014dfaaa8678c85"},
 ]
 
 [package.dependencies]
@@ -1419,4 +1419,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "d386924c076fe3b8e7cf5e13dc6303910c842de29e6da9c3519863f89c17b372"
+content-hash = "7275454e5f4e2f28ad3a9032a0c873044a240825aaf697e65df3f76eebf06081"
