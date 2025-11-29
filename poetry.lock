@@ -754,34 +754,29 @@ files = [
 
 [[package]]
 name = "molecule"
-version = "24.12.0"
+version = "25.11.1"
 description = "Molecule aids in the development and testing of Ansible roles"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "molecule-24.12.0-py3-none-any.whl", hash = "sha256:c650d92295860ce17d79048b1dabb787f674718870668d99b52ecdc0e88af541"},
-    {file = "molecule-24.12.0.tar.gz", hash = "sha256:7243ff58e0b8159aa2cf465ba9605d657f1d614617264307bef5b32518467afe"},
+    {file = "molecule-25.11.1-py3-none-any.whl", hash = "sha256:45713f2831d6409435bc3f2fd4f18a2171490d5c9c0f58e6990b9d616124e47f"},
+    {file = "molecule-25.11.1.tar.gz", hash = "sha256:c65888e3283c2677048f945d197296064ffcee8aea5bb7e8fff39b1c199ce3ba"},
 ]
 
 [package.dependencies]
-ansible-compat = ">=24.6.1"
+ansible-compat = ">=25.1.4"
 ansible-core = ">=2.15.0"
 click = ">=8.0,<9"
-click-help-colors = "*"
+click-help-colors = ">=0.9.4"
 enrich = ">=1.2.7"
-Jinja2 = ">=2.11.3"
+jinja2 = ">=2.11.3"
 jsonschema = ">=4.9.1"
-packaging = "*"
+packaging = ">=25.0"
 pluggy = ">=0.7.1,<2.0"
-PyYAML = ">=5.1"
+pyyaml = ">=5.1"
 rich = ">=9.5.1"
 wcmatch = ">=8.1.2"
-
-[package.extras]
-docs = ["linkchecker (>=10.4.0)", "mkdocs-ansible (>=24.3.0)", "pipdeptree (>=2.4.0)"]
-test = ["ansi2html (>=1.8.0)", "ansible-lint (>=6.12.1)", "black", "check-jsonschema", "coverage[toml]", "docker (>=7.1.0)", "filelock (>=3.9.0)", "mypy", "pexpect (>=4.8.0,<5)", "pip-tools", "pre-commit", "pydoclint", "pylint", "pytest", "pytest-mock (>=3.10.0)", "pytest-plus (>=0.4.0)", "pytest-xdist", "requests (!=2.32.0)", "ruff", "toml-sort", "tox", "types-jsonschema", "types-pexpect", "types-pyyaml"]
-testinfra = ["pytest-testinfra (>=8.1.0)"]
 
 [[package]]
 name = "molecule-plugins"
@@ -1338,7 +1333,7 @@ description = "Backported and Experimental Type Hints for Python 3.8+"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
-markers = "python_version <= \"3.12\""
+markers = "python_version < \"3.13\""
 files = [
     {file = "typing_extensions-4.9.0-py3-none-any.whl", hash = "sha256:af72aea155e91adfc61c3ae9e0e342dbc0cba726d6cba4b6c72c1f34e47291cd"},
     {file = "typing_extensions-4.9.0.tar.gz", hash = "sha256:23478f88c37f27d76ac8aee6c905017a143b0b1b886c3c9f66bc2fd94f9f5783"},
@@ -1419,4 +1414,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "7275454e5f4e2f28ad3a9032a0c873044a240825aaf697e65df3f76eebf06081"
+content-hash = "256f7a59974f82d3eee61cfe561f0c7efd7cd21c92d7792ee628706b3bbdafdb"
