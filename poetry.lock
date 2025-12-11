@@ -61,14 +61,14 @@ resolvelib = ">=0.5.3,<2.0.0"
 
 [[package]]
 name = "ansible-lint"
-version = "25.12.0"
+version = "25.12.1"
 description = "Checks playbooks for practices and behavior that could potentially be improved"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "ansible_lint-25.12.0-py3-none-any.whl", hash = "sha256:df8385af857a1f509145e680850845efb783c3bf2ccb8d95acaced92e01100e3"},
-    {file = "ansible_lint-25.12.0.tar.gz", hash = "sha256:84fa30130fe8771d8d8997bff09fd2a762a053ae9530d498fa3e66eb74608fe9"},
+    {file = "ansible_lint-25.12.1-py3-none-any.whl", hash = "sha256:26f406dd35794501e66b78b8eb1ee5e4fa87468c0ffa25fb41d4000dba656d92"},
+    {file = "ansible_lint-25.12.1.tar.gz", hash = "sha256:b6e9abfb4b3223c8dd081fe3c986f123d83b07e7011d40a684972431efb4c7de"},
 ]
 
 [package.dependencies]
@@ -1371,4 +1371,4 @@ dev = ["doc8", "flake8", "flake8-import-order", "rstcheck[sphinx]", "sphinx"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "6775f48c1c0489c02013e7caa68009a3f05591b8f19aa00d50398b22229c6545"
+content-hash = "35832d4ed0372ffbe4a0285d18964cc1617a808f0b4c7fac0bf52802b4ad5449"
