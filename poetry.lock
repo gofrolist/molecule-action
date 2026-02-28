@@ -397,24 +397,6 @@ files = [
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
-name = "click-help-colors"
-version = "0.9.4"
-description = "Colorization of help messages in Click"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "click-help-colors-0.9.4.tar.gz", hash = "sha256:f4cabe52cf550299b8888f4f2ee4c5f359ac27e33bcfe4d61db47785a5cc936c"},
-    {file = "click_help_colors-0.9.4-py3-none-any.whl", hash = "sha256:b33c5803eeaeb084393b1ab5899dc5476c7196b87a18713045afe76f840b42db"},
-]
-
-[package.dependencies]
-click = ">=7.0,<9"
-
-[package.extras]
-dev = ["mypy", "pytest"]
-
-[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -740,34 +722,28 @@ files = [
 
 [[package]]
 name = "molecule"
-version = "24.12.0"
+version = "26.2.0"
 description = "Molecule aids in the development and testing of Ansible roles"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "molecule-24.12.0-py3-none-any.whl", hash = "sha256:c650d92295860ce17d79048b1dabb787f674718870668d99b52ecdc0e88af541"},
-    {file = "molecule-24.12.0.tar.gz", hash = "sha256:7243ff58e0b8159aa2cf465ba9605d657f1d614617264307bef5b32518467afe"},
+    {file = "molecule-26.2.0-py3-none-any.whl", hash = "sha256:3541c8607d91e0ae7165b7f8c9584f86448f4b66ce79f9a6a8233d19666b03c3"},
+    {file = "molecule-26.2.0.tar.gz", hash = "sha256:646a70899073aa6db89c374229a884b969a2b552dd8e5bdc187a4d10847bc32e"},
 ]
 
 [package.dependencies]
-ansible-compat = ">=24.6.1"
+ansible-compat = ">=25.1.4"
 ansible-core = ">=2.15.0"
 click = ">=8.0,<9"
-click-help-colors = "*"
 enrich = ">=1.2.7"
-Jinja2 = ">=2.11.3"
+jinja2 = ">=2.11.3"
 jsonschema = ">=4.9.1"
-packaging = "*"
+packaging = ">=23.2"
 pluggy = ">=0.7.1,<2.0"
-PyYAML = ">=5.1"
+pyyaml = ">=5.1"
 rich = ">=9.5.1"
 wcmatch = ">=8.1.2"
-
-[package.extras]
-docs = ["linkchecker (>=10.4.0)", "mkdocs-ansible (>=24.3.0)", "pipdeptree (>=2.4.0)"]
-test = ["ansi2html (>=1.8.0)", "ansible-lint (>=6.12.1)", "black", "check-jsonschema", "coverage[toml]", "docker (>=7.1.0)", "filelock (>=3.9.0)", "mypy", "pexpect (>=4.8.0,<5)", "pip-tools", "pre-commit", "pydoclint", "pylint", "pytest", "pytest-mock (>=3.10.0)", "pytest-plus (>=0.4.0)", "pytest-xdist", "requests (!=2.32.0)", "ruff", "toml-sort", "tox", "types-jsonschema", "types-pexpect", "types-pyyaml"]
-testinfra = ["pytest-testinfra (>=8.1.0)"]
 
 [[package]]
 name = "molecule-plugins"
@@ -1391,4 +1367,4 @@ dev = ["doc8", "flake8", "flake8-import-order", "rstcheck[sphinx]", "ruff", "sph
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "d1ed2a0b724edc5ead7ffb9c0a27eabd750a42788353ebc82396f53dd99b2e53"
+content-hash = "1163d74fefdce73665e0e4ebb3b38a8caefc434f29324699e99dd6f6c314965b"
