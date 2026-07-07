@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.11.11-slim-bookworm
+ARG PYTHON_VERSION=3.14.6-slim-trixie
 
 FROM python:${PYTHON_VERSION} AS builder
 
@@ -9,7 +9,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
     POETRY_VIRTUALENVS_IN_PROJECT=true
 
 ARG BUILD_DEPS="\
-    docker \
     gcc \
     libc-dev \
     libffi-dev \
@@ -58,6 +57,7 @@ WORKDIR /app
 COPY --from=builder /app/.venv /app/.venv
 
 ARG PACKAGES="\
+    docker-cli \
     docker.io \
     git \
     openssh-client \
