@@ -1,10 +1,12 @@
+FROM ghcr.io/astral-sh/uv:0.11.26 AS uv
+
 FROM python:3.14.6-slim-trixie AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    PIP_DISABLE_PIP_VERSION_CHECK=true \
-    POETRY_VIRTUALENVS_IN_PROJECT=true
+    UV_PYTHON_DOWNLOADS=never \
+    UV_LINK_MODE=copy
 
 ARG BUILD_DEPS="\
     gcc \
@@ -20,21 +22,13 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+COPY --from=uv /uv /usr/local/bin/uv
+
 WORKDIR /app
-COPY . .
+COPY pyproject.toml uv.lock ./
 
-RUN --mount=type=cache,mode=0755,target=/root/.cache/pip \
-    pip install \
-        --upgrade \
-        pip \
-        poetry \
-        setuptools \
-        wheel
-
-RUN --mount=type=cache,mode=0755,target=/root/.cache/pypoetry \
-    poetry install \
-        --without dev \
-        --no-root
+RUN --mount=type=cache,mode=0755,target=/root/.cache/uv \
+    uv sync --frozen --no-dev
 
 ##################
 # runtime
@@ -56,7 +50,6 @@ COPY --from=builder /app/.venv /app/.venv
 
 ARG PACKAGES="\
     docker-cli \
-    docker.io \
     git \
     openssh-client \
     podman \
@@ -69,4 +62,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["/bin/sh", "-c", "cd ${INPUT_MOLECULE_WORKING_DIR} && molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}"]
+CMD ["/bin/sh", "-c", "cd \"${INPUT_MOLECULE_WORKING_DIR}\" && molecule ${INPUT_MOLECULE_OPTIONS} ${INPUT_MOLECULE_COMMAND} ${INPUT_MOLECULE_ARGS}"]

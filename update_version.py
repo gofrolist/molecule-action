@@ -1,11 +1,11 @@
-import toml
+import tomllib
 
 
 def read_version_from_pyproject():
     """Read the current version from the pyproject.toml file."""
-    with open("pyproject.toml", "r") as file:
-        data = toml.load(file)
-        return data["tool"]["poetry"]["version"]
+    with open("pyproject.toml", "rb") as file:
+        data = tomllib.load(file)
+        return data["project"]["version"]
 
 
 def update_action_yml(tag_name, template_path="action.yml.tpl", output_path="action.yml"):
