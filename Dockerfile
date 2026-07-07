@@ -28,7 +28,10 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 
 RUN --mount=type=cache,mode=0755,target=/root/.cache/uv \
-    uv sync --frozen --no-dev
+    uv sync --frozen --no-dev && \
+    # seed pip into the venv so users can install extra packages
+    # (pytest plugins, collection python deps) at runtime
+    uv pip install pip
 
 ##################
 # runtime
