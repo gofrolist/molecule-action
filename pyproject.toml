@@ -15,6 +15,7 @@ dependencies = [
     "ansible-lint==26.6.0",
     "molecule==26.6.0",
     "molecule-plugins[docker,podman]",
+    "pytest-testinfra",
 ]
 
 [project.urls]
