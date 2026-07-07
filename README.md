@@ -77,15 +77,15 @@ jobs:
   molecule:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
         with:
           path: "${{ github.repository }}"
       - uses: gofrolist/molecule-action@v2
 ```
 
->NOTE: By default molecule is going to look for configuration at `molecule/*/molecule.yml`, so if option `molecule-working-dir` is not provided,
+>NOTE: By default molecule is going to look for configuration at `molecule/*/molecule.yml`, so if option `molecule_working_dir` is not provided,
 >checkout action needs to place the file in ${{ github.repository }} in order for Molecule to find your role. If your role is placed somewhere else
->in the repository, ensure that `molecule-working-dir` is set up accordingly, in order to `cd` to that directory before issuing `molecule` command.
+>in the repository, ensure that `molecule_working_dir` is set up accordingly, in order to `cd` to that directory before issuing `molecule` command.
 
 ### Advanced example:
 
@@ -107,14 +107,13 @@ jobs:
       fail-fast: false
       matrix:
         scenario:
-          - centos-8
-          - debian-10
-          - fedora-34
-          - oraclelinux-8
-          - ubuntu-20.04
+          - debian-13
+          - fedora-42
+          - rockylinux-9
+          - ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
         with:
           path: "${{ github.repository }}"
       - name: Molecule
@@ -128,6 +127,8 @@ jobs:
 ```
 
 > TIP: N.B. Use `gofrolist/molecule-action@v2` or any other valid tag, or branch, or commit SHA instead of `v2` to pin the action to use a specific version.
+
+The Docker image used by this action is published to both [Docker Hub](https://hub.docker.com/r/gofrolist/molecule) (`gofrolist/molecule`) and [GitHub Container Registry](https://github.com/gofrolist/molecule-action/pkgs/container/molecule) (`ghcr.io/gofrolist/molecule`) for `linux/amd64` and `linux/arm64`. If you run molecule directly from the image (outside this action), pulling from GHCR avoids Docker Hub rate limits.
 
 ## Troubleshooting
 If you see this error while you executing `apt_key` task
@@ -214,4 +215,4 @@ git tag -fa v2 -m "Update v2 tag" && git push origin v2 --force
 https://github.com/actions/toolkit/blob/master/docs/action-versioning.md#recommendations
 
 ## License
-The Dockerfile and associated scripts and documentation in this project are released under the [MIT](license).
+The Dockerfile and associated scripts and documentation in this project are released under the [MIT License](LICENSE).

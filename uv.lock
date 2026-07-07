@@ -447,7 +447,7 @@ wheels = [
 
 [[package]]
 name = "molecule-action"
-version = "2.7.103"
+version = "2.7.104"
 source = { virtual = "." }
 dependencies = [
     { name = "ansible-lint" },
