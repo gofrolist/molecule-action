@@ -39,6 +39,6 @@ jobs:
           ${{ env.DOCKER_IMAGE_NAME }}:test \
           sh -c "\
             molecule --version \
-            && molecule init scenario --driver-name docker validate \
+            && molecule init scenario validate \
             && molecule test --scenario-name validate --driver-name docker \
           "
