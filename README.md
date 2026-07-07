@@ -12,12 +12,14 @@ This GitHub action allows you to run [Molecule](https://molecule.readthedocs.io/
     description: |
       Options:
         --debug / --no-debug    Enable or disable debug mode. Default is disabled.
-        -v, --verbose           Increase Ansible verbosity level. Default is 0.  [x>=0]
-        -c, --base-config TEXT  Path to a base config (can be specified multiple times). If provided, Molecule will first load and deep merge the configurations in the specified order, and deep merge each scenario's molecule.yml on top. By default Molecule is looking for
-                                '.config/molecule/config.yml' in current VCS repository and if not found it will look in user home. (None).
+        -v, --verbose           Increase Ansible verbosity level. Default is 0.
+        -c, --base-config TEXT  Path to a base config (can be specified multiple times). If provided, Molecule will first load and deep merge the configurations
+                                in the specified order, and deep merge each scenario's molecule.yml on top. By default Molecule is looking for
+                                '.config/molecule/config.yml' in current VCS repository, in collections at 'extensions/molecule/config.yml', and if not found it
+                                will look in user home. (None).
         -e, --env-file TEXT     The file to read variables from when rendering molecule.yml. (.env.yml)
-        --version
-        --help                  Show this message and exit.
+        --version               Show version information and exit.
+        -h, --help              Show this message and exit.
     required: false
 
   molecule_command:
@@ -30,17 +32,16 @@ This GitHub action allows you to run [Molecule](https://molecule.readthedocs.io/
         dependency   Manage the role's dependencies.
         destroy      Use the provisioner to destroy the instances.
         drivers      List drivers.
-        idempotence  Use the provisioner to configure the instances and parse the output to determine idempotence.
-        init         Initialize a new role or scenario.
-        lint         Lint the role (dependency, lint).
+        idempotence  Use the provisioner to configure the instances.
+        init         Initialize a new scenario.
         list         List status of instances.
         login        Log in to one instance.
         matrix       List matrix of steps used to test instances.
         prepare      Use the provisioner to prepare the instances into a particular starting state.
         reset        Reset molecule temporary folders.
-        side-effect  Use the provisioner to perform side-effects to the instances.
+        side-effect  Use the provisioner to perform side effects to the role.
         syntax       Use the provisioner to syntax check the role.
-        test         Test (dependency, lint, cleanup, destroy, syntax, create, prepare, converge, idempotence, side_effect, verify, cleanup, destroy).
+        test         Test (dependency, cleanup, destroy, syntax, create, prepare, converge, idempotence, side_effect, verify, cleanup, destroy).
         verify       Run automated tests against instances.
     required: true
     default: 'test'
@@ -48,12 +49,12 @@ This GitHub action allows you to run [Molecule](https://molecule.readthedocs.io/
   molecule_args:
     description: |
       Arguments:
-        -s, --scenario-name TEXT        Name of the scenario to target. (default)
-        -d, --driver-name [delegated|docker]
-                                        Name of driver to use. (delegated)
-        --all / --no-all                Test all scenarios. Default is False.
-        --destroy [always|never]        The destroy strategy used at the conclusion of a Molecule run (always).
-        --parallel / --no-parallel      Enable or disable parallel mode. Default is disabled.
+        -s, --scenario-name TEXT        Name of the scenario to target. May be specified multiple times. (default: default)
+        -d, --driver-name [containers|podman|openstack|gce|ec2|docker|vagrant|default|azure]
+                                        Name of driver to use.
+        --all / --no-all                Target all scenarios. Overrides scenario-name. (default: disabled)
+        --destroy [always|never]        The destroy strategy used at the conclusion of a Molecule run. (default: always)
+        --parallel / --no-parallel      DEPRECATED: Use --workers instead. Enable or disable parallel isolation mode. (default: disabled)
     required: false
 
   molecule_working_dir:
