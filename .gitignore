@@ -1,0 +1,15 @@
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# uv
+# (uv.lock is committed on purpose)
+
+# OS
+.DS_Store

@@ -1,0 +1,10 @@
+---
+# CI fixture scenario, exercised end-to-end by the action self-test job
+# in .github/workflows/test.yml.
+driver:
+  name: docker
+platforms:
+  - name: molecule-action-test
+    image: python:3.14-slim-trixie
+    command: sleep infinity
+    pre_build_image: true

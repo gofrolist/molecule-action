@@ -1,31 +1,33 @@
-[tool.poetry]
+[project]
 name = "molecule-action"
 version = "2.7.104"
 description = "GitHub action that allows you to run Molecule to test Ansible role."
 readme = "README.md"
 license = "MIT"
-authors = ["Evgenii Vasilenko <gmrnsk@gmail.com>"]
-maintainers = ["Evgenii Vasilenko <gmrnsk@gmail.com>"]
-repository = "https://github.com/gofrolist/molecule-action"
+authors = [
+    { name = "Evgenii Vasilenko", email = "gmrnsk@gmail.com" },
+]
+maintainers = [
+    { name = "Evgenii Vasilenko", email = "gmrnsk@gmail.com" },
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ansible-lint==26.6.0",
+    "molecule==26.6.0",
+    "molecule-plugins[docker,podman]",
+]
 
-[tool.poetry.dependencies]
-python = '^3.14'
-ansible-lint = "==26.6.0"
-molecule = "==26.6.0"
-molecule-plugins = {version = "*", extras = ["docker", "podman"]}
+[project.urls]
+Repository = "https://github.com/gofrolist/molecule-action"
 
-[tool.poetry.group.dev.dependencies]
-toml = "==0.10.2"
-
-[build-system]
-requires = ["poetry-core>=1.8.1"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+package = false
 
 [tool.semantic_release]
 assets = ["action.yml"]
-version_toml = ["pyproject.toml:tool.poetry.version"]
+version_toml = ["pyproject.toml:project.version"]
 commit_message = "chore(release): bump version to v{version} [skip ci]"
-build_command = "pip install toml && python update_version.py"
+build_command = "python update_version.py"
 
 [tool.semantic_release.changelog]
 exclude_commit_patterns = [

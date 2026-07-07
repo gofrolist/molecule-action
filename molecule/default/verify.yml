@@ -1,0 +1,13 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Collect instance facts
+      ansible.builtin.setup:
+      register: facts
+
+    - name: Assert the instance is reachable
+      ansible.builtin.assert:
+        that:
+          - facts is succeeded
