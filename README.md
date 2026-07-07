@@ -130,6 +130,8 @@ jobs:
 
 The Docker image used by this action is published to both [Docker Hub](https://hub.docker.com/r/gofrolist/molecule) (`gofrolist/molecule`) and [GitHub Container Registry](https://github.com/gofrolist/molecule-action/pkgs/container/molecule) (`ghcr.io/gofrolist/molecule`) for `linux/amd64` and `linux/arm64`. If you run molecule directly from the image (outside this action), pulling from GHCR avoids Docker Hub rate limits.
 
+The image bundles `pytest-testinfra`, so scenarios using the [testinfra verifier](https://ansible.readthedocs.io/projects/molecule/configuration/#molecule.verifier.testinfra.Testinfra) (`verifier: name: testinfra`) work out of the box. If your testinfra tests need extra pytest plugins (e.g. `pytest-subtests`), install them via a `shell` dependency step as described in [Troubleshooting](#troubleshooting).
+
 ## Troubleshooting
 If you see this error while you executing `apt_key` task
 ```
