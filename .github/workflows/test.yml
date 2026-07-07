@@ -13,7 +13,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.0
@@ -33,12 +33,31 @@ jobs:
 
       - name: Test Molecule default pipeline
         run: |
-          docker run \
+          docker run --rm \
           -v /var/run/docker.sock:/var/run/docker.sock \
+          -v ${{ github.workspace }}:/workspace \
+          -w /workspace \
           -e PY_COLORS=1 \
           ${{ env.DOCKER_IMAGE_NAME }}:test \
-          sh -c "\
-            molecule --version \
-            && molecule init scenario validate \
-            && molecule test --scenario-name validate --driver-name docker \
-          "
+          sh -c "molecule --version && molecule test"
+
+  # Exercises the action end-to-end the way consumers use it: action.yml input
+  # wiring, INPUT_* env passing and the working-dir handling in the image CMD.
+  action-test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.0
+
+      - name: Checkout fixture to the default molecule_working_dir
+        uses: actions/checkout@v7.0.0
+        with:
+          path: ${{ github.repository }}
+
+      - name: Point the action at the local Dockerfile
+        run: "sed -i 's|^  image:.*|  image: Dockerfile|' action.yml"
+
+      - name: Run the action against the fixture scenario
+        uses: ./
+        with:
+          molecule_command: test

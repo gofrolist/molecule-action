@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Check connectivity to the instance
+      ansible.builtin.ping:
