@@ -1,6 +1,6 @@
 FROM ghcr.io/astral-sh/uv:0.12.1 AS uv
 
-FROM python:3.14.6-slim-trixie AS builder
+FROM python:3.14.7-slim-trixie AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONUNBUFFERED=1 \
@@ -37,7 +37,7 @@ RUN --mount=type=cache,mode=0755,target=/root/.cache/uv \
 # runtime
 ##################
 
-FROM python:3.14.6-slim-trixie AS runtime
+FROM python:3.14.7-slim-trixie AS runtime
 
 LABEL "maintainer"="Evgenii Vasilenko <gmrnsk@gmail.com>"
 LABEL "repository"="https://github.com/gofrolist/molecule-action"
