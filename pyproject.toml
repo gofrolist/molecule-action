@@ -12,7 +12,7 @@ maintainers = [
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "ansible-lint==26.6.0",
+    "ansible-lint==26.8.0",
     "molecule==26.8.0",
     "molecule-plugins[docker,podman]",
     "pytest-testinfra",
