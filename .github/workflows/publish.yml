@@ -77,6 +77,8 @@ jobs:
         uses: actions/publish-action@v0.4.0
         with:
           source-tag: ${{ env.TAG_NAME }}
+          # GITHUB_TOKEN can't move the tag if workflow files changed on master mid-run
+          token: ${{ secrets.PAT }}
 
   validate:
     needs:
