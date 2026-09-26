@@ -1,6 +1,6 @@
 [project]
 name = "molecule-action"
-version = "2.9.13"
+version = "2.9.14"
 description = "GitHub action that allows you to run Molecule to test Ansible role."
 readme = "README.md"
 license = "MIT"
